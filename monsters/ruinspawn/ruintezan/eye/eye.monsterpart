@@ -1,0 +1,9 @@
+{
+  "name" : "ruintezaneye",
+  "category" : "ruintezan",
+  "type" : "eye",
+
+  "frames" : {
+    "eye" : "yokateye.png"
+  }
+}

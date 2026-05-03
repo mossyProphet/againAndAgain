@@ -1,0 +1,9 @@
+{
+  "name" : "ruinnurgle",
+  "category" : "ruinnurgle",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "master.png"
+  }
+}

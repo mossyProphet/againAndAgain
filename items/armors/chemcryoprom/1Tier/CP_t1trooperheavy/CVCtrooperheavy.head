@@ -1,0 +1,18 @@
+{
+  "itemName" : "CVCtrooperheavyHead",
+  "price" : 250,
+  "inventoryIcon" : "icons.png:head",
+  "maxStack" : 1,
+  "rarity" : "Essential",
+  "category" : "headarmour",
+  "description" : "Grim and infamous",
+  "shortdescription" : "Combine Charger Helm",
+  "tooltipKind" : "armor",
+  
+
+  "maleFrames" : "head.png",
+  "femaleFrames" : "head.png",
+  "mask" : "mask.png",
+
+  "level" : 1
+}

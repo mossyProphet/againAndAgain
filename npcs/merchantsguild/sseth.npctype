@@ -1,0 +1,197 @@
+{
+  "type": "sseth",
+  "baseType": "merchant",
+
+  "npcname": "Trader AI",
+
+  "damageTeamType": "assistant",
+  "damageTeam": 1,
+
+  "persistent": true,
+  "innateStatusEffects": [ "invulnerable", "colorblue" ],
+  "scriptConfig": {
+
+    "reactions": {
+      "spontaneous": [
+      ]
+    },
+    "personalities": [
+      [
+        1.0,
+        {
+          "personality": "normal",
+          "reactions": {}
+        }
+      ]
+    ],
+    "behaviorConfig": {
+      "play": false,
+      "chat": false
+    },
+
+    "questGenerator": {
+      "pools": [],
+      "enableParticipation": false
+    },
+
+    "merchant": {
+      "waitTime": 40,
+      "storeRadius": 8,
+      "categories": {
+        "human": [ "sseth" ]
+      },
+
+      //"rotateStock": true,
+      //"rotationTime": 80,
+
+      "buyFactorRange": [ 1.0, 3.0 ],
+      "sellFactorRange": [ 0.2, 0.5 ],
+      "numItems": 8,
+      "paneLayoutOverride": {
+        "windowtitle": {
+          "title": "Trade-Assistant AI",
+          "subtitle": "Need some spice in life?"
+        }
+      }
+    },
+
+    "chatSounds": {
+      "avian": {
+        "male": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ]
+      },
+      "apex": {
+        "male": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ]
+      },
+      "floran": {
+        "male": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ]
+      },
+      "glitch": {
+        "male": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ]
+      },
+      "human": {
+        "male": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ]
+      },
+      "hylotl": {
+        "male": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ]
+      },
+      "default": {
+        "male": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ],
+        "female": [
+          "/sfx/humanoid/glitch_chatter_female3.ogg"
+        ]
+      }
+    },
+
+    "dialog": {
+      "merchant": {
+        "start": {
+          "default": {
+            "default": [
+              "Trade protocol initialized. Session: #${randomId}",
+              "Product catalog access granted. Select category",
+              "Purchase interface activated. Input request"
+            ]
+          }
+        },
+        "welcome": {
+          "default": {
+            "default": [
+              "Welcome package v3.1 loaded. Daily deals available",
+              "Customer recognition... Profile: ${playerLevel}. Recommendations generated",
+              "Terminal ready for transactions. Specials: ${dailyItems}"
+            ]
+          }
+        },
+        "end": {
+          "default": {
+            "default": [
+              "Session terminated. Code: 0xTRD_SUCCESS",
+              "Remember to rate service at feedback terminal",
+              "POS system shutdown. Until next transaction!"
+            ]
+          }
+        },
+        "follow": "/dialog/merchant.config:follow",
+        "tout": {
+          "default": {
+            "default": [
+              "Alert! ${discount}% discount in ${category} segment",
+              "Active shoppers receive bonus loyalty units",
+              "Update loyalty firmware for premium goods access"
+            ]
+          }
+        }
+      }
+    }
+  },
+
+
+  "items": {
+    "override": [
+      [
+        0,
+        [
+          {
+            "head": [
+              {
+                "name": "glitchtier5mhead",
+                "parameters": { "colorIndex": 0 }
+              }
+            ],
+            "chest": [
+              {
+                "name": "apextier6achest",
+                "parameters": { "colorIndex": 0 }
+              }
+            ],
+            "legs": [
+              {
+                "name": "apextier6apants",
+                "parameters": { "colorIndex": 0 }
+              }
+            ]
+          }
+        ]
+      ]
+    ]
+  },
+  "statusControllerSettings": {
+    "stats": {
+      "healthRegen": {
+        "baseValue": -2
+      }
+    }
+  }
+}

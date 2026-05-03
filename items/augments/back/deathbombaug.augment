@@ -1,0 +1,21 @@
+{
+  "itemName": "deathbombaug",
+  "price": 5000,
+  "rarity": "Uncommon",
+  "category": "eppAugment",
+  "inventoryIcon": "deathbombaug.png",
+  "description": "Dont you feel like you wanna just spontaneously explode?",
+  "shortdescription": "Explosion Module(no element)",
+
+  "augment": {
+    "type": "back",
+    "name": "deathbombaug",
+    "displayName": "Explosion",
+    "displayIcon": "/items/augments/back/deathbombaug.png",
+    "effects": [ "deathbombaug" ]
+  },
+
+  "radioMessagesOnPickup": [ "pickupaugment" ],
+
+  "scripts": [ "/scripts/augments/augment.lua" ]
+}

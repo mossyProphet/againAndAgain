@@ -1,0 +1,14 @@
+{
+  "name" : "predvision",
+  
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "predvision.lua"
+  ],
+
+  "animationConfig" : "predvision.animation"
+
+  //"label" : "Run Boost",
+  //"icon" : "/interface/statuses/haste.png"
+}

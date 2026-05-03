@@ -1,0 +1,14 @@
+[
+{
+  "op": "replace",
+  "path": "/effects",
+  "value": [
+    [
+      {
+        "effect": "rage",
+        "duration": 10
+      }
+    ]
+  ]
+}
+]

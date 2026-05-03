@@ -1,0 +1,9 @@
+{
+  "name" : "ruinslaanesh",
+  "category" : "ruinslaanesh",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "noxling.png"
+  }
+}

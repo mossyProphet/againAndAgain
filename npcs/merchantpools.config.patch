@@ -1,0 +1,482 @@
+[
+    {
+        "op": "add",
+        "path": "/sseth",
+      "value": [
+        [
+          0,
+          [
+            {
+              "item": { "name": "torch" }
+            },
+            {
+              "item": { "name": "flare" }
+            },
+            {
+              "item": { "name": "climbingrope" }
+            },
+            {
+              "item": { "name": "redstim" }
+            },
+            {
+              "item": { "name": "bluestim" }
+            },
+            {
+              "item": { "name": "yellowstim" }
+            },
+            {
+              "item": { "name": "paperplane" }
+            },
+            {
+              "item": { "name": "beachball" }
+            },
+
+            {
+              "item": { "name": "firework" }
+            },
+            {
+              "item": { "name": "fireworkblue" }
+            },
+            {
+              "item": { "name": "fireworkgreen" }
+            },
+            { "item": { "name": "bomb" } },
+            { "item": { "name": "oillantern1" } },
+            {
+              "item": { "name": "fairylights" }
+            },
+            {
+              "item": { "name": "grassseeds" }
+            },
+            {
+              "item": { "name": "commonpistol" },
+              "useSeed": true
+             
+            },
+            {
+              "item": { "name": "lanternstickback" }
+            },
+            {
+              "item": { "name": "recreationalvehicle" }
+            },
+            {
+              "item": { "name": "tier2chair" }
+            },
+            {
+              "item": { "name": "bardoor" }
+            },
+            {
+              "item": { "name": "oillanterntall" }
+            },
+            {
+              "item": { "name": "frogstatue" }
+            },
+            {
+              "item": { "name": "safe" }
+            },
+            {
+              "item": { "name": "medievalregister" }
+            },
+            {
+              "item": { "name": "guillotine" }
+            },
+            {
+              "item": { "name": "trashcan" }
+            },
+            {
+              "item": { "name": "woodenarmchair1" }
+            },
+            {
+              "item": { "name": "medievalswitchshackle" }
+            },
+            {
+              "item": { "name": "coffeemachine" }
+            },
+            {
+              "item": { "name": "commonpistol" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonmachinepistol" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonassaultrifle" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonshotgun" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonsniperrifle" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonpistol" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonmachinepistol" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commongrenadelauncher" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonrocketlauncher" },
+              
+              "useSeed": true
+            },
+            { "item": { "name": "coffee" } },
+            { "item": { "name": "soda" } },
+            { "item": { "name": "currentgizer" } },
+            { "item": { "name": "fishfingers" } },
+            { "item": { "name": "fishnchips" } },
+            { "item": { "name": "hothothotpot" } },
+            { "item": { "name": "potatogrids" } },
+            { "item": { "name": "toxicjamdonut" } }
+          ]
+        ],
+        [
+          1.9,
+          [
+            {
+              "item": {
+                "name": "damageaugment1"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "energyaugment"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "healingaugment1"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "healthaugment1"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "lightaugment1"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "fireblockaugment"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "iceblockaugment"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "electricblockaugment"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "poisonblockaugment"
+              }
+              
+            },
+
+            {
+              "item": {
+                "name": "gravityaugment"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "jumpaugment"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "speedaugment"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "swimaugment"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "thornsaugment"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "mobilityaugment"
+              }
+              
+            },
+            {
+              "item": { "name": "commondagger" },
+              "useSeed": true
+            },
+            { "item": { "name": "coffee" } },
+            { "item": { "name": "soda" } },
+            { "item": { "name": "currentgizer" } },
+            { "item": { "name": "fishfingers" } },
+            { "item": { "name": "fishnchips" } },
+            { "item": { "name": "hothothotpot" } },
+            { "item": { "name": "potatogrids" } },
+            { "item": { "name": "toxicjamdonut" } }
+          ]
+        ],
+        [
+          3.9,
+          [
+
+            {
+              "item": {
+                "name": "damageaugment2"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "energyaugment2"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "healingaugment2"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "healthaugment2"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "lightaugment2"
+              }
+              
+            },
+
+            {
+              "item": {
+                "name": "swimaugment"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "thornsaugment"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "mobilityaugment"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "ripjack_hyperblade"
+              }
+            },
+
+            {
+              "item": { "name": "commonpistol" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonmachinepistol" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonassaultrifle" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonshotgun" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonsniperrifle" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonpistol" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonmachinepistol" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commongrenadelauncher" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonrocketlauncher" },
+              
+              "useSeed": true
+            },
+            { "item": { "name": "coffee" } },
+            { "item": { "name": "soda" } },
+            { "item": { "name": "currentgizer" } },
+            { "item": { "name": "fishfingers" } },
+            { "item": { "name": "fishnchips" } },
+            { "item": { "name": "hothothotpot" } },
+            { "item": { "name": "potatogrids" } },
+            { "item": { "name": "toxicjamdonut" } }
+          ]
+        ],
+        [
+          5.9,
+          [
+
+            {
+              "item": {
+                "name": "damageaugment3"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "energyaugment3"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "healingaugment3"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "healthaugment3"
+              }
+              
+            },
+            {
+              "item": {
+                "name": "lightaugment3"
+              }
+            },
+            {
+              "item": {
+                "name": "thornsaugment"
+              }
+            },
+            {
+              "item": {
+                "name": "mobilityaugment"
+              }
+            },
+            {
+              "item": {
+                "name": "ripjack_hyperblade"
+              }
+            },
+            {
+              "item": { "name": "nemesis" },
+              "price": 32000
+            },
+            {
+              "item": { "name": "commonpistol" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonmachinepistol" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonassaultrifle" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonshotgun" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonsniperrifle" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonpistol" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonmachinepistol" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commongrenadelauncher" },
+              
+              "useSeed": true
+            },
+            {
+              "item": { "name": "commonrocketlauncher" },
+              
+              "useSeed": true
+            },
+            { "item": { "name": "coffee" } },
+            { "item": { "name": "soda" } },
+            { "item": { "name": "currentgizer" } },
+            { "item": { "name": "fishfingers" } },
+            { "item": { "name": "fishnchips" } },
+            { "item": { "name": "hothothotpot" } },
+            { "item": { "name": "potatogrids" } },
+            { "item": { "name": "toxicjamdonut" } }
+
+          ]
+        ]
+      ]
+    }
+]

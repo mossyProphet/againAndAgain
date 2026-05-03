@@ -1,0 +1,19 @@
+{
+  "breaksWithTile": true,
+  "description": "Precore",
+  "harvestLevel": 2,
+  "health": 3,
+  "itemDrop": "precursomium",
+  "miningParticle": "orespark",
+  "miningSounds": [ "/sfx/tools/pickaxe_ore.ogg", "/sfx/tools/pickaxe_ore2.ogg" ],
+  "modId": 571,
+  "modName": "precore",
+  "renderParameters": {
+    "texture": "prec.png",
+    "variants": 8,
+    "multiColored": false,
+    "zLevel": 0,
+    "radiantLight": [ 115, 0, 192 ]
+  },
+  "renderTemplate": "/tiles/classicmaterialtemplate.config"
+}

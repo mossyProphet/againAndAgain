@@ -1,0 +1,18 @@
+{
+  "projectileName": "golemspawn",
+  "image": "golemspawn.png",
+  "animationCycle": 2,
+  "animationLoops": true,
+  "frameNumber": 4,
+  "damageKindImage": "icon.png",
+  "lightColor": [ 45, 190, 23 ],
+  "actionOnReap": [
+  ],
+  "power": 10,
+  "speed": 0.0,
+  "damageKind": "default",
+  "onlyHitTerrain": true,
+
+
+  "scripts": [ "golemspawn.lua" ]
+}

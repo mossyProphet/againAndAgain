@@ -1,0 +1,32 @@
+{
+  "projectileName": "armoriceburst",
+  "image": "armoriceburst.png",
+  "animationCycle": 0.25,
+  "frameNumber": 5,
+  "damageKindImage": "icon.png",
+  "pointLight": true,
+  "timeToLive": 2,
+  "actionOnReap": [
+    {
+      "action": "config",
+      "file": "/projectiles/explosions/burstexplosion/iceburstexplosion.config"
+    }
+  ],
+  "power": 6.0,
+  "damageKind": "ice",
+  "piercing": true,
+  "damagePoly": [
+    [ -36, 0 ],
+    [ -24, -24 ],
+    [ 0, -36 ],
+    [ 24, -24 ],
+    [ 36, 0 ],
+    [ 24, 24 ],
+    [ 0, 36 ],
+    [ -24, 24 ]
+  ],
+  "statusEffects": [
+    "biomecold",
+    "frostslow"
+  ]
+}

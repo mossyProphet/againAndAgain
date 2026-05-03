@@ -1,0 +1,20 @@
+{
+  "projectileName": "magma_pipe",
+  "image": "magma_pipe.png",
+  "physics": "grenade",
+  "bounces": -1,
+  "animationCycle": 0.25,
+  "frameNumber": 1,
+  "damageKindImage": "magma_pipe.png",
+  "lightColor": [ 235, 126, 2 ],
+  "pointLight": true,
+  "actionOnReap": [
+    {
+      "action": "config",
+      "file": "/projectiles/explosions/regularexplosion2/fireexplosionknockback.config"
+    }
+  ],
+  "power": 5.0,
+  "speed": 80,
+  "damageType": "NoDamage"
+}

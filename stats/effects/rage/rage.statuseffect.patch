@@ -1,0 +1,19 @@
+[
+  {
+    "op": "replace",
+    "path": "/scripts",
+    "value": [
+      "megarage.lua"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/effectConfig/powerModifier",
+    "value": 3
+  },
+  {
+    "op": "replace",
+    "path": "/defaultDuration",
+    "value": 4
+  }
+]

@@ -1,0 +1,64 @@
+{ "compressionlevel":-1,
+ "height":12,
+ "infinite":false,
+ "layers":[
+        {
+         "compression":"zlib",
+         "data":"eJx7w8DA8GaYYx1GCDbGgQnJgfCoW0fdSm+3UoJHw3XUraNuxe3WoZC3BgIDANAUX4o=",
+         "encoding":"base64",
+         "height":12,
+         "id":2,
+         "name":"back",
+         "opacity":0.45,
+         "type":"tilelayer",
+         "visible":true,
+         "width":43,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJx7w8DA8IYG+AeNzCUWr8WCcQFCcuh4JLsVm3up4VZ6pYOh5FYpRuyYkBw93IruXkrDlZbuHHUrfdxLiVvp4U5kt1KSt+jlVkL4Jw3MBAAdVVwR",
+         "encoding":"base64",
+         "height":12,
+         "id":3,
+         "name":"front",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":43,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":5,
+ "nextobjectid":3,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.10.2",
+ "tileheight":8,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Packed\/tilesets\/packed\/materials.json"
+        }, 
+        {
+         "firstgid":198,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Packed\/tilesets\/packed\/supports.json"
+        }, 
+        {
+         "firstgid":235,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Packed\/tilesets\/packed\/miscellaneous.json"
+        }, 
+        {
+         "firstgid":259,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Starbound\/assets\/Packed\/tilesets\/packed\/supports.json"
+        }, 
+        {
+         "firstgid":296,
+          "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Starbound\/mods\/againandagain\/tilesets\/moogCity\/ancientcolored.json"
+        }],
+ "tilewidth":8,
+ "type":"map",
+ "version":1.1,
+ "width":43
+}

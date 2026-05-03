@@ -1,0 +1,40 @@
+{
+  "particleEmitters" : {
+    "activateParticles": {
+      "emissionRate": 1.0,
+      "particles": [
+        {
+          "particle": "blood",
+          "flip": true,
+          "offset": [ 0, 0.0 ]
+        },
+        {
+          "particle": "blood",
+          "flip": true,
+          "offset": [ 0, -0.75 ]
+        }
+      ]
+    },
+    "deactivateParticles": {
+      "emissionRate": 1.0,
+      "particles": [
+        {
+          "particle": "greenblood",
+          "flip": true,
+          "offset": [ 0, 0.0 ]
+        },
+        {
+          "particle": "greenblood",
+          "flip": true,
+          "offset": [ 0, -0.75 ]
+        }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "activate" : [ "/sfx/tech/tech_sphere_transform.ogg" ],
+    "deactivate": [ "/sfx/tech/mech_activate2.ogg" ],
+    "forceDeactivate" : [ "/sfx/tech/tech_sonicsphere_charge1.ogg" ]
+  }
+}

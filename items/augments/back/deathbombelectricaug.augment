@@ -1,0 +1,21 @@
+{
+  "itemName": "deathbombelectricaug",
+  "price": 5000,
+  "rarity": "Uncommon",
+  "category": "eppAugment",
+  "inventoryIcon": "deathbombelectricaug.png",
+  "description": "Doesnt that just make you wanna spontaneously burst into electricity?",
+  "shortdescription": "Explosion Module(electric)",
+
+  "augment": {
+    "type": "back",
+    "name": "deathbombelectricaug",
+    "displayName": "Electric Burst",
+    "displayIcon": "/items/augments/back/deathbombelectricaug.png",
+    "effects": [ "deathbombelectricaug" ]
+  },
+
+  "radioMessagesOnPickup": [ "pickupaugment" ],
+
+  "scripts": [ "/scripts/augments/augment.lua" ]
+}

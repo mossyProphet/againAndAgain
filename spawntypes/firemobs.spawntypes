@@ -1,0 +1,110 @@
+[
+	{
+    "name" : "firespookit",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.02,
+    "monsterType" : [
+      [0.01, "spookit"],
+      [0.99, "firespookit"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  {
+    "name" : "firemonopus",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.02,
+    "monsterType" : [
+      [0.01, "monopus"],
+      [0.99, "firemonopus"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  {
+    "name" : "firewisper",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.02,
+    "monsterType" : [
+      [0.01, "wisper"],
+      [0.99, "firewisper"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  },
+  {
+    "name": "firesqueem",
+
+    "spawnParameters": {
+      "area": "air",
+      "region": "all",
+      "time": "all"
+    },
+    "groupSize": [ 1, 1 ],
+    "spawnChance": 0.02,
+    "monsterType": [
+      [ 0.01, "squeem" ],
+      [ 0.99, "firesqueem" ]
+    ],
+    "monsterParameters": {
+      "aggressive": true
+    }
+  },
+  {
+    "name": "firegosmet",
+
+    "spawnParameters": {
+      "area": "air",
+      "region": "all",
+      "time": "all"
+    },
+    "groupSize": [ 1, 1 ],
+    "spawnChance": 0.02,
+    "monsterType": [
+      [ 0.01, "gosmet" ],
+      [ 0.99, "firegosmet" ]
+    ],
+    "monsterParameters": {
+      "aggressive": true
+    }
+  },
+  {
+    "name": "firelumoth",
+
+    "spawnParameters": {
+      "area": "air",
+      "region": "all",
+      "time": "all"
+    },
+    "groupSize": [ 1, 1 ],
+    "spawnChance": 0.02,
+    "monsterType": [
+      [ 0.01, "lumoth" ],
+      [ 0.99, "firelumoth" ]
+    ],
+    "monsterParameters": {
+      "aggressive": true
+    }
+  }
+]

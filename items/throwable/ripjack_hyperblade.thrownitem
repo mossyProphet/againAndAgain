@@ -1,0 +1,30 @@
+{
+  "itemName" : "ripjack_hyperblade",
+  "price" : 200,
+  "rarity" : "Common",
+  "category" : "throwableItem",
+  "inventoryIcon" : "ripjack_hyperblade.png",
+  "image" : "ripjack_hyperblade.png",
+  "shortdescription" : "Ripjack Hyperblade",
+  "description" : "Friendly fire? Who gives a damn!",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 0.2,
+
+  "projectileType" : "ripjack_hyperblade",
+  "projectileConfig" : {
+    "speed" : 120,
+    "power" : 32,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item.ogg" ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "itemName": "fleshwrangler",
+  "level": 4,
+  "price": 1500,
+  "maxStack": 1,
+  "rarity": "Legendary",
+  "description": "To guide your helpers with an iron grip",
+  "shortdescription": "Guiding Hand",
+  //"tooltipKind": "gun",
+  "category": "uniqueWeapon",
+  "twoHanded": true,
+  "itemTags": [ "weapon", "ranged", "livingweapon", "upgradeableWeapon" ],
+
+  "inventoryIcon": "fleshwranglerfull.png",
+
+  "animation": "/items/active/weapons/ranged/gun.animation",
+  "animationParts": {
+    "butt": "",
+    "middle": "fleshwranglerfull.png",
+    "barrel": "",
+    "muzzleFlash": ""
+  },
+  "animationCustom": {
+    "sounds": {
+      "fire": [ "/sfx/gun/wormgun1.ogg", "/sfx/gun/wormgun2.ogg", "/sfx/gun/wormgun3.ogg" ],
+      "altFire": [ "/sfx/gun/wormgun_burst.ogg" ]
+    }
+    },
+    "baseOffset": [ -0.06, 0.2 ],
+    "muzzleOffset": [ 1.4, 0.15 ],
+
+
+    //"blinkTime": [ 2.0, 4.0 ],
+    //
+    //"twitchTime": [ 0.4, 1.5 ],
+    //"twitchMagnitude": 0.2,
+
+    "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
+
+
+
+    "elementalType": "physical",
+
+    "primaryAbility": {
+      "scripts": [ "/items/active/weapons/ranged/wranglerfire.lua" ],
+      "class": "GunFire",
+
+      "fireTime": 0.5,
+      "baseDps": 0,
+      "energyUsage": 18.75,
+      "inaccuracy": 0.02,
+      "projectileCount": 1,
+      "fireType": "auto",
+
+      "projectileType": "scannerprojectile",
+      "projectileParameters": {
+        "power": 0,
+        "timeToLive": 3,
+        "speed": 30
+      },
+
+      "stances": {
+        "idle": {
+          "armRotation": 0,
+          "weaponRotation": -90,
+          "twoHanded": true,
+
+          "allowRotate": true,
+          "allowFlip": true
+        },
+        "fire": {
+          "duration": 0,
+          "armRotation": 10,
+          "weaponRotation": -90,
+          "twoHanded": true,
+
+          "allowRotate": true,
+          "allowFlip": true
+        },
+        "cooldown": {
+          "duration": 0.15,
+          "armRotation": 10,
+          "weaponRotation": -90,
+          "twoHanded": true,
+
+          "allowRotate": true,
+          "allowFlip": true
+        }
+      }
+    },
+
+
+
+    "altAbilityType": "grenadelauncher",
+  "altAbility": {
+    "elementalConfig": {
+      "physical": {
+        "projectileType": "rayeye",
+        "projectileParameters": {
+          "power": -100,
+          "timeToLive": 3,
+          "speed": 150
+        },
+
+        "energyUsage": 30,
+        "fireTime": 0.5,
+        "power": 0
+      }
+    },
+    "energyUsage": 30,
+    "fireTime": 0.5,
+    "power": 0
+  },
+
+    "builder": "/items/buildscripts/buildunrandweapon.lua",
+
+    "upgradeParameters": {
+      "inventoryIcon": "fleshwranglerfull_l6.png",
+      "animationParts": {
+        "middle": "fleshwranglerfull_l6.png"
+      },
+      "shortdescription": "Guiding Hand ^red;^reset;"
+    }
+  }

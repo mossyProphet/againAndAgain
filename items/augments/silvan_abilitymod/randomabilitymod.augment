@@ -1,0 +1,22 @@
+{
+  "itemName": "silvan_randomabilitymod",
+  "price": 1500,
+  "tooltipKind": "sb_object",
+  "rarity": "common",
+  "itemTags": ["weapon", "ranged", "pistol", "gun", "nonweapon"],
+  "sb_unupgradeable": true,
+  "category": "pistol",
+  "tooltipFields": {
+    "subtitle": "Weapon Mod"
+  },
+  "description": "Replaces the abilities of generated weapons.\n^gray;Apply with right-click",
+  "shortdescription": "Randomize",
+  "slots": ["primary", "alt"],
+  "inventoryIcon": [{
+      "image": "/items/generated/sb_mod.png"
+    }, {
+      "image": "sb_random.png"
+    }
+  ],
+  "scripts": ["/scripts/augments/sb_randomability.lua"]
+}

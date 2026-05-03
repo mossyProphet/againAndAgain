@@ -1,0 +1,16 @@
+{
+  "itemName": "silvan_weaponupgrade5",
+  "price": 3175,
+  "tooltipKind": "silvan_object",
+  "rarity": "legendary",
+  "itemTags": ["weapon", "ranged", "pistol", "gun", "nonweapon"],
+  "category": "pistol",
+  "tooltipFields": {
+    "subtitle": "Weapon Upgrade Kit"
+  },
+  "newLevel": 5,
+  "inventoryIcon": "5.png",
+  "description": "This upgrade kit can raise a weapon or shield to ^orange;level 5.^reset;\n^gray;Apply with right-click",
+  "shortdescription": "Expert Upgrade Kit",
+  "scripts": ["/scripts/augments/silvan_upgrade.lua"]
+}

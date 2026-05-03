@@ -1,0 +1,21 @@
+{
+  "itemName" : "minionsaugment2",
+  "price" : 10000,
+  "rarity" : "Uncommon",
+  "category" : "eppAugment",
+  "inventoryIcon" : "minionsaugment.png",
+  "description" : "An EPP module that boosts your damage output mediocrily. And TWO more pets",
+  "shortdescription" : "Pet Augment(medium)",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "damage1",
+    "displayName" : "+2 Minion Slot",
+    "displayIcon" : "/items/augments/back/minionaugment.png",
+    "effects" : [ "rageaugment2", "minionaugment2" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

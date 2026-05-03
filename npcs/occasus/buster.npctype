@@ -1,0 +1,55 @@
+{
+  "type": "buster",
+  "baseType": "hostile",
+
+  "persistent": true,
+
+  "dropPools": [ "cultisttreasure" ],
+
+  "scriptConfig": {
+    "dialog": {
+      "attack": "/dialog/buster.config:attack"
+    }
+  },
+
+  "items": {
+    "override": [
+      [
+        0,
+        [
+          {
+            "head": [ { "name": "cultisthead" } ],
+            "chest": [ { "name": "armoredberserkchest" } ],
+            "back": [ { "name": "armoredcultistback" } ],
+            "legs": [
+              {
+                "name": "perfectpants",
+                "parameters": { "colorIndex": 10 }
+              }
+            ],
+            "sheathedprimary": [
+              "rareshortsword",
+              "rarebroadsword",
+              "rareaxe",
+              "rarehammer"
+            ],
+            "primary": [ "magmapipelauncher" ]
+          }
+        ]
+      ]
+    ]
+  },
+  "statusControllerSettings": {
+    "stats": {
+      "maxHealth": {
+        "baseValue": 100.0
+      },
+      "powerMultiplier": {
+        "baseValue": 2.5
+      },
+      "protection": {
+        "baseValue": 0.4
+      }
+    }
+  }
+}

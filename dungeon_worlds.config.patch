@@ -1,0 +1,25 @@
+[
+  {
+    "op": "add",
+    "path": "/moogCityBeeg",
+    "value": {
+      "primaryDungeon": "moogCity",
+      "threatLevel": 9,
+      "gravity": 0.80,
+      "worldSize": [ 1000, 1000 ],
+      "dungeonBaseHeight": 500,
+      "ambientLightLevel": [ 132, 132, 132 ],
+      "ambientNoises": "/sfx/environmental/space_loop4.ogg",
+      //"musicTrack": "/.ogg",
+      "environmentStatusEffects": [ "biomeairless" ],
+      "worldEdgeForceRegions": "TopAndBottom",
+      "biome": "neptune"
+    }
+
+  },
+  {
+    "op": "replace",
+    "path": "/glitchmission1/biome",
+    "value": "volcanic"
+  }
+]

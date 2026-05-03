@@ -1,0 +1,38 @@
+[
+  {
+    "name": "cvc_undivided",
+
+    "spawnParameters": {
+      "area": "surface",
+      "region": "all",
+      "time": "all"
+    },
+    "groupSize": [ 1, 1 ],
+    "spawnChance": 0.02,
+    "monsterType": [
+      [ 0.99, "tentaclebomb"],
+      [ 0.01, "ruinundivided" ]
+    ],
+    "monsterParameters": {
+      "aggressive": true
+    }
+  },
+  {
+    "name": "cvc_tzeentch",
+
+    "spawnParameters": {
+      "area": "air",
+      "region": "all",
+      "time": "all"
+    },
+    "groupSize": [ 1, 1 ],
+    "spawnChance": 0.02,
+    "monsterType": [
+      [ 0.99, "tentaclebomb"],
+      [ 0.01, "ruintezan" ]
+    ],
+    "monsterParameters": {
+      "aggressive": true
+    }
+  }
+]

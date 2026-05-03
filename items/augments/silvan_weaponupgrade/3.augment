@@ -1,0 +1,16 @@
+{
+  "itemName": "silvan_weaponupgrade3",
+  "price": 2875,
+  "tooltipKind": "silvan_object",
+  "rarity": "legendary",
+  "itemTags": ["weapon", "ranged", "pistol", "gun", "nonweapon"],
+  "category": "pistol",
+  "tooltipFields": {
+    "subtitle": "Weapon Upgrade Kit"
+  },
+  "newLevel": 3,
+  "inventoryIcon": "3.png",
+  "description": "This upgrade kit can raise a weapon or shield to ^orange;level 3.^reset;\n^gray;Apply with right-click",
+  "shortdescription": "Advanced Upgrade Kit",
+  "scripts": ["/scripts/augments/silvan_upgrade.lua"]
+}

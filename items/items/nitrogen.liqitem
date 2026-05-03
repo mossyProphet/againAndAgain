@@ -1,0 +1,10 @@
+{
+  "itemName" : "liquidNitrogen",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "liquidnitrogenicon.png",
+  "shortdescription" : "Nitrogen",
+  "description" : "A measure of bubbling, chilly liquid.",
+
+  "liquid" : "nitrogen"
+}

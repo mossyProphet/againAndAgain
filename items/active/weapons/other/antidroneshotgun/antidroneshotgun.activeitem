@@ -1,0 +1,99 @@
+{
+  "itemName" : "antidroneshotgun",
+  "price" : 4080,
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "description" : "Dear Glitch Animations - please go eat some bullets!",
+  "shortdescription" : "Anti-Drone Shotgun",
+  // "tooltipKind" : "gun",
+  "category" : "uniqueWeapon",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","ranged","shotgun"],
+  "level" : 6,
+
+  "inventoryIcon" : [
+    { "image" : "antidroneshotgun.png" }
+  ],
+
+  "animation" : "/items/active/weapons/ranged/gun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "antidroneshotgun.png",
+    "barrel" : "15.png",
+    "muzzleFlash" : "antidroneshotgunmuzzleflash.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : ["/sfx/gun/plasma_shotgun3.ogg"]
+    },
+    "lights" : {
+      "muzzleFlash" : {
+        "color" : [50, 190, 190]
+      }
+    }
+  },
+
+  "baseOffset" : [0.125, 0.625],
+  "muzzleOffset" : [1.75, 0],
+
+  "scripts" : ["/items/active/weapons/ranged/gun.lua"],
+
+  "elementalType" : "electric",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.45,
+    "baseDps" : 4,
+    "energyUsage" : 25,
+    "projectileCount" : 10,
+    "inaccuracy" : 0.15,
+    "fireType" : "auto",
+
+    "projectileType" : "electricdoomshot",
+    "projectileParameters" : {
+      "knockback" : 20
+    },
+
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.2,
+        "armRotation" : 8,
+        "weaponRotation" : 8,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbilityType" : "grenadelauncher",
+  "altAbility": {
+    "elementalConfig": {
+      "physical": { "projectileType": "doomgrenade" }
+    },
+    "energyUsage": 100,
+    "baseDps": 25
+  },
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

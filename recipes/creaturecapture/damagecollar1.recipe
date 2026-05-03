@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "goldbar", "count" : 1 },
+	{ "item" : "leather", "count" : 3 },
+	{ "item" : "diamond", "count" : 1 },
+    { "item" : "volatilepowder", "count" : 5 }
+  ],
+  "output" : {
+    "item" : "damagecollar1",
+    "count" : 1
+  },
+  "groups" : [ "capturestation", "all" ]
+}

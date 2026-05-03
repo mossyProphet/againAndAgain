@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "name": "novakidfloatingtown",
+    "species": "novakid",
+    "rules": [],
+    "anchor": [ "gradbase1" ],
+    "gravity": 80,
+    "maxRadius": 1000000,
+    "maxParts": 300,
+    "extendSurfaceFreeSpace": 100,
+    "protected": false
+  },
+  "parts": [
+    {
+      "name": "gradbase1",
+      "rules": [
+        [
+          "maxSpawnCount",
+          [ 1 ]
+        ],
+        [
+          "doNotCombineWith",
+          []
+        ],
+        [
+          "doNotConnectToPart",
+          [ "gradbase1" ]
+        ]
+      ],
+      "def": [ "tmx", "novakidfloatingtownbase.json" ],
+      "chance": 1
+    },
+    {
+      "name": "gradside",
+      "rules": [
+      ],
+      "def": [ "tmx", "novakidfloatingtownside.json" ],
+      "chance": 1
+    },
+    {
+      "name": "gradsideleft",
+      "rules": [
+      ],
+      "def": [ "tmx", "novakidfloatingtownsideleft.json" ],
+      "chance": 1
+    },
+    {
+      "name": "novakidfloatingtownsidemerchantplacecentered",
+      "rules": [
+      ],
+      "def": [ "tmx", "novakidfloatingtownsidemerchantplacecentered.json" ],
+      "chance": 1
+    },
+    {
+      "name": "novakidfloatingtownsidemerchantplacecenteredleft",
+      "rules": [
+      ],
+      "def": [ "tmx", "novakidfloatingtownsidemerchantplacecenteredleft.json" ],
+      "chance": 1
+    },
+    {
+      "name": "novakidfloatingtownsidemerchantplaceoffcenter",
+      "rules": [
+      ],
+      "def": [ "tmx", "novakidfloatingtownsidemerchantplaceoffcenter.json" ],
+      "chance": 1
+    },
+    {
+      "name": "novakidfloatingtownsidemerchantplaceoffcenterleft",
+      "rules": [
+      ],
+      "def": [ "tmx", "novakidfloatingtownsidemerchantplaceoffcenterleft.json" ],
+      "chance": 1
+    }
+  ]
+}

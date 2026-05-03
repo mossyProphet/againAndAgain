@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "volatilepowder", "count" : 32 },
+    { "item" : "string", "count" : 1 },
+    { "item" : "fabric", "count" : 4 }
+  ],
+  "output" : { "item" : "zzzdynamite", "count" : 1 },
+  "groups" : [ "craftinganvil2", "consumables", "all" ]
+}

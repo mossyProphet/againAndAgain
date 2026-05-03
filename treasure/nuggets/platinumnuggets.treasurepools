@@ -1,0 +1,32 @@
+{																																		   
+  "platinumnugget1" : [
+    [1, {
+      "pool": [
+        {
+          "weight": 0.4,
+          "item": "platinumnuggetb"
+        },
+        {
+          "weight": 0.35,
+          "item": "platinumnuggeta"
+        },
+        {
+          "weight": 0.0625,
+          "pool": "augments"
+        },
+        {
+          "weight": 0.0625,
+          "pool": "petcollars"
+        },
+        {
+          "weight": 0.0625,
+          "pool": "instrument"
+        },
+        {
+          "weight": 0.0625,
+          "pool": "costume"
+        }
+      ]
+    }]
+  ]
+  }

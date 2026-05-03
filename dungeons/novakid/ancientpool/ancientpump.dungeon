@@ -1,0 +1,247 @@
+{
+	"metadata": {
+		"name": "ancientpump",
+		"species": "novakid",
+		"rules": [],
+		"anchor": [ "boat" ],
+		"gravity": 80,																																		
+		"maxRadius": 4000000,
+		"maxParts": 500,
+		"protected": false
+		//"extendSurfaceFreeSpace": 300
+	},
+
+	"parts": [
+
+		
+		{
+			"name": "base",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 3 ]
+				]
+			],
+			"def": [ "tmx", "ancientpumpbaseroom.json" ],
+			"chance": 1
+		},
+		{
+			"name": "baseleft",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				]
+			],
+			"def": [ "tmx", "ancientpumpleft.json" ],
+			"chance": 1
+		},
+		{
+			"name": "baseright",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				]
+			],
+			"def": [ "tmx", "ancientpumpright.json" ],
+			"chance": 1
+		},
+		{
+			"name": "ascentleft",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "ascentright" ]
+				]
+			],
+			"def": [ "tmx", "ancientpumpascentleft.json" ],
+			"chance": 1
+		},
+		{
+			"name": "ascentright",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "ascentleft"]
+				]
+			],
+			"def": [ "tmx", "ancientpumpascentright.json" ],
+			"chance": 1
+		},
+		{
+			"name": "bigpool",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 40 ]
+				]
+			],
+			"def": [ "tmx", "ancientdambasisbulkinnards.json" ],
+			"chance": 0.5
+		},
+		
+		{
+			"name": "boat",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "ascentleft", "ascentright", "bigpoolleftcap", "bigpoolrightcap", "boatlib"]
+				]
+			],
+			"def": [ "tmx", "ancientdambasisbulkinnardsmainhouse.json" ],
+			"chance": 1
+		},
+
+		{
+			"name": "boatlib",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "ascentleft", "ascentright", "bigpoolleftcap", "bigpoolrightcap", "boat"]
+				]
+			],
+			"def": [ "tmx", "ancientdambasisbulkinnardsfloatinglibrary.json" ],
+			"chance": 1
+		},
+		{
+			"name": "smallboatorig",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 5 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "ascentleft", "ascentright", "bigpoolleftcap", "bigpoolrightcap", "boat", "boatlib"]
+				]
+			],
+			"def": [ "tmx", "ancientdambasisbulksmallboathouse.json" ],
+			"chance": 0.1
+		},
+		{
+			"name": "smallboathome",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 5 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "ascentleft", "ascentright", "bigpoolleftcap", "bigpoolrightcap", "boat", "boatlib"]
+				]
+			],
+			"def": [ "tmx", "ancientdambasisbulksmallboathouse1.json" ],
+			"chance": 0.1
+		},
+		{
+			"name": "smallboathometu",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 5 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "ascentleft", "ascentright", "bigpoolleftcap", "bigpoolrightcap", "boat", "boatlib"]
+				]
+			],
+			"def": [ "tmx", "ancientdambasisbulksmallboathouse2.json" ],
+			"chance": 0.4
+		},
+		{
+			"name": "smallboathometri",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 2 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "ascentleft", "ascentright", "bigpoolleftcap", "bigpoolrightcap", "boat", "boatlib"]
+				]
+			],
+			"def": [ "tmx", "ancientdambasisbulksmallboathouse3.json" ],
+			"chance": 0.4
+		},
+		{
+			"name": "smallboathomefor",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "ascentleft", "ascentright", "bigpoolleftcap", "bigpoolrightcap", "boat", "boatlib"]
+				]
+			],
+			"def": [ "tmx", "ancientdambasisbulksmallboathouse4.json" ],
+			"chance": 0.4
+		},
+		{
+			"name": "smallboathomefiv",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "ascentleft", "ascentright", "bigpoolleftcap", "bigpoolrightcap", "boat", "boatlib"]
+				]
+			],
+			"def": [ "tmx", "ancientdambasisbulksmallboathouse5.json" ],
+			"chance": 0.4
+		},
+		{
+			"name": "smallboatgarden",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 5 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "ascentleft", "ascentright", "bigpoolleftcap", "bigpoolrightcap", "boat", "boatlib"]
+				]
+			],
+			"def": [ "tmx", "ancientdambasisbulksmallboathouse6.json" ],
+			"chance": 0.4
+		}
+		
+
+		
+	]
+}

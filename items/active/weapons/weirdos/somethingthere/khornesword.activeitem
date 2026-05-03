@@ -1,0 +1,159 @@
+{
+  "itemName": "khornesword",
+  "level": 8,
+  "price": 1600,
+  "maxStack": 1,
+  "rarity": "Legendary",
+  "description": "You shouldnt have ignored the gym back then",
+  "shortdescription": "Vascular Cutter",
+  "tooltipKind": "sword",
+  "category": "broadsword",
+  "twoHanded": true,
+  "itemTags": [ "weapon", "melee", "broadsword", "upgradeableWeapon" ],
+
+  "inventoryIcon": "khorneswordfull.png",
+
+  "animation": "khornesword.animation",
+  "animationParts": {
+    "blade": "khornesword.png",
+    "pupil": "pupil.png",
+    "eyelid": "eyelid.png"
+  },
+  "animationCustom": {},
+
+  "blinkTime": [ 2.0, 4.0 ],
+
+  "twitchTime": [ 0.4, 1.5 ],
+  "twitchMagnitude": 0.2,
+
+  "scripts": [ "/items/active/weapons/weirdos/somethingthere/khornesword.lua" ],
+
+  "elementalType": "fire",
+
+  "primaryAbility": {
+    "scripts": [ "/items/active/weapons/melee/meleeslash.lua" ],
+    "class": "MeleeSlash",
+
+    "fireTime": 1.6,
+    "baseDps": 10.0,
+    "damageConfig": {
+      "damageSourceKind": "firebroadsword",
+      "statusEffects": [ "burning" ],
+      "knockback": 30,
+      "knockbackMode": "facing",
+      "timeoutGroup": "primary"
+    },
+    "stances": {
+      "idle": {
+        "armRotation": -90,
+        "weaponRotation": -10,
+        "aimAngle": 0,
+        "allowRotate": false,
+        "allowFlip": true
+      },
+      "windup": {
+        "duration": 0.1,
+        "armRotation": 90,
+        "weaponRotation": -10,
+        "twoHanded": true,
+        "aimAngle": 0,
+
+        "allowRotate": false,
+        "allowFlip": true
+      },
+      "preslash": {
+        "duration": 0.025,
+        "armRotation": 55,
+        "weaponRotation": -45,
+        "twoHanded": true,
+        "aimAngle": 0,
+
+        "allowRotate": false,
+        "allowFlip": false
+      },
+      "fire": {
+        "duration": 0.4,
+        "armRotation": -45,
+        "weaponRotation": -55,
+        "twoHanded": true,
+        "aimAngle": 0,
+
+        "allowRotate": false,
+        "allowFlip": false
+      }
+    }
+  },
+
+  "altAbilityType": "flipslash",
+  "altAbility": {
+    "name": "Flip Slash",
+    "type": "flipslash",
+    "scripts": [ "/items/active/weapons/melee/abilities/broadsword/flipslash/flipslash.lua" ],
+    "class": "FlipSlash",
+
+    "cooldownTime": 1.6,
+
+    "explodeOnBounce": true,
+
+    "projectileType": "fireplasmaexplosion",
+
+    "damageConfig": {
+      "damageSourceKind": "firebroadsword",
+      "statusEffects": [],
+      "baseDamage": 8,
+      "knockback": [ 0, -35 ],
+      "timeout": 0.2,
+      "timeoutGroup": "alt"
+    },
+
+    "flipMovementParameters": {
+      "collisionPoly": [
+        [ -2.0, -1.0 ],
+        [ -1.0, -2.0 ],
+        [ 1.0, -2.0 ],
+        [ 2.0, -1.0 ],
+        [ 2.0, 1.0 ],
+        [ 1.0, 2.0 ],
+        [ -1.0, 2.0 ],
+        [ -2.0, 1.0 ]
+      ]
+    },
+
+    "energyUsage": 60.0,
+    "rotations": 8,
+    "rotationTime": 0.2,
+
+    "jumpVelocity": [ 35, 20 ],
+    "jumpDuration": 0.8,
+
+    "stances": {
+      "windup": {
+        "duration": 0.2,
+        "armRotation": 30,
+        "weaponRotation": 0,
+        "twoHanded": true,
+
+        "allowRotate": false,
+        "allowFlip": true
+      },
+      "flip": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "twoHanded": true,
+
+        "allowRotate": false,
+        "allowFlip": false
+      }
+    }
+  },
+
+  "builder": "/items/buildscripts/buildunrandweapon.lua",
+
+  "upgradeParameters": {
+    "inventoryIcon": "khorneswordfull_l6.png",
+    "animationParts": {
+      "blade": "khornesword_l6.png"
+    },
+    "shortdescription": "Vascular Cutter ^red;^reset;"
+  }
+}

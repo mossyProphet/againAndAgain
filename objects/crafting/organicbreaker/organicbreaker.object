@@ -1,0 +1,92 @@
+{
+  "objectName" : "organicbreaker",
+  "colonyTags" : ["commerce"],
+  "rarity" : "Rare",
+  "description" : "The organic compound breaker is used to produce biomass from raw organic.",
+  "shortdescription" : "^green;Organic Compound Breaker^white;",
+  "subtitle" : "Turn organic into mass",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 1250,
+  "objectType" : "container",
+  "printable" : false,
+  "health" : 1.5,
+
+  "apexDescription" : "I can put ore in here to make gross soup of organics.",
+  "avianDescription" : "It stinks, but at least is useful",
+  "floranDescription" : "Machine ssstab monsters, digest them outside gut.",
+  "glitchDescription" : "Disgusted. Never in my life have I felt the smell worse. I must close the door",
+  "humanDescription" : "At least money doesnt stink",
+  "hylotlDescription" : "As simple as feeding yeast and bacterias with monstrous organics",
+  "novakidDescription" : "A rot machine. I didn't mean that by dirty work",
+
+  "lightColor" : [109, 179, 147],
+
+  "flickerPeriod" : 0.5,
+  "flickerMinIntensity" : 0.9,
+  "flickerMaxIntensity" : 1,
+  "flickerPeriodVariance" : 0.075,
+  "flickerIntensityVariance" : 0.025,
+
+  "particleEmitter" : {
+    "emissionRate" : 1.0,
+    "emissionVariance" : 0.5,
+
+    "particle" : {
+      "type" : "ember",
+      "size" : 1.0,
+      "color" : [100, 255, 100, 255],
+      "light" : [50, 50, 150],
+      "fade" : 0.9,
+      "initialVelocity" : [0.0, 5.0],
+      "finalVelocity" : [0.0, 3.0],
+      "approach" : [0, 20],
+      "timeToLive" : 2,
+      "layer" : "middle"
+    },
+
+    "particleVariance" : {
+      "initialVelocity" : [0.5, 2.0]
+    }
+  },
+
+  "inventoryIcon" : "organicbreakericon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "organicbreaker.png:<color>.<frame>", "fullbright" : true }, { "image" : "organicbreakerlit.png:<color>.<frame>" } ],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "imagePosition" : [0, 0],
+      "frames" : 4,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "imageLayers" : [ { "image" : "organicbreaker.png:<color>.<frame>", "fullbright" : true }, { "image" : "organicbreakerlit.png:<color>.<frame>" } ],
+      "direction" : "right",
+
+      "imagePosition" : [0, 0],
+      "frames" : 4,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/campfire.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+
+  "statusEffects" : [ ],
+
+  "recipeGroup" : "organicbreaker",
+  "openSounds" : [ "/sfx/objects/campfire_use.ogg" ],
+  "slotCount" : 2,
+  "uiConfig" : "/interface/objectcrafting/organicbreaker.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+
+}

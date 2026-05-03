@@ -1,0 +1,158 @@
+{
+  "objectName" : "ancientwaterpump",
+  "colonyTags" : ["toxic","evil"],
+  "printable" : false,
+  "rarity" : "Common",
+  "description" : "It seems to launch unlimited amount of water through the wide portal from somewhere...",
+  "shortdescription" : "Ancient Water Pump",
+  "race" : "generic",
+
+  //"apexDescription" : "A pesky little volcanic eruption.",
+  //"avianDescription" : "Lava is escaping through this tiny vent!",
+  //"floranDescription" : "Lava iss not Floran's friend.",
+  //"glitchDescription" : "Distressed. Not what I wanted to see today.",
+  //"humanDescription" : "I don't want to find out what that is.",
+  //"hylotlDescription" : "Not something I want to get close to.",
+  //"novakidDescription" : "Hot lava!",
+
+  "category" : "trap",
+  "price" : 200,
+
+  "inventoryIcon" : "ancientwaterpumpicon.png",
+  "orientations" : [
+    {
+      "image" : "ancientwaterpump.png:<color>.<frame>",
+      "imagePosition" : [-800, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      
+      "animationPosition" : [-800, 0],
+      "animationParts" : {
+        "bg" : "ancientwaterpump.png",
+        "fg" : "ancientwaterpump.png"
+      },
+
+      "projectileDirection" : [0, 1],
+      "projectilePosition" : [0, 0.7],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "ancientwaterpump.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+      
+      "animationPosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "ancientwaterpump.png",
+        "fg" : "ancientwaterpump.png"
+      },
+
+      "projectileDirection" : [0, 1],
+      "projectilePosition" : [1, 0.7],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "ancientwaterpumpleft.png:<color>.<frame>",
+      "imagePosition" : [0, -800],
+      "direction" : "right",
+      
+      "animationPosition" : [0, -800],
+      "animationParts" : {
+        "bg" : "ancientwaterpumpleft.png",
+        "fg" : "ancientwaterpumpleft.png"
+      },
+
+      "projectileDirection" : [1, 0],
+      "projectilePosition" : [0.7, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "left" ]
+    },
+    {
+      "image" : "ancientwaterpumpright.png:<color>.<frame>",
+      "imagePosition" : [0, -800],
+      "direction" : "right",
+      
+      "animationPosition" : [0, -800],
+      "animationParts" : {
+        "bg" : "ancientwaterpumpright.png",
+        "fg" : "ancientwaterpumpright.png"
+      },
+
+      "projectileDirection" : [-1, 0],
+      "projectilePosition" : [0.3, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "right" ]
+    },
+    {
+      "image" : "ancientwaterpumpceiling.png:<color>.<frame>",
+      "imagePosition" : [-800, 0],
+      "direction" : "left",
+      "flipImages" : true,
+      
+      "animationPosition" : [-800, 0],
+      "animationParts" : {
+        "bg" : "ancientwaterpumpceiling.png",
+        "fg" : "ancientwaterpumpceiling.png"
+      },
+
+      "projectileDirection" : [0, -1],
+      "projectilePosition" : [0, 0.3],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "image" : "ancientwaterpumpceiling.png:<color>.<frame>",
+      "imagePosition" : [0, 0],
+      "direction" : "right",
+      
+      "animationPosition" : [0, 0],
+      "animationParts" : {
+        "bg" : "ancientwaterpumpceiling.png",
+        "fg" : "ancientwaterpumpceiling.png"
+      },
+
+      "projectileDirection" : [0, -1],
+      "projectilePosition" : [1, 0.3],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/projectiletrap/projectiletrap.lua" ],
+  "scriptDelta" : 2,
+
+  "animation" : "/objects/wired/projectiletrap/projectiletrap.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "shoot" : [ "/sfx/projectiles/poisonrain_impact.ogg", "/sfx/projectiles/goocluster_pop.ogg" ],
+      "on" : [ ],
+      "off" : [ ]
+    }
+  },
+
+  "inputNodes" : [ [0, 0] ],
+
+  "inactiveLightColor" : [0, 0, 0], // light color to emit when the object is 'off'
+  "activeLightColor" : [0, 0, 0], // light color to emit when the object is 'on'
+
+  "fireTime" : 0.16, // rate of fire
+  "fireTimeVariance" : 1.5, // variation in rate of fire
+  "projectile" : "waterballoon", // name of projectile (required)
+  "projectileConfig" : { // extra configuration overrides for projectile
+    "damageTeam" : { "type" : "Environment" },
+    "power" : 10,
+    "speed" : 256
+  },
+
+  "smashOnBreak" : true,
+  "smashSounds" : [ "/sfx/objects/rock_break1.ogg", "/sfx/objects/rock_break2.ogg", "/sfx/objects/rock_break3.ogg", "/sfx/objects/rock_break4.ogg", "/sfx/objects/rock_break5.ogg", "/sfx/objects/rock_crumble1.ogg", "/sfx/objects/rock_crumble2.ogg", "/sfx/objects/rock_crumble3.ogg", "/sfx/objects/rock_crumble4.ogg", "/sfx/objects/rock_crumble5.ogg" ],
+  "smashParticles" : [ { "count" : 5, "particle" : "blackstoneshard" } ]
+}

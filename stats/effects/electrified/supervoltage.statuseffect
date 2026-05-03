@@ -1,0 +1,21 @@
+{
+  "name" : "supervoltage",
+  "blockingStat" : "electricStatusImmunity",
+
+  "effectConfig" : {
+    "boltInterval" : 4.5,
+    "jumpDistance" : 18,
+    "healthDamageFactor" : 0.0225,
+    "damageClampRange" : [1, 45]
+  },
+  "defaultDuration" : 18,
+
+  "scripts" : [
+    "supervoltage.lua"
+  ],
+
+  "animationConfig" : "supervoltage.animation",
+
+  "label" : "Overcharged",
+  "icon" : "/interface/statuses/electric.png"
+}

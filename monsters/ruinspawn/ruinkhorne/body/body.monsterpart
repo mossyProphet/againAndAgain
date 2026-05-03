@@ -1,0 +1,9 @@
+{
+  "name" : "ruinkhorne",
+  "category" : "ruinkhorne",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "noxling.png"
+  }
+}

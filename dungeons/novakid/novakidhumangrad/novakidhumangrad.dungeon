@@ -1,0 +1,271 @@
+{
+"metadata" : {
+    "name" : "novakidhumangrad",
+    "species" : "novakid",
+    "rules" : [],
+    "anchor" : [ "gradbase1" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 500,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+  "parts": [
+    {
+      "name": "gradbase1",
+      "rules": [
+        [
+          "maxSpawnCount",
+          [ 1 ]
+        ],
+        [
+          "doNotCombineWith",
+          []
+        ],
+        [
+          "doNotConnectToPart",
+          [ "gradbase1" ]
+        ]
+      ],
+      "def": [ "tmx", "novakidfloatingstationbase.json" ],
+      "chance": 1.0
+    },
+    {
+      "name": "gradshortceiling",
+      "rules": [
+        [
+          "maxSpawnCount",
+          [ 1 ]
+        ],
+        [
+          "doNotCombineWith",
+          ["gradmediumceiling"]
+        ],
+        [
+          "doNotConnectToPart",
+          [  ]
+        ]
+      ],
+      "def": [ "tmx", "novakidfloatingstationshortcap.json" ],
+      "chance": 0.25
+    },
+    {
+      "name": "gradmediumceiling",
+      "rules": [
+        [
+          "maxSpawnCount",
+          [ 1 ]
+        ],
+        [
+          "doNotCombineWith",
+          ["gradshortceiling"]
+        ],
+        [
+          "doNotConnectToPart",
+          [  ]
+        ]
+      ],
+      "def": [ "tmx", "novakidfloatingstationmediumcap.json" ],
+      "chance": 0.75
+    },
+    
+    
+    {
+      "name": "human_balcony1",
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [ "human_balcony1", "human_balcony2", "human_balcony3", "human_balcony4", "human_balcony5", "human_balcony1r", "human_balcony2r", "human_balcony3r", "human_balcony4r", "human_balcony5r" ]
+        ]
+
+      ],
+      "def": [ "tmx", "human_balcony1.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_balcony2",
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [ "human_balcony1", "human_balcony2", "human_balcony3", "human_balcony4", "human_balcony5", "human_balcony1r", "human_balcony2r", "human_balcony3r", "human_balcony4r", "human_balcony5r" ]
+
+        ]
+      ],
+      "def": [ "tmx", "human_balcony2.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_balcony3",
+      "rules": [
+         [
+          "doNotConnectToPart",
+          [ "human_balcony1", "human_balcony2", "human_balcony3", "human_balcony4", "human_balcony5", "human_balcony1r", "human_balcony2r", "human_balcony3r", "human_balcony4r", "human_balcony5r" ]
+
+        ]
+
+      ],
+      "def": [ "tmx", "human_balcony3.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_balcony4",
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [ "human_balcony1", "human_balcony2", "human_balcony3", "human_balcony4", "human_balcony5", "human_balcony1r", "human_balcony2r", "human_balcony3r", "human_balcony4r", "human_balcony5r" ]
+
+        ]
+      ],
+      "def": [ "tmx", "human_balcony4.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_balcony5",
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [ "human_balcony1", "human_balcony2", "human_balcony3", "human_balcony4", "human_balcony5", "human_balcony1r", "human_balcony2r", "human_balcony3r", "human_balcony4r", "human_balcony5r" ]
+
+        ]
+
+      ],
+      "def": [ "tmx", "human_balcony5.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_balcony6",
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [ "human_balcony1", "human_balcony2", "human_balcony3", "human_balcony4", "human_balcony5", "human_balcony1r", "human_balcony2r", "human_balcony3r", "human_balcony4r", "human_balcony5r" ]
+
+        ]
+
+      ],
+      "def": [ "tmx", "human_balcony6.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_balcony1r",
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [ "human_balcony1", "human_balcony2", "human_balcony3", "human_balcony4", "human_balcony5", "human_balcony1r", "human_balcony2r", "human_balcony3r", "human_balcony4r", "human_balcony5r" ]
+        ]
+
+      ],
+      "def": [ "tmx", "human_balcony1r.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_balcony2r",
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [ "human_balcony1", "human_balcony2", "human_balcony3", "human_balcony4", "human_balcony5", "human_balcony1r", "human_balcony2r", "human_balcony3r", "human_balcony4r", "human_balcony5r" ]
+
+        ]
+      ],
+      "def": [ "tmx", "human_balcony2r.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_balcony3r",
+      "rules": [
+         [
+          "doNotConnectToPart",
+          [ "human_balcony1", "human_balcony2", "human_balcony3", "human_balcony4", "human_balcony5", "human_balcony1r", "human_balcony2r", "human_balcony3r", "human_balcony4r", "human_balcony5r" ]
+
+        ]
+
+      ],
+      "def": [ "tmx", "human_balcony3r.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_balcony4r",
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [ "human_balcony1", "human_balcony2", "human_balcony3", "human_balcony4", "human_balcony5", "human_balcony1r", "human_balcony2r", "human_balcony3r", "human_balcony4r", "human_balcony5r" ]
+
+        ]
+      ],
+      "def": [ "tmx", "human_balcony4r.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_balcony5r",
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [ "human_balcony1", "human_balcony2", "human_balcony3", "human_balcony4", "human_balcony5", "human_balcony1r", "human_balcony2r", "human_balcony3r", "human_balcony4r", "human_balcony5r" ]
+
+        ]
+
+      ],
+      "def": [ "tmx", "human_balcony5r.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_balcony6r",
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [ "human_balcony1", "human_balcony2", "human_balcony3", "human_balcony4", "human_balcony5", "human_balcony1r", "human_balcony2r", "human_balcony3r", "human_balcony4r", "human_balcony5r" ]
+
+        ]
+
+      ],
+      "def": [ "tmx", "human_balcony6r.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_rooms_left1",
+      "rules": [
+        [
+          "doNotConnectToPart",
+          [ "human_rooms_left1" ]
+        ]
+      ],
+      "def": [ "tmx", "human_rooms_left1.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_rooms_right2",
+      "rules": [
+         [
+          "doNotConnectToPart",
+          [ "human_rooms_right2" ]
+        ]
+      ],
+      "def": [ "tmx", "human_rooms_right2.json" ],
+      "chance": 1.0
+    },
+
+    {
+      "name": "human_rooms_right1",
+      "rules": [
+         [
+          "doNotConnectToPart",
+          [ "human_rooms_right1" ]
+        ]
+      ],
+      "def": [ "tmx", "human_rooms_right1.json" ],
+      "chance": 1.0
+    }
+  ]
+}

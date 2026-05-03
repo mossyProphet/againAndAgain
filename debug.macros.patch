@@ -1,0 +1,16 @@
+[
+  {
+    "op": "add",
+    "path": "/doinstakill",
+    "value": [
+      "/entityeval status.setResourcePercentage(\"health\", 0)"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/reseteffects",
+    "value": [
+      "/eval status.clearAllPersistentEffects(player.id())"
+    ]
+  }
+]

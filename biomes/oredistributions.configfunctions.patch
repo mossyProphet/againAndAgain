@@ -1,0 +1,26 @@
+[
+  {
+    "op": "add",
+    "path": "/asteroid/0/1/2",
+    "value": [
+      "tungsten",
+      0.56
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/asteroid/0/1/2",
+    "value": [
+      "corefragment",
+      0.7
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/asteroid/0/1/2",
+    "value": [
+      "precore",
+      0.5
+    ]
+  }
+]

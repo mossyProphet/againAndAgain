@@ -1,0 +1,33 @@
+{
+  "projectileName": "bossshield",
+  "image": "/projectiles/invisibleprojectile/invisibleprojectile.png",
+  "animationCycle": 0.25,
+  "frameNumber": 5,
+  "damageKindImage": "icon.png",
+  "pointLight": true,
+  "timeToLive": 0.25,
+  "actionOnReap": [
+    {
+      "action": "config",
+      "file": "/projectiles/explosions/burstexplosion/bloodfireburstexplosion.config"
+    }
+  ],
+  "power": 16.0,
+  "damageKind": "fire",
+  "piercing": true,
+  "damagePoly": [
+    [ -36, 0 ],
+    [ -24, -24 ],
+    [ 0, -36 ],
+    [ 24, -24 ],
+    [ 36, 0 ],
+    [ 24, 24 ],
+    [ 0, 36 ],
+    [ -24, 24 ]
+  ],
+  "speed": 0,
+  "statusEffects": [
+    "melting",
+    "burning"
+  ]
+}

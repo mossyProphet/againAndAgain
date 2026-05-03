@@ -1,0 +1,18 @@
+{
+  "itemName": "precision",
+  "price": 2625,
+  "tooltipKind": "sidegrade",
+  "rarity": "legendary",
+  "itemTags": [ "weapon", "ranged", "pistol", "gun", "nonweapon" ],
+  "category": "weapon",
+  "tooltipFields": {
+    "subtitle": "Weapon Upgrade Kit"
+  },
+  "changes": {
+    "inaccuracy": 0.5
+   },
+  "inventoryIcon": "precision.png",
+  "description": "Decrease inaccuracy in two. ^orange;BONUS: average DPS increased by 5 percent^reset;\n^gray;Apply with right-click",
+  "shortdescription": "Precision Sidegrade Kit",
+  "scripts": [ "/scripts/augments/weirder_upgrades.lua" ]
+}

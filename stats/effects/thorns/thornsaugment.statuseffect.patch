@@ -1,0 +1,15 @@
+
+  [
+    {
+      "op": "replace",
+      "path": "/scripts",
+      "value": [
+        "newthorns.lua"
+      ]
+    },
+    {
+      "op": "add",
+      "path": "/effectConfig/minionBonus",
+      "value": 1
+    }
+  ]

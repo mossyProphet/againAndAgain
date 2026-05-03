@@ -1,0 +1,74 @@
+{
+  "type" : "cryochempromworker",
+  "baseType" : "villager",
+  
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "greetingChance" : 0.1
+    },
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "S-so c-cold! We meed to wear our uniform even at our base...",
+            "CryoChemPRom found the woRst place to look foR exotic gases. Worst f-foR me anyways -",
+            "I HATE SNOW",
+            "When I have my vacation, I am going to Hylotl towns underwater...."
+          ]
+        },
+        "apex" : {
+          "default" : [
+            "This planet is tough to live in, but it beats being under Miniknog rule.",
+            "Big Ape will not find me here. I hope.",
+            "This planet is even cold for those of us with fur."
+          ]
+        },
+        "avian" : {
+          "default" : [
+            "I keep freezing off my feathers working in this place...",
+            "I like watching my gear's frostblooms",
+            "Only the hardiest workers can stand working on a planet like this."
+          ]
+        },
+        "glitch" : {
+          "default" : [
+            "Exhausted. Refinery work is hard work!",
+            "Fatigued. I have been working hard here. At least this keeps me warm!",
+            "Eager. A Glitch's work is never done!",
+            "Sensitive. I am feeling so cold here... makers never intended me in THIS atmosphere"
+          ]
+        },
+        "novakid" : {
+            "default" : [
+                "You aren't local, mate? Seein' that by your light clothing...",
+                "Turns out my drrrinks ain't warmin' me up.",
+                "My innard flames aint helping much with warmth...",
+                "At least ChemProm provided us with matching salary and DECENT work conditions. Hurray!"
+            ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "rabotyagahelm", "parameters" : { "colorIndex" : 2 } }, { "name" : "rabotyagamask", "parameters" : { "colorIndex" : 2 } }
+            ],
+            "chest" : [
+              { "name" : "rabotyagachest", "parameters" : { "colorIndex" : 2 } }
+            ],
+            "back" : [
+              { "name" : "foundryback", "parameters" : { "colorIndex" : 2 } }
+            ],
+            "legs" : [
+              { "name" : "rabotyagalegs", "parameters" : { "colorIndex" : 2 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

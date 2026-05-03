@@ -1,0 +1,61 @@
+{
+  "type": "foundrybuster",
+  "baseType": "hostile",
+
+  "persistent": true,
+
+  "dropPools": [ "cultisttreasure" ],
+
+  "scriptConfig": {
+    "dialog": {
+      "attack": "/dialog/buster.config:attack"
+    }
+  },
+
+  "items": {
+    "override": [
+      [
+        0,
+        [
+          {
+            "head": [ { "name": "cultisthead" } ],
+            "chest": [
+              {
+                "name": "foundryguardchest",
+                "parameters": { "colorIndex": 1 }
+              }
+            ],
+            "legs": [
+              {
+                "name": "foundrylegs",
+                "parameters": { "colorIndex": 1 }
+              }
+            ],
+            "sheathedprimary": [
+              "rareshortsword",
+              "rarebroadsword",
+              "rareaxe",
+              "rarehammer"
+            ],
+            "primary": [
+              "npcshotgun"
+            ]
+          }
+        ]
+      ]
+    ]
+  },
+  "statusControllerSettings": {
+    "stats": {
+      "maxHealth": {
+        "baseValue": 80.0
+      },
+      "powerMultiplier": {
+        "baseValue": 4.0
+      },
+      "protection": {
+        "baseValue": 0.3
+      }
+    }
+  }
+}

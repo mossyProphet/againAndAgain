@@ -1,0 +1,14 @@
+{
+  "name" : "dronechest",
+  
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "dronechest.lua"
+  ]
+
+  //"animationConfig" : "dronechest.animation"
+
+  //"label" : "Run Boost",
+  //"icon" : "/interface/statuses/haste.png"
+}

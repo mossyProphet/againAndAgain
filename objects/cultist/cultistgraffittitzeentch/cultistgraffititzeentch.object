@@ -1,0 +1,31 @@
+{
+  "objectName": "cultistgraffititzeentch",
+  "colonyTags": [ "human", "cultist", "light" ],
+  "rarity": "Common",
+  "category": "decorative",
+  "price": 0,
+  "printable": true,
+  "lightColor": [ 15, 115, 235 ],
+
+
+  "description": "I can almost swear it tends to change quite a lot",
+  "shortdescription": "Occasus R&D sign",
+  "race": "human",
+
+ 
+
+  "inventoryIcon": "cultistgraffititzeentchicon.png",
+  "orientations": [
+    {
+      "image": "cultistgraffititzeentch.png:<color>.<frame>",
+      "imagePosition": [ -16, -16 ],
+      "frames": 9,
+      "animationCycle": 1.5,
+
+      "spaceScan": 0.1,
+      "anchors": [ "background" ]
+    }
+  ],
+  "scriptDelta": 60
+  //"smashOnBreak": true
+}

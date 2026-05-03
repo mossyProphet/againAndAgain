@@ -1,0 +1,33 @@
+{ "columns":0,
+ "grid":
+    {
+     "height":1,
+     "orientation":"orthogonal",
+     "width":1
+    },
+ "margin":0,
+ "name":"ThisIsMyTileSet",
+ "spacing":0,
+ "tilecount":1,
+ "tiledversion":"1.10.2",
+  "tileheight": 8,
+  "tileproperties": {
+    "3": {
+      "imagePositionX": "-40",
+      "imagePositionY": "0",
+      "object": "tm_crafting/crafter"
+    }
+  },
+  "tiles": {
+    "3":
+    {
+      "id": 3,
+      "image": "crafter.png",
+      "imageheight": 24,
+      "imagewidth": 40
+    }
+  },
+ "tilewidth":8,
+ "type":"tileset",
+ "version":"1.10"
+}

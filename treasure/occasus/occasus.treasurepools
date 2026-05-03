@@ -1,0 +1,93 @@
+{
+  "occasusbarrackslocker": [
+    [
+      1,
+      {
+        "pool": [
+          {
+            "weight": 0.65,
+            "pool": "basicTreasure"
+          },
+          {
+            "weight": 0.2,
+            "pool": "humancampTreasure"
+          },
+          {
+            "weight": 0.05,
+            "pool": "stim"
+          },
+          {
+            "weight": 0.10,
+            "item": "cannedfood"
+          }
+        ],
+        "poolRounds": [
+          [ 0.30, 0 ],
+          [ 0.20, 1 ],
+          [ 0.20, 2 ],
+          [ 0.10, 3 ],
+          [ 0.10, 4 ],
+          [ 0.10, 5 ]
+        ],
+        "allowDuplication": true
+      }
+    ]
+  ],
+    "occasusbarracksAltar":[
+      [
+        1,
+        {
+          "fill": [
+            { "item": [ "goldbar", 50 ] },
+            { "item": [ "money", 5000 ] }
+          ],
+          "pool": [
+            {
+              "weight": 0.1,
+              "item": [ "techcard", 1 ]
+            },
+            {
+              "weight": 0.1,
+              "pool": "valuableTreasure"
+            },
+            {
+              "weight": 0.2,
+              "item": [ "diamond", 1 ]
+            },
+            {
+              "weight": 0.1,
+              "item": [ "money", 10000 ]
+            },
+            {
+              "weight": 0.1,
+              "pool": "rareGun"
+            },
+            {
+              "weight": 0.15,
+              "item": [ "capturepod", 1 ]
+            },
+            {
+              "weight": 0.15,
+              "pool": "rareMelee"
+            },
+            {
+              "weight": 0.099,
+              "pool": "shield"
+            },
+            {
+              "weight": 0.001,
+              "item": [ "mecharmsoluskatana", 1 ]
+            }
+          ],
+          "poolRounds": [
+            [ 0.25, 5 ],
+            [ 0.25, 6 ],
+            [ 0.25, 7 ],
+            [ 0.25, 8 ]
+          ],
+          "allowDuplication": true
+        }
+      ]
+    
+  ]
+}

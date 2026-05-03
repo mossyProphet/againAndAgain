@@ -1,0 +1,25 @@
+{
+  "materialId": 574,
+  "materialName": "nitrogenice",
+  "particleColor": [ 195, 206, 253, 255 ],
+  "itemDrop": "nitrogenice",
+  "shortdescription": "Nitrogen Ice",
+  "description": "Solid nitrogen, tingly to the touch. It bit grows each time I breathe onto it",
+  "glitchdescription": "Observant. It appears this nitrogen is naturally frozen. Maybe...",
+  "florandescription": "Frossty ssolid ice.... OUCH",
+  "novakiddescription": "Buncha ice, but it makes me feel... not well.",
+  "footstepSound": "/sfx/blocks/footstep_ice.ogg",
+  "health": 4,
+  "category": "materials",
+  "damageTable": "/tiles/flammableDamage.config",
+
+  "renderTemplate": "/tiles/classicmaterialtemplate.config",
+  "renderParameters": {
+    "texture": "nitrogenice.png",
+    "variants": 5,
+    "lightTransparent": true,
+    "occludesBelow": false,
+    "multiColored": true,
+    "zLevel": 1880
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "itemName": "deathbombfireaug",
+  "price": 5000,
+  "rarity": "Uncommon",
+  "category": "eppAugment",
+  "inventoryIcon": "deathbombfireaug.png",
+  "description": "Doesnt that just make you wanna spontaneously combust?",
+  "shortdescription": "Explosion Module(fire)",
+
+  "augment": {
+    "type": "back",
+    "name": "deathbombfireaug",
+    "displayName": "Fiery Explosion",
+    "displayIcon": "/items/augments/back/deathbombfireaug.png",
+    "effects": [ "deathbombfireaug" ]
+  },
+
+  "radioMessagesOnPickup": [ "pickupaugment" ],
+
+  "scripts": [ "/scripts/augments/augment.lua" ]
+}

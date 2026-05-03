@@ -1,0 +1,98 @@
+{
+  "sounds": {
+    "discharge": [ "/sfx/specialbar/special-bar-discharge.ogg" ]
+  },
+  "particleEmitters": {
+    "embers": {
+      "enabled": true,
+      "emissionRate": 45.0,
+      "burstCount": 90,
+
+
+
+      "particles": [
+        {
+          "particle": {
+            "type": "ember",
+            "size": 1.5,
+            "color": [ 50, 20, 50, 230 ],
+            "fade": 0.9,
+            "destructionAction": "shrink",
+            "destructionTime": 0.8,
+            "position": [ 0.0, 0.0 ],
+            "offsetRegion": [ 0, 0, 0, 0 ],
+            "initialVelocity": [ 0, 2 ],
+            "approach": [ 0, 10 ],
+            "timeToLive": 0.3,
+            "variance": {
+              "initialVelocity": [ 0, 5 ]
+            }
+          }
+        },
+        {
+          "particle": {
+            "type": "ember",
+            "size": 2.5,
+            "color": [ 250, 50, 250, 200 ],
+            "fade": 0.5,
+            "destructionAction": "shrink",
+            "destructionTime": 0.2,
+            "position": [ 0.0, 0.0 ],
+            "offsetRegion": [ 0, 0, 0, 0 ],
+            "initialVelocity": [ 1, 2 ],
+            "approach": [ 0, 10 ],
+            "timeToLive": 0.4,
+            "variance": {
+              "initialVelocity": [ 0, 5 ]
+            }
+          }
+        },
+        {
+          "particle": {
+            "type": "ember",
+            "size": 2.5,
+            "color": [ 50, 40, 50, 160 ],
+            "fade": 0.3,
+            "destructionAction": "shrink",
+            "destructionTime": 0.2,
+            "position": [ 0.0, 0.0 ],
+            "offsetRegion": [ 0, 0, 0, 0 ],
+            "initialVelocity": [ 1, 2 ],
+            "approach": [ 0, 10 ],
+            "timeToLive": 0.4,
+            "variance": {
+              "initialVelocity": [ 0, 5 ]
+            }
+          }
+        }
+      ]
+    }
+    /*
+    "statustext" : {
+      "enabled" : true,
+      "emissionRate" : 1.0,
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "text",
+            "text" : "rage",
+            "size" : 0.75,
+            "color" : [170, 50, 50, 230],
+            "fade" : 1,
+            "destructionAction" : "shrink",
+            "destructionTime" : 0.8,
+            "position" : [0.0, 0.0],
+            "offsetRegion" : [0, 0, 0, 0],
+            "initialVelocity" : [0, 4],
+            "finalVelocity" : [0, 1],
+            "approach" : [0, 10],
+            "timeToLive" : 1,
+            "variance" : {
+            }
+          }
+        }
+      ]
+    }
+    */
+  }
+}

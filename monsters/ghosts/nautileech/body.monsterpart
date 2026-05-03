@@ -1,0 +1,9 @@
+{
+  "name" : "nautileech",
+  "category" : "greaternautileech",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "greaternautileech.png"
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "type": "ruinkhorne",
+  "shortdescription": "Musculetar Ruin Spawn",
+  "description": "This mutant in particular specializes mostly in melee combat",
+
+  "categories": [ "ruinkhorne" ],
+  //"parts": [ "body", "eye" ],
+  "parts": [ "body" ],
+
+  "animation": "ruinkhorne.animation",
+
+  "dropPools": [
+    {
+      "default": "ruinKhorneDrop"
+    }
+  ],
+
+  "baseParameters": {
+    "damageBar": "special",
+    "monsterClass": "boss",
+
+
+
+    "scripts": [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior": "monster",
+
+    "behaviorConfig": {
+      "damageOnTouch": true,
+
+      "targetQueryRange": 40,
+      "targetOnDamage": true,
+      "keepTargetInSight": true,
+      "keepTargetInRange": 60,
+      "targetOutOfSightTime": 2.5,
+
+      "foundTargetActions": [],
+
+      "fleeActions": [],
+
+      "hostileActions": [
+        {
+          "name": "action-leap",
+          "cooldown": 0.2,
+          "parameters": {
+            "maximumRange": 75,
+            "windupTime": 0.2,
+            "windupState": "",
+
+            "chargeTime": 1.6,
+            "chargeSpeed": 150,
+            "chargeControlForce": 800,
+            "wallKnockback": true,
+            "wallCrashSound": "",
+            "wallCrashEmitter": "",
+
+            "winddownStopForce": 0,
+            "winddownTime": 0.0,
+            "winddownState": ""
+          }
+        },
+        {
+          "name": "action-charge",
+          "cooldown": 1.0,
+          "parameters": {
+            "maximumRange": 23,
+            "windupState": "chargewindup",
+            "windupTime": 0.3,
+
+            "chargeTime": 0.15,
+            "chargeSpeed": 150,
+            "chargeControlForce": 1000,
+            "chargeState": "charge",
+            "wallCrashSound": "",
+            "wallCrashEmitter": "",
+
+            "winddownTime": 0.05,
+            "winddownStopForce": 1000,
+            "winddownState": "chargewinddown"
+          }
+        },
+        {
+          "name": "action-fire",
+          "cooldown": 2.4,
+          "parameters": {
+            "requireLineOfSight": true,
+            "maximumRange": 8,
+            "minimumRange": 1,
+            "windupState": "shootwindup",
+            "windupTime": 0.1,
+
+            "projectileType": "bossshield",
+            "aimAtTarget": false,
+            "fireOffset": [ 1, -1 ],
+            "projectileCount": 8,
+            "projectileParameters": {
+              "speed": 20,
+              "power": 16,
+              "timeToLive": 0.125
+            },
+            "projectileInterval": 0.0,
+            "fireState": "shoot",
+            "fireDelay": 0.0,
+            "fireSound": "fire",
+            
+            "inaccuracy": 3.14,
+            "fireArc": true,
+            "projectileSpeed": 60,
+            "gravityMultiplier": 0.1,
+
+            "winddownState": "shootwinddown",
+            "winddownTime": 0.5
+          }
+        }
+      ],
+
+      "periodicActions": [],
+
+      "approachActions": [
+        {
+          "name": "approach-walk",
+          "parameters": {
+            "canJump": true,
+            "maxJumps": 6,
+            "jumpXVelocity": 12,
+            "jumpYVelocity": 30,
+            "jumpXControlForce": 50,
+            "minXRange": 10
+          }
+        }
+      ],
+
+      "followActions": [
+        {
+          "name": "approach-teleport",
+          "parameters": {
+          }
+        },
+        {
+          "name": "approach-walk",
+          "parameters": {
+            "canJump": true,
+            "maxJumps": 6,
+            "jumpXVelocity": 12,
+            "jumpYVelocity": 30,
+            "jumpXControlForce": 50,
+            "minXRange": 10
+          }
+        }
+      ],
+
+      "wanderActions": [
+        {
+          "name": "wander-walk",
+          "cooldown": 6.0,
+          "parameters": {
+            "wanderTime": [ 5, 15 ]
+          }
+        }
+      ],
+
+      "concurrentActions": [
+        {
+          "name": "action-animate",
+          "parameters": {
+            "stateType": "aggro",
+            "state": "deaggro"
+          }
+        }
+      ],
+
+      "concurrentHostileActions": [
+        {
+          "name": "action-animate",
+          "parameters": {
+            "stateType": "aggro",
+            "state": "aggro"
+          }
+        }
+      ]
+    },
+
+    "touchDamage": {
+      "poly": [
+        [ 0.87, 1.625 ],
+        [ 1.8, 2.3 ],
+        [ 1.8, -2.3 ],
+        [ 0.87, -3 ],
+        [ -0.87, -3 ],
+        [ -1.8, -1.125 ],
+        [ -1.8, 1.125 ],
+        [ -0.87, 3 ]
+      ],
+      "damage": 56,
+
+      "teamType": "enemy",
+      "damageSourceKind": "slash",
+      "knockback": 20,
+      "statusEffects": []
+    },
+
+    "metaBoundBox": [ -4, -4, 4, 4 ],
+    "scale": 1.0,
+
+    "movementSettings": {
+      "collisionPoly": [
+        [ 0.87, 1.625 ],
+        [ 1.8, 2.3 ],
+        [ 1.8, -2.3 ],
+        [ 0.87, -3 ],
+        [ -0.87, -3 ],
+        [ -1.8, -1.125 ],
+        [ -1.8, 1.125 ],
+        [ -0.87, 3 ]
+      ],
+
+      "mass": 2.0,
+      "walkSpeed": 8,
+      "runSpeed": 14,
+
+      "airFriction": 0,
+
+      "airJumpProfile": {
+        "jumpSpeed": 80.0,
+        "jumpInitialPercentage": 1.0,
+        "jumpHoldTime": 0.0
+      }
+      //"physicsEffectCategories": [ "boss" ]
+    },
+
+    "bodyMaterialKind": "organic",
+
+    "knockoutTime": 0.3,
+    "knockoutAnimationStates": {
+      "damage": "stunned"
+    },
+    "deathParticles": "deathPoof",
+    "knockoutEffect": "",
+
+    "statusSettings": {
+      "statusProperties": {
+        "targetMaterialKind": "organic"
+      },
+
+      "appliesEnvironmentStatusEffects": false,
+      "appliesWeatherStatusEffects": true,
+      "minimumLiquidStatusEffectPercentage": 0.1,
+
+      "primaryScriptSources": [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta": 5,
+
+      "stats": {
+        "knockbackStunTime": {
+          "baseValue": 0.25
+        },
+        "knockbackThreshold": {
+          "baseValue": 9
+        },
+        "maxHealth": {
+          "baseValue": 380
+        },
+        "protection": {
+          "baseValue": 0.0
+        },
+        "healthRegen": {
+          "baseValue": 0.5
+        },
+        "powerMultiplier": {
+          "baseValue": 1.6
+        },
+        "physicalResistance": {
+          "baseValue": 0.0
+        },
+        "fireResistance": {
+          "baseValue": 0.3
+        },
+        "fireStatusImmunity": {
+          "baseValue": 1.0
+        },
+        "iceResistance": {
+          "baseValue": 0.0
+        },
+        "iceStatusImmunity": {
+          "baseValue": 0.0
+        },
+        "electricResistance": {
+          "baseValue": 0.5
+        },
+        "electricStatusImmunity": {
+          "baseValue": 1.0
+        },
+        "poisonResistance": {
+          "baseValue": -0.3
+        },
+        "poisonStatusImmunity": {
+          "baseValue": -0.5
+        }
+      },
+
+      "resources": {
+        "stunned": {
+          "deltaValue": -2.4,
+          "initialValue": 0.0
+        },
+        "health": {
+          "maxStat": "maxHealth",
+          "deltaStat": "healthRegen",
+          "deltaValue": 0.8,
+          "defaultPercentage": 100
+        }
+      }
+    },
+
+    "mouthOffset": [ 0, 0 ],
+    "feetOffset": [ 0, -11 ],
+    "capturable": true,
+    "captureHealthFraction": 0.5,
+    "nametagColor": [ 254, 205, 165 ],
+    "captureCollectables": { "monsters": "ruinkhorne" }
+  }
+}

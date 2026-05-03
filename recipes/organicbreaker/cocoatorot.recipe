@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "cocoa", "count" : 1 }
+  ],
+  "output" : { "item" : "rottenfood", "count" : 1 },
+  "groups" : [ "organicbreaker" ]
+}

@@ -1,0 +1,64 @@
+{ "compressionlevel":-1,
+ "height":13,
+ "infinite":false,
+ "layers":[
+        {
+         "compression":"zlib",
+         "data":"eJxjYmBgYBrFWPFRKuCh6u7B5l+Q2caM9Mejfhr103D0ExMRfiIn\/xMyk5b+IcZPtMC09hO9\/UUP\/9DLb\/T2CzY8mOvV4YABRUdwGw==",
+         "encoding":"base64",
+         "height":13,
+         "id":2,
+         "name":"back",
+         "opacity":0.58,
+         "type":"tilelayer",
+         "visible":true,
+         "width":53,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJxjYKAPEKCTPTBwlEisw0gYS+HAIP245Igxl1g3kuonSsONUv2jfhpefuIlQQ+lbqJUPyn+wWFGAzqm1E2U6qdyGIP9NBjKPWoCSuOKEvfQwj9QcylKg+S6iVppDY\/5ZOcvUt1Ead4RJM2uBnz5i1r5iRz\/kOIPagA+OtoFAFEThtw=",
+         "encoding":"base64",
+         "height":13,
+         "id":3,
+         "name":"front",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":53,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":5,
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.10.2",
+ "tileheight":8,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Packed\/tilesets\/packed\/miscellaneous.json"
+        }, 
+        {
+         "firstgid":25,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Packed\/tilesets\/packed\/materials.json"
+        }, 
+        {
+         "firstgid":222,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Packed\/tilesets\/packed\/supports.json"
+        }, 
+        {
+         "firstgid":259,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Starbound\/assets\/Packed\/tilesets\/packed\/supports.json"
+        }, 
+        {
+         "firstgid":296,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Starbound\/mods\/againandagain\/tilesets\/moogCity\/ancientcolored.json"
+        }],
+ "tilewidth":8,
+ "type":"map",
+ "version":1.1,
+ "width":53
+}

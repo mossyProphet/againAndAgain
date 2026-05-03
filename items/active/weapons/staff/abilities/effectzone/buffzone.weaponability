@@ -1,0 +1,15 @@
+{
+  "ability" : {
+    "type" : "buffzone",
+    "name" : "Buffing Zone",
+    "scripts" : ["/items/active/weapons/staff/abilities/effectzone/effectzone.lua"],
+    "class" : "EffectZone",
+
+    "energyCost" : 60,
+
+    "maxCastRange" : 75,
+
+    "projectileType" : "mobzone",
+    "projectileParameters" : {}
+  }
+}

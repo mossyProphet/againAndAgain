@@ -1,0 +1,68 @@
+{ "compressionlevel":-1,
+ "height":34,
+ "infinite":false,
+ "layers":[
+        {
+         "compression":"zlib",
+         "data":"eJztz7EJgDAQhtHLQO7gvCI4R2bRIRQVBMFgoaTIKz644or\/5RQxR3vldFR7Bzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7e3ux19\/Bzs7Ozs7+h32J6McUfXd2v+89\/Q1xVfqbCn2x4+3f5t7tjRYrmParEw==",
+         "encoding":"base64",
+         "height":34,
+         "id":2,
+         "name":"back",
+         "opacity":0.53,
+         "type":"tilelayer",
+         "visible":true,
+         "width":63,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJztzrENwCAQBMGjMwp2SXRAA4TggMCxJUhmpUk++etJOgAAAAAAAADwy9tTUk9p61\/Lt307uSOXG7m7YQKiznGw",
+         "encoding":"base64",
+         "height":34,
+         "id":3,
+         "name":"front",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":63,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":5,
+ "nextobjectid":2,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.10.2",
+ "tileheight":8,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Packed\/tilesets\/packed\/materials.json"
+        }, 
+        {
+         "firstgid":198,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Starbound\/assets\/Packed\/tilesets\/packed\/supports.json"
+        }, 
+        {
+         "firstgid":235,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Packed\/tilesets\/packed\/miscellaneous.json"
+        }, 
+        {
+         "firstgid":259,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Starbound\/assets\/Packed\/tilesets\/packed\/materials.json"
+        }, 
+        {
+         "firstgid":456,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Starbound\/assets\/Packed\/tilesets\/packed\/miscellaneous.json"
+        }, 
+        {
+         "firstgid":480,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Starbound\/assets\/Packed\/tilesets\/packed\/huge-objects.json"
+        }],
+ "tilewidth":8,
+ "type":"map",
+ "version":1.1,
+ "width":63
+}

@@ -1,0 +1,15 @@
+{
+  "name" : "recharge",
+  "type" : "head",
+
+  "scripts" : ["recharge.lua"],
+  "animator" : "recharge.animation",
+
+  "description" : "Press a button to manually recharge your energy! ^green;[F]",
+  "shortDescription" : "Recharge",
+  "rarity" : "Legendary",
+  "icon" : "/tech/recharge.png",
+
+  "chipCost" : 8
+
+}

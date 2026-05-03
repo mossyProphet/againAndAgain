@@ -1,0 +1,29 @@
+[
+  {
+    "op": "add",
+    "path": "/mainBlock",
+    "value": "ice"
+  },
+  {
+    "op": "add",
+    "path": "/subBlocks",
+    "value": [
+      "iceblock"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/ores",
+    "value": "surface"
+  },
+  {
+    "op": "add",
+    "path": "/surfacePlaceables",
+    "value": {
+      "grassMod": [
+        "snow"
+      ],
+      "grassModDensity": 0.9
+    }
+  }
+]

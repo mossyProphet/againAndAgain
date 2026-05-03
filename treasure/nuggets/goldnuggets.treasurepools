@@ -1,0 +1,140 @@
+{
+  "goldnugget1": [
+    [
+      1,
+      {
+        "pool": [
+          {
+            "weight": 0.7,
+            "pool": "goldnugget"
+          },
+
+          {
+            "weight": 0.05,
+            "item": "goldenpenguinfossil"
+          },
+
+          {
+            "weight": 0.0625,
+            "pool": "augments"
+          },
+          {
+            "weight": 0.0625,
+            "pool": "petcollars"
+          },
+          {
+            "weight": 0.0625,
+            "pool": "instrument"
+          },
+          {
+            "weight": 0.0625,
+            "pool": "costume"
+          }
+
+        ]
+      }
+    ]
+  ],
+  "goldnugget2": [
+    [
+      1,
+      {
+        "pool": [
+          {
+            "weight": 0.7,
+            "pool": "goldnugget"
+          },
+
+          {
+            "weight": 0.05,
+            "item": "goldenpenguinfossil"
+          },
+
+          {
+            "weight": 0.0625,
+            "pool": "augments"
+          },
+          {
+            "weight": 0.0625,
+            "pool": "petcollars"
+          },
+          {
+            "weight": 0.0625,
+            "pool": "instrument"
+          },
+          {
+            "weight": 0.0625,
+            "pool": "costume"
+          }
+
+        ]
+      }
+    ]
+  ],
+  "goldnugget3": [
+    [
+      1,
+      {
+        "pool": [
+          {
+            "weight": 0.7,
+            "pool": "goldnugget"
+          },
+
+          {
+            "weight": 0.05,
+            "item": "goldenpenguinfossil"
+          },
+
+          {
+            "weight": 0.0625,
+            "pool": "augments"
+          },
+          {
+            "weight": 0.0625,
+            "pool": "petcollars"
+          },
+          {
+            "weight": 0.0625,
+            "pool": "instrument"
+          },
+          {
+            "weight": 0.0625,
+            "pool": "costume"
+          }
+
+        ]
+      }
+    ]
+  ],
+  "goldnugget": [
+    [
+      1,
+      {
+        "pool": [
+
+          {
+            "weight": 0.2,
+            "item": "goldnuggeta"
+          },
+          {
+            "weight": 0.2,
+            "item": "goldnuggetb"
+          },
+          {
+            "weight": 0.2,
+            "item": "goldnuggetc"
+          },
+          {
+            "weight": 0.2,
+            "item": "goldnuggetd"
+          },
+          {
+            "weight": 0.2,
+            "item": "goldnuggete"
+          }
+        ]
+      }
+    ]
+  ]
+}

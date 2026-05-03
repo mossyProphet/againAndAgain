@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "silvernuggeta", "count" : 1 }
+  ],
+  "output" : { "item" : "silverbar", "count" : 50 },
+  "duration" : 2.15,
+  "groups" : [ "craftingfurnace2", "bars", "all" ]
+}

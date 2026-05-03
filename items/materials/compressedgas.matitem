@@ -1,0 +1,14 @@
+{
+  "itemName": "compressedgas",
+  "price": 1,
+  "category": "block",
+  "rarity": "Common",
+  "inventoryIcon": "compressedgas.png",
+  "description": "This gas is dense enough to be solid despite being this warm",
+  "shortdescription": "Compressed Gas",
+  "glitchDescription": "OVERHEATED MATTER DETECTED",
+  "floranDescription": "Floran likesss the warmth...",
+  "novakidDescription": "Like my own body on touch",
+
+  "materialId": 572
+}

@@ -1,0 +1,58 @@
+{
+  "projectileName": "wormshield",
+  "physics": "laser",
+  "timeToLive": 10,
+  "image": "wormshield.png",
+  "animationCycle": 0.8,
+  "frameNumber": 12,
+  "windupFrames": 3,
+  "winddownFrames": 3,
+  "damageTeam": { "type": "indiscriminate" },
+  "periodicActions": [
+    {
+      "time": 9.7,
+      "repeat": false,
+      "action": "sound",
+      "options": [ "/sfx/tech/vehicle_disappear1.ogg" ]
+    }
+  ],
+  "actionOnReap": [],
+  "speed": 0,
+  "power": 15,
+  "damageKind": "plasma",
+  "onlyHitTerrain": false,
+  //"persistentStatusEffects": [ "staffrage" ],
+  //"statusEffectArea": [
+  //  [ -6.0, 0 ],
+  //  [ -4.0, -4.0 ],
+  //  [ 0, -6.0 ],
+  //  [ 4.0, -4.0 ],
+  //  [ 6.0, 0 ],
+  //  [ 4.0, 4.0 ],
+  //  [ 0, 6.0 ],
+  //  [ -4.0, 4.0 ]
+  //],
+
+  "damagePoly": [
+    [ -60.0, 0 ],
+    [ -40.0, -40.0 ],
+    [ 0, -60.0 ],
+    [ 40.0, -40.0 ],
+    [ 60.0, 0 ],
+    [ 40.0, 40.0 ],
+    [ 0, 60.0 ],
+    [ -40.0, 40.0 ]
+  ],
+
+  "renderLayer": "Player+1",
+  "orientationLocked": true,
+  "fullbright": true,
+  "emitters": [],
+
+  "piercing": true,
+  "bounces": -1,
+
+  "scripts": [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+
+  "persistentAudio": "/sfx/projectiles/zone_power_loop.ogg"
+}

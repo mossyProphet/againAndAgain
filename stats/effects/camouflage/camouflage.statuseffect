@@ -1,0 +1,12 @@
+{
+  "name" : "camouflage",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "camouflage.lua"
+  ],
+
+  "label" : "Perpetually Hiding",
+  "icon" : "/interface/statuses/invisible.png"
+}

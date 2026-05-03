@@ -1,0 +1,14 @@
+{
+  "name" : "savingcheck",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "savingcheck.lua"
+  ]
+
+  //"animationConfig" : "glow.animation",
+
+  //"label" : "Abscentive Syndrome",
+  //"icon" : "/interface/statuses/glow.png"
+}

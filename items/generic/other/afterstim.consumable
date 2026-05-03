@@ -1,0 +1,17 @@
+{
+  "itemName" : "afterstim",
+  "rarity" : "Common",
+  "price" : 100,
+  "category" : "medicine",
+  "inventoryIcon" : "violetstim.png",
+  "description" : "A stimpack full of violet liquid, that makes your mind spread around like moss",
+  "shortdescription" : "Violet Stim Pack",
+  "effects" : [ [
+      {
+        "effect" : "afterstim",
+        "duration" : 1
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "stimuse" ]
+}

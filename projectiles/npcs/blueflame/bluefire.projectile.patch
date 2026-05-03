@@ -1,0 +1,35 @@
+[
+  {
+    "op": "replace",
+    "path": "/statusEffects/0",
+    "value": "frostburn"
+  },
+  {
+    "op": "replace",
+    "path": "/damageKindImage",
+    "value": "/interface/statuses/ice.png"
+  },
+  {
+    "op": "replace",
+    "path": "/damageKind",
+    "value": "ice"
+  },
+  {
+    "op": "add",
+    "path": "/actionOnReap/0",
+    "value": {
+      "action": "config",
+      "file": "/projectiles/explosions/fireexplosion/fireexplosion.config"
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/bounces",
+    "value": -1
+  },
+  {
+    "op": "replace",
+    "path": "/timeToLive",
+    "value": 24
+  }
+]

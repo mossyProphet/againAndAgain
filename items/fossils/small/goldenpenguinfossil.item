@@ -1,0 +1,30 @@
+{
+  "itemName" : "goldenpenguinfossil",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Aurized Penguin Fossil",
+  "description" : "A fossilised penguin skeleton, made up of gold building up on it",
+  "category" : "smallFossil",
+
+  "race" : "generic",
+  "price" : 2250,
+
+  "inventoryIcon" : "goldenpenguinfossilicon.png",
+
+  "completeSetDescriptions": {
+    "price": 9000,
+    "shortdescription": "Aurized Penguin Fossil",
+    "description": "A fossilised penguin skeleton, made up of gold building up on it"
+  },
+
+  "displayImage" : "/objects/fossils/smallfossils/goldenpenguin.png",
+  "displayoffset" :[0, 0],
+
+  "fossilSetName" : "penguin",
+  "setIndex" : 1,
+  "setCount" : 1,
+  "setCollectables" : { "fossils" : "penguin" },
+
+  "completeFossilIcon" : "/objects/fossils/smallfossils/smallfossilcompleteicon.png"
+}

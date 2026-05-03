@@ -1,0 +1,55 @@
+[
+  {
+    "op": "add",
+    "path": "/metadata/extendSurfaceFreeSpace",
+    "value": 2
+  },
+  {
+    "op": "add",
+    "path": "/parts/13",
+    "value": {
+      "name": "merchant_advanced_floran",
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            1
+          ]
+        ]
+      ],
+      "def": [
+        "tmx",
+        "merchant_advanced_floran.json"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/metadata/anchor/13",
+    "value": "merchant_advanced_floran"
+  },
+  {
+    "op": "add",
+    "path": "/parts/14",
+    "value": {
+      "name": "merchant_advanced_avian",
+      "rules": [
+        [
+          "maxSpawnCount",
+          [
+            1
+          ]
+        ]
+      ],
+      "def": [
+        "tmx",
+        "merchant_advanced_avian.json"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/metadata/anchor/14",
+    "value": "merchant_advanced_avian"
+  }
+]

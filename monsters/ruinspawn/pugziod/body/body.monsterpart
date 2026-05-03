@@ -1,0 +1,9 @@
+{
+  "name" : "body",
+  "category" : "pugziod",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

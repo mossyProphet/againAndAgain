@@ -1,0 +1,344 @@
+[
+  {
+    "op": "add",
+    "path": "/terrestrialHorizonGraphics/neptune",
+    "value": {
+      "baseImages": "/celestial/system/terrestrial/horizon/textures/neptunes_<selector>.png",
+      "maskPerPlanetRange": [ 3, 3 ],
+      "maskTextures": "/celestial/system/terrestrial/horizon/masks/temperate/gasgiant2_<selector>.png"
+    }
+  },
+
+  {
+    "op": "add",
+    "path": "/terrestrialGraphics/neptune",
+    "value": {
+      //"baseCount": 9,
+      //"baseImages": "/celestial/system/terrestrial/biomes/neptune/maskie<num>.png",
+      "baseImage": "/celestial/system/gas_giant/gas_giant_base.png",
+      "shadowImages": "/celestial/system/gas_giant/shadows/<num>.png",
+      "shadowNumber": [ 1, 9 ],
+      "dynamicsImages": "/celestial/system/gas_giant/gas_giant_dynamics/<num>.png",
+      "dynamicsRange": [ 1, 30 ],
+      "overlayImages": "/celestial/system/gas_giant/gas_giant_clouds_<num>.png",
+      "overlayCount": 2,
+
+      "primaryHueShiftRange": [ 0, 360 ],
+      "hueShiftOffsetRange": [ -40, 40 ]
+    }
+  },
+
+
+
+  {
+    "op": "add",
+    "path": "/terrestrialHorizonGraphics/neutronswarm",
+    "value": {
+      "baseImages": "/celestial/system/asteroids/horizon/asteroidfield_<selector>.png",
+      "atmosphereTextures": "/celestial/system/asteroids/horizon/asteroidfield_<selector>.png",
+      "shadowTextures": "/celestial/system/asteroids/horizon/asteroidfield_<selector>.png",
+      "maskTextures": "/celestial/system/asteroids/horizon/asteroidfield_<selector>.png",
+      "liquidTextures": "/celestial/system/asteroids/horizon/asteroidfield_<selector>.png",
+      "maskPerPlanetRange": [ 0, 0 ]
+    }
+  },
+
+  {
+    "op": "add",
+    "path": "/terrestrialGraphics/neutronswarm",
+    "value": {
+      "shadowImages": "/celestial/system/asteroids/dynamics/<num>.png",
+      "liquidImages": "/celestial/system/asteroids/dynamics/<num>.png",
+      "shadowNumber": [ 1, 9 ],
+      //"baseImages": "/celestial/system/asteroids/base/maskie<num>.png",
+      "baseImages": "/celestial/system/asteroids/dynamics/<num>.png",
+      "dynamicsImages": "/celestial/system/asteroids/dynamics/<num>.png",
+      "primaryHueShiftRange": [ 0, 360 ],
+      "hueShiftOffsetRange": [ -10, 120 ],
+      "dynamicsRange": [ 1, 9 ]
+    }
+  },
+
+  {
+    "op": "add",
+    "path": "/planetaryTypes/BlackHoleTier7",
+    "value": {
+      "satelliteProbability": 0.65,
+      "maxSatelliteCount": 5,
+      "baseParameters": {
+        "worldType": "Terrestrial",
+        "description": "Near Black Hole",
+        "terrestrialType": [ "neptune" ],
+        "smallImage": "/celestial/system/planet_small.png"
+      },
+      "variationParameters": [
+        {
+          "imageScale": 0.05,
+          "smallImageScale": 0.4,
+          "worldSize": "large"
+        },
+        {
+          "imageScale": 0.1,
+          "smallImageScale": 0.4,
+          "worldSize": "kilomoreLarge"
+        },
+        {
+          "imageScale": 0.2,
+          "smallImageScale": 0.4,
+          "worldSize": "megamoreLarge"
+        }
+      ]
+    }
+  },
+
+  {
+    "op": "add",
+    "path": "/planetaryTypes/BlackHoleTier7/baseParameters/terrestrialType/-",
+    "value": "neptune"
+  },
+
+  {
+    "op": "add",
+    "path": "/planetaryTypes/Barren/baseParameters/terrestrialType/-",
+    "value": "neptune"
+  },
+
+  {
+    "op": "add",
+    "path": "/planetaryTypes/Tier6/baseParameters/terrestrialType/-",
+    "value": "neptune"
+  },
+
+  {
+    "op": "add",
+    "path": "/planetaryTypes/Barren/baseParameters/terrestrialType/-",
+    "value": "moon"
+  },
+
+  {
+    "op": "add",
+    "path": "/planetaryTypes/BlackHoleTier7/baseParameters/terrestrialType/-",
+    "value": "neutronswarm"
+  },
+
+  {
+    "op": "add",
+    "path": "/systemTypes/Blackhole",
+    "value": {
+      "selectionWeight": 1,
+      "baseParameters": {
+        "image": "/celestial/system/blackhole2.png",
+        "spaceThreatLevel": 8,
+        "twinkleTime": [ 1.0, 1.5 ],
+        "typeName": "blackhole"
+      },
+      "variationParameters": [
+
+        {
+          "brightness": [ 1, 1 ],
+          "description": "Black Hole",
+          "imageScale": 0.5,
+          "magnitude": 8,
+          "twinkleBackground": "/celestial/stars/backgrounds/star7px.png",
+          "twinkleFrames": "/celestial/stars/blackhole.png"
+        }
+      ],
+      "orbitRegions": [
+        {
+          "bodyProbability": 0.5,
+          "orbitRange": [ 2, 5 ],
+          "planetaryTypes": [
+            {
+              "weight": 0.05,
+              "item": "BlackHoleTier7"
+            },
+            {
+              "weight": 0.15,
+              "item": "BlackHoleTier7"
+            },
+            {
+              "weight": 0.7,
+              "item": "Tier6"
+            },
+            {
+              "weight": 0.05,
+              "item": "Barren"
+            },
+            {
+              "weight": 0.05,
+              "item": "AsteroidField"
+            }
+          ],
+          "regionName": "BlackHoleTier7Inner",
+          "satelliteTypes": [
+            {
+              "item": "Moon",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "bodyProbability": 0.25,
+          "orbitRange": [ 6, 7 ],
+          "planetaryTypes": [
+            {
+              "weight": 0.9,
+              "item": "GasGiant"
+            },
+            {
+              "weight": 0.05,
+              "item": "Barren"
+            },
+            {
+              "weight": 0.05,
+              "item": "AsteroidField"
+            }
+          ],
+          "regionName": "BlackHoleTier7Mid",
+          "satelliteTypes": [
+            {
+              "item": "Moon",
+              "weight": 0.1
+            },
+            {
+              "item": "Tier6",
+              "weight": 0.05
+            },
+            {
+              "item": "Tier4",
+              "weight": 0.10
+            },
+            {
+              "item": "Tier5",
+              "weight": 0.15
+            },
+            {
+              "item": "Tier6",
+              "weight": 0.6
+            }
+          ]
+        },
+        {
+          "bodyProbability": 0.5,
+          "orbitRange": [ 8, 10 ],
+          "planetaryTypes": [
+            {
+              "item": "Tier4",
+              "weight": 0.05
+            },
+            {
+              "item": "Tier5",
+              "weight": 0.15
+            },
+            {
+              "item": "Tier6",
+              "weight": 0.7
+            },
+            {
+              "item": "Barren",
+              "weight": 0.05
+            },
+            {
+              "item": "AsteroidField",
+              "weight": 0.05
+            }
+          ],
+          "regionName": "BlackHoleTier7Outer",
+          "satelliteTypes": [
+            {
+              "item": "Moon",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "bodyProbability": 1.0,
+          "orbitRange": [ 11, 16 ],
+          "planetaryTypes": [
+            {
+              "item": "AncientGateway",
+              "weight": 0.2
+            },
+            {
+              "item": "AsteroidField",
+              "weight": 0.1
+            },
+            {
+              "item": "Barren",
+              "weight": 0.1
+            },
+            {
+              "item": "Tier5",
+              "weight": 0.1
+            },
+            {
+              "item": "Tier6",
+              "weight": 0.5
+            }
+          ],
+          "regionName": "7Gate",
+          "satelliteTypes": []
+        },
+        {
+          "bodyProbability": 1.0,
+          "orbitRange": [ 1, 1 ],
+          "planetaryTypes": [
+            {
+              "item": "AncientGateway",
+              "weight": 1.0
+            }
+          ],
+          "regionName": "7InGate",
+          "satelliteTypes": []
+        }
+      ]
+    }
+  },
+
+  {
+    "op": "add",
+    "path": "/systemTypeBins/5",
+    "value": [ 0.3, "Blackhole" ]
+  },
+
+  {
+    "op": "add",
+    "path": "/systemTypeBins/6",
+    "value": [ 0.3, "Blackhole" ]
+  },
+
+  {
+    "op": "replace",
+    "path": "/planetaryTypes/GasGiant",
+    "value": {
+      "satelliteProbability": 0.5,
+      "maxSatelliteCount": 5,
+      "baseParameters": {
+        "worldType": "Terrestrial",
+        "description": "Gas Giant Planet",
+        "terrestrialType": [ "neptune" ],
+        "smallImage": "/celestial/system/planet_large.png"
+      },
+      "variationParameters": [
+        {
+          "imageScale": 0.05,
+          "smallImageScale": 0.4,
+          "worldSize": "large"
+        },
+        {
+          "imageScale": 0.1,
+          "smallImageScale": 0.4,
+          "worldSize": "kilomoreLarge"
+        },
+        {
+          "imageScale": 0.2,
+          "smallImageScale": 0.4,
+          "worldSize": "megamoreLarge"
+        }
+      ]
+    }
+    }
+  
+
+
+]

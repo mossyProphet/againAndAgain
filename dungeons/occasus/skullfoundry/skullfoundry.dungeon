@@ -1,0 +1,178 @@
+{
+	"metadata": {
+		"name": "skullfoundry",
+		"species": "generic",
+		"rules": [],
+		"anchor": [ "base" ],
+		"gravity": 80,
+		"maxRadius": 1000000,
+		"maxParts": 96,
+		"protected": true,
+		"extendSurfaceFreeSpace": 640
+	},
+
+	"parts": [
+		{
+			"name": "base",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				]
+				//[
+				//	"doNotConnectToPart",
+				//	[ "generator", "justempty" ]
+				//]
+			],
+			"def": [ "tmx", "occasusskullfoundrythroneroom.json" ]
+		},
+
+		{
+			"name": "generator",
+			"rules": [
+
+				//[
+				//	"doNotConnectToPart",
+				//	[ "crossway" ]
+				//]
+			],
+			"def": [ "tmx", "occasusskullfoundrygeneratorroom.json" ]
+		},
+		{
+			"name": "stairway",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"doNotConnectToPart",
+					[ "stairway2" ]
+				]
+			],
+			"def": [ "tmx", "occasusskullfoundrystairway.json" ]
+		},
+		{
+			"name": "stairway2",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"doNotConnectToPart",
+					[ "stairway" ]
+				]
+			],
+			"def": [ "tmx", "occasusskullfoundrystairway2.json" ]
+		},
+		{
+			"name": "smeltery",
+			"rules": [
+
+				//[
+				//	"doNotConnectToPart",
+				//	[ "crossway" ]
+				//]
+			],
+			"def": [ "tmx", "occasusskullfoundrysmeltery.json" ]
+		},
+		{
+			"name": "justempty",
+			"rules": [
+
+				//[
+				//	"doNotConnectToPart",
+				//	[ "crossway" ]
+				//]
+			],
+			"def": [ "tmx", "occasusskullfoundrybasecentralroom.json" ]
+		},
+		{
+			"name": "resting",
+			"rules": [
+
+				//[
+				//	"doNotConnectToPart",
+				//	[ "crossway" ]
+				//]
+			],
+			"def": [ "tmx", "occasusskullfoundryrestingroom.json" ]
+		},
+		{
+			"name": "toproom",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				]
+				//[
+				//	"doNotConnectToPart",
+				//	[ "generator", "justempty" ]
+				//]
+			],
+			"def": [ "tmx", "occasusskullfoundrytoproom.json" ],
+			"chance": 1
+		},
+		{
+			"name": "shadebalcony",
+			"rules": [
+				[ "ignorePartMaximumRule" ]
+			],
+			"def": [ "tmx", "occasusskullfoundrybalconyofshadow.json" ],
+			"chance": 1
+		},
+		{
+			"name": "shadebalcony2",
+			"rules": [
+				[ "ignorePartMaximumRule" ]
+			],
+			"def": [ "tmx", "occasusskullfoundrybalconyofshadow2.json" ],
+			"chance": 1
+		},
+
+		{
+			"name": "normiebasement",
+			"rules": [
+				//[ "ignorePartMaximumRule" ],
+				[
+					"doNotConnectToPart",
+					[ "stairway", "stairway2", "shadebalcony", "shadebalcony2", "generator", "smeltery", "resting", "justempty", "toproom" ]
+				]
+			],
+			"def": [ "tmx", "occasusskullfoundrybasebasement.json" ]
+		},
+
+		{
+			"name": "gymbasement",
+			"rules": [
+				//[ "ignorePartMaximumRule" ],
+				[
+					"doNotConnectToPart",
+					[ "stairway", "stairway2", "shadebalcony", "shadebalcony2", "generator", "smeltery", "resting", "justempty", "toproom" ]
+				]
+			],
+			"def": [ "tmx", "occasusskullfoundrygymbasement.json" ]
+		},
+		{
+			"name": "smelterybasement",
+			"rules": [
+				//[ "ignorePartMaximumRule" ],
+				[
+					"doNotConnectToPart",
+					[ "stairway", "stairway2", "shadebalcony", "shadebalcony2", "generator", "smeltery", "resting", "justempty", "toproom" ]
+				]
+			],
+			"def": [ "tmx", "occasusskullfoundrysmelterybasement.json" ]
+		},
+		{
+			"name": "subbase",
+			"rules": [
+				//[
+				//	"maxSpawnCount",
+				//	[ 1 ]
+				//]
+				[
+					"doNotConnectToPart",
+					[ "throneroom" ]
+				]
+			],
+			"def": [ "tmx", "occasusskullfoundrysubthroneroom.json" ],
+			"chance": 0.125
+		}
+	]
+}

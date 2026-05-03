@@ -1,0 +1,57 @@
+{
+  "type": "khornate",
+  "baseType": "hostile",
+
+  "persistent": true,
+
+  "dropPools": [ "cultisttreasure" ],
+
+  "scriptConfig": {
+    "dialog": {
+      "attack": "/dialog/khornate_template.config:attack"
+    }
+  },
+
+  "items": {
+    "override": [
+      [
+        0,
+        [
+          {
+            "head": [ { "name": "daemonprincehead" } ],
+            "chest": [ { "name": "armoredberserkchest" } ],
+            "back": [ { "name": "armoredcultistback" } ],
+            "legs": [
+              {
+                "name": "perfectpants",
+                "parameters": { "colorIndex": 10 }
+              }
+            ],
+            "primary": [
+              {
+                "name": "meleegun",
+                "parameters": {
+                }
+              }
+             
+            ]
+            //"sheathedprimary" : [ "npcpistol" ]
+          }
+        ]
+      ]
+    ]
+  },
+  "statusControllerSettings": {
+    "stats": {
+      "maxHealth": {
+        "baseValue": 150.0
+      },
+      "powerMultiplier": {
+        "baseValue": 3.0
+      },
+      "protection": {
+        "baseValue": 0.9
+      }
+    }
+  }
+}

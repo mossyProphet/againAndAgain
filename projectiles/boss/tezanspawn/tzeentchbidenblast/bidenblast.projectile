@@ -1,0 +1,81 @@
+{
+  "projectileName": "bidenblast",
+  "image": "bidenblastlegacy.png",
+  "animationCycle": 0.4,
+  "lightColor": [ 80, 50, 250 ],
+  "frameNumber": 3,
+  "fullbright": true,
+  "damageKindImage": "icon.png",
+  "physics": "default",
+  "emitters": [ "largeelectriccloud"],
+  "damageTeam": { "type": "enemy" },
+
+  "actionOnReap": [
+    {
+      "action": "loop",
+      "count": 10,
+      "body": [
+        {
+          "action": "particle",
+          "specification": {
+            "type": "ember",
+            "size": 1.5,
+            "color": [ 25, 190, 10, 255 ],
+            "fade": 0.9,
+            "approach": [ 30, 30 ],
+            "light": [ 100, 40, 240 ],
+            "timeToLive": 0.5,
+            "layer": "middle",
+            "variance": {
+              "position": [ 2.5, 2.5 ],
+              "finalVelocity": [ 3.0, 3.0 ],
+              "size": 0.5,
+              "timeToLive": 0.3,
+              "fade": 0.3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "action": "config",
+      "file": "/projectiles/explosions/regularexplosion2/electricexplosionknockback.config"
+    }
+  ],
+  "damagePoly": [
+    [ -36, 0 ],
+    [ -24, -24 ],
+    [ 0, -36 ],
+    [ 24, -24 ],
+    [ 36, 0 ],
+    [ 24, 24 ],
+    [ 0, 36 ],
+    [ -24, 24 ]
+  ],
+  "boundBox": [ -9, -9, 9, 9 ],
+  "damageKind": "electric",
+  "onlyHitTerrain": false,
+  "speed": 70,
+  "timeToLive": 1.5,
+
+  "explosionAction": {
+    "action": "actions",
+    "list": [
+      {
+        "action": "projectile",
+        "inheritDamageFactor": 1,
+        "type": "electricexplosion"
+      },
+      {
+        "action": "light",
+        "color": "blue"
+      }
+    ]
+  },
+
+  "scriptDelta": 1,
+  "scripts" : [ "bidenblast.lua" ],
+  "statusEffects" : [
+    "supervoltage"
+  ]
+}

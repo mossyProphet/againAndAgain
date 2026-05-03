@@ -1,0 +1,21 @@
+{
+  "itemName": "deathbombpoisonaug",
+  "prpoison": 5000,
+  "rarity": "Uncommon",
+  "category": "eppAugment",
+  "inventoryIcon": "deathbombpoisonaug.png",
+  "description": "Dont you feel like you wanna just spontaneously explode into poison?",
+  "shortdescription": "Explosion Module(poison)",
+
+  "augment": {
+    "type": "back",
+    "name": "deathbombpoisonaug",
+    "displayName": "Rotwind",
+    "displayIcon": "/items/augments/back/deathbombpoisonaug.png",
+    "effects": [ "deathbombpoisonaug" ]
+  },
+
+  "radioMessagesOnPickup": [ "pickupaugment" ],
+
+  "scripts": [ "/scripts/augments/augment.lua" ]
+}

@@ -1,0 +1,17 @@
+{
+  "itemName" : "clearstim",
+  "rarity" : "Common",
+  "price" : 100,
+  "category" : "medicine",
+  "inventoryIcon" : "heartForConsumption.png",
+  "description" : "A stimpack full of violet liquid, that makes your mind spread around like moss",
+  "shortdescription" : "Violet Solvant Pack",
+  "effects" : [ [
+      {
+        "effect" : "clearer",
+        "duration" : 1
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "stimuse" ]
+}

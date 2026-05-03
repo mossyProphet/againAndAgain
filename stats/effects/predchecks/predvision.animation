@@ -1,0 +1,14 @@
+
+  {
+    "particleEmitters": {
+      
+    },
+    "lights": {
+      "glow": {
+        "active": true,
+        "position": [ 0, 0 ],
+        "color": [ 179, 19, 152 ],
+        "pointLight": true
+      }
+    }
+  }

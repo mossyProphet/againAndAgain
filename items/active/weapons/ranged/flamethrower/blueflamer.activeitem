@@ -1,0 +1,70 @@
+{
+  "itemName": "blueflamer",
+  "level": 2,
+  "price": 1500,
+  "maxStack": 1,
+  "rarity": "Legendary",
+  "description": "Bring the coldest winterrs with you!",
+  "shortdescription": "Blue Flamethrower",
+  "tooltipKind": "gun",
+  "category": "uniqueWeapon",
+  "twoHanded": true,
+  "itemTags": [ "weapon", "ranged", "upgradeableWeapon" ],
+
+  "inventoryIcon": "blueflamer.png",
+
+  "animation": "/items/active/weapons/ranged/gun.animation",
+  "animationParts": {
+    "butt": "",
+    "middle": "/items/active/weapons/ranged/flamethrower/blueflamer.png",
+    "barrel": "",
+    "muzzleFlash": ""
+  },
+  "animationCustom": {
+    "sounds": {
+      "fireStart": [ "/sfx/gun/flamethrower_start.ogg" ],
+      "fireLoop": [ "/sfx/gun/flamethrower_loop.ogg" ],
+      "fireEnd": [ "/sfx/gun/flamethrower_stop.ogg" ]
+    }
+  },
+  "baseOffset": [ 0.75, 0 ],
+  "muzzleOffset": [ 2.5, 0.4 ],
+
+  "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
+
+  "elementalType": "ice",
+
+  "primaryAbilityType": "flamethrower",
+  "primaryAbility": {
+    "projectileCount": 4,
+    "baseDps": 15,
+    "energyUsage": 30,
+    "projectileType": "blueflame",
+    "fireTime": 0.05,
+    "projectileParameters": {
+      "speed": 47
+    }
+  },
+
+  "altAbilityType": "flamethrower",
+  "altAbility": {
+    "projectileCount": 2,
+    "baseDps": 25,
+    "energyUsage": 250,
+    "fireTime": 0.05,
+    "projectileType": "bluefire",
+    "projectileParameters": {
+      "speed": 77
+    }
+  },
+
+  "builder": "/items/buildscripts/buildunrandweapon.lua",
+
+  "upgradeParameters": {
+    "inventoryIcon": "blueflamer_l6.png",
+    "animationParts": {
+      "middle": "/items/active/weapons/ranged/flamethrower/blueflamer_l6.png"
+    },
+    "shortdescription": "Vyuga CryoOxydizer ^blue;^reset;"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name" : "chemprom",
+
+  "effectConfig" : {},
+  "defaultDuration" : 3,
+
+
+  "label" : "You are a ChemCryoProm faction member",
+  "icon" : "/stats/effects/chemprom/chemprom.png"
+}

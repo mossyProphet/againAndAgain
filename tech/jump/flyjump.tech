@@ -1,0 +1,17 @@
+{
+  "name" : "flyjump",
+  "type" : "legs",
+
+  "scripts" : ["multijump.lua"],
+  "animator" : "flyjump.animation",
+
+  "description" : "Gives you ability to make a whole lotta jumps.... it IS flying!",
+  "shortDescription" : "Fly Jump",
+  "rarity" : "Legendary",
+  "icon" : "/tech/flyjump.png",
+
+  "chipCost" : 8,
+
+  "multiJumpCount" : 100,
+  "multiJumpModifier" : 0.4
+}

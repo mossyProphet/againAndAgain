@@ -1,0 +1,9 @@
+{
+  "name" : "protocrawler",
+  "category" : "protocrawlertail",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "lumoth.png"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "input": [
+    {
+      "item": "tungstenbar",
+      "count": 1
+    },
+    {
+      "item": "nitrogenice",
+      "count": 2
+    },
+    {
+      "item": "ironbar",
+      "count": 2
+    },
+    {
+      "item": "battery",
+      "count": 1
+    },
+    {
+      "item": "wire",
+      "count": 6
+    },
+    {
+      "item": "siliconboard",
+      "count": 3
+    }
+  ],
+  "output" : { "item" : "wormwarder", "count" : 8 },
+  "groups" : [ "craftingfurniture2", "decoration", "all" ]
+}

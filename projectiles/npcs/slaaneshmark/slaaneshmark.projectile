@@ -1,0 +1,25 @@
+{
+  "projectileName": "slaaneshmark",
+  "image": "slaaneshmark.png",
+  "fullbright": true,
+  "animationCycle": 0.25,
+  "frameNumber": 2,
+  "physics": "laser",
+  "timeToLive": 4,
+  "bounces": 0,
+  "actionOnReap": [
+    {
+      "action": "projectile",
+      "inheritDamageFactor": 1,
+      "type": "slaaneshaim",
+      "stop": true
+    }
+  ],
+  "boundBox": [ -7, -7, 7, 7 ],
+  "power": 0.0,
+  "speed": 200,
+  "scriptDelta": 1,
+  "lightColor": [ 150, 20, 120 ],
+  "damageType": "NoDamage",
+  "damageKind": "plasma"
+}

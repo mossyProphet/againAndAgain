@@ -1,0 +1,14 @@
+{
+  "name": "fodderstim",
+  "effectConfig": {},
+  "defaultDuration": 5,
+
+  "scripts": [
+    "fodderstim.lua"
+  ],
+
+  //"animationConfig" : "glow.animation",
+
+  "label": "Cognitive Distribution",
+  "icon": "/interface/statuses/mentaldistrib.png"
+}

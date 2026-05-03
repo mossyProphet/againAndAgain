@@ -1,0 +1,175 @@
+{
+	"metadata": {
+		"name": "buoyantbase",
+		"species": "generic",
+		"rules": [],
+		"anchor": [ "base" ],
+		"gravity": 72,
+		"maxRadius": 1000000,
+		"maxParts": 81,
+		"protected": false,
+		"extendSurfaceFreeSpace": 360
+	},
+
+	"parts": [
+		{
+			"name": "base",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[ "ignorePartMaximumRule" ]
+			],
+			"def": [ "tmx", "occasusbuoyantbase.json" ]
+		},
+		{
+			"name": "basetu",
+			"rules": [
+
+			],
+			"def": [ "tmx", "occasusbuoyantbase.json" ]
+		},
+		{
+			"name": "ascent",
+			"rules": [
+			],
+			"def": [ "tmx", "occasusbuoyantascent.json" ]
+		},
+		{
+			"name": "basement",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				]
+			],
+			"def": [ "tmx", "occasusbuoyantlaboratoriesrooms.json" ],
+			"chance": 1
+		},
+
+		{
+			"name": "basementtu",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 3 ]
+				]
+			],
+			"def": [ "tmx", "occasusbuoyantlivingrooms.json" ],
+			"chance": 1
+		},
+		{
+			"name": "basementtri",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 4 ]
+				]
+			],
+			"def": [ "tmx", "occasusbuoyantstoragerooms.json" ],
+			"chance": 1
+		},
+		{
+			"name": "basementfor",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				]
+			],
+			"def": [ "tmx", "occasusbuoyantsciencingrooms.json" ],
+			"chance": 1
+		},
+		{
+			"name": "edgeleft",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "edgeright", "base", "ascent" ]
+				]
+			],
+			"def": [ "tmx", "occasusbuoyantbasementedgeleft.json" ],
+			"chance": 1
+		},
+		{
+			"name": "edgeright",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "edgeleft", "base", "ascent" ]
+				]
+			],
+			"def": [ "tmx", "occasusbuoyantbasementedgeright.json" ],
+			"chance": 1
+		},
+		{
+			"name": "capleft",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "edgeright", "base", "ascent" ]
+				],
+				[ "ignorePartMaximumRule" ]
+			],
+			"def": [ "tmx", "occasusbuoyantbasementedgeleftcap.json" ],
+			"chance": 1
+		},
+		{
+			"name": "capright",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "edgeleft", "base", "ascent" ]
+				],
+				[ "ignorePartMaximumRule" ]
+			],
+			"def": [ "tmx", "occasusbuoyantbasementedgerightcap.json" ],
+			"chance": 1
+		},
+		{
+			"name": "surface",
+			"rules": [
+				[
+					"doNotConnectToPart",
+					[ "edgeright", "edgeleft", "base", "ascent", "capright", "capleft" ]
+				],
+				[ "ignorePartMaximumRule" ]
+			],
+			"def": [ "tmx", "occasusbuoyantbasesurfacecapstorage.json" ],
+			"chance": 0
+		},
+		{
+			"name": "miniboss",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "edgeleft", "edgeright", "base", "ascent", "capright", "capleft" ]
+				],
+				[ "ignorePartMaximumRule" ]
+			],
+			"def": [ "tmx", "occasusbuoyantbasesurfacecapboss.json" ],
+			"chance": 1
+		}
+	]
+}

@@ -1,0 +1,306 @@
+{
+    "type": "growableblocksmanager",
+    "scripts": [
+        "/stagehands/growableblocks.lua"
+    ],
+    "scriptDelta": 1,
+    "biomes":{
+        "shrooms": {
+            "music": "/music/mutation.ogg",
+            "undergroundMusic": "/music/mutation.ogg",
+            "spreadTypes": {
+                "material": [
+                    "shroomblock"
+                ],
+                "mod": [
+                   
+                ],
+                "liquid": [
+                    "shroomblock",
+                    "shroomwater"
+                ]
+            },
+            "spreadConversions": {
+                "material": {
+                    "ash": "shroomblock",
+                    "sand2": "shroomblock",
+                    "sand": "shroomblock"
+                },
+                "mod": {
+                   
+                },
+                "liquid": {
+                  "water": "shroomwater",
+                  "healingliquid": "shroomwater",
+                 
+                  "lava": "shroomwater",
+                  "fuel": "shroomwater"
+                }
+            },
+            "spreadOverrides": {
+                "material": {},
+                "mod": {}
+            },
+            "matSpreadRange": 1,
+            "matSpreadChance": 0.5,
+            "matSpreadTries": 1,
+            "modSpreadChance": 0.25,
+            "modSpreadTries": 16,
+            "modSpreadRange": 16,
+            "musicPriority": 50,
+            "musicBlocks": 15,
+            "musicDis": 25,
+            "monsterBlocks": 5,
+            "monsterLimit": 50,
+            "monsterDisMin": 75,
+            "monsterDisMax": 100,
+            "monsters": {
+                "fish": {
+                    "chance": 0.1,
+                    "pos": "underground"
+                }
+            }
+        },
+        
+    "corals": {
+            "music": "/music/mutation.ogg",
+            "undergroundMusic": "/music/mutation.ogg",
+            "spreadTypes": {
+                "material": [
+                    "livingcoralblock"
+                ],
+                "mod": [
+                   
+                ],
+                "liquid": [
+                    "livingcoralblock",
+                    "coralwater"
+                ]
+            },
+            "spreadConversions": {
+                "material": {
+                    "ash": "livingcoralblock",
+                    "sand2": "livingcoralblock",
+                    "sand": "livingcoralblock"
+                },
+                "mod": {
+                   
+                },
+                "liquid": {
+                  "water": "coralwater",
+                  "healingliquid": "coralwater"
+                }
+            },
+            "spreadOverrides": {
+                "material": {},
+                "mod": {}
+            },
+            "matSpreadRange": 1,
+            "matSpreadChance": 0.5,
+            "matSpreadTries": 1,
+            "modSpreadChance": 0.25,
+            "modSpreadTries": 16,
+            "modSpreadRange": 16,
+            "musicPriority": 50,
+            "musicBlocks": 15,
+            "musicDis": 25,
+            "monsterBlocks": 5,
+            "monsterLimit": 50,
+            "monsterDisMin": 75,
+            "monsterDisMax": 100,
+            "monsters": {
+                "fish": {
+                    "chance": 0.1,
+                    "pos": "underground"
+                }
+            }
+        },
+
+
+        "algae": {
+            "music": "/music/mutation.ogg",
+            "undergroundMusic": "/music/mutation.ogg",
+            "spreadTypes": {
+                "material": [
+                    "livingplantmass"
+                ],
+                "mod": [
+                   
+                ],
+                "liquid": [
+                    "livingplantmass",
+                    "plantmass"
+                ]
+            },
+            "spreadConversions": {
+                "material": {
+                    "ash": "livingplantmass",
+                    "sand2": "livingplantmass",
+                    "sand": "livingplantmass"
+                },
+                "mod": {
+                   
+                },
+                "liquid": {
+                  "water": "plantmass",
+                  "healingliquid": "plantmass"
+                }
+            },
+            "spreadOverrides": {
+                "material": {},
+                "mod": {}
+            },
+            "matSpreadRange": 1,
+            "matSpreadChance": 0.5,
+            "matSpreadTries": 1,
+            "modSpreadChance": 0.25,
+            "modSpreadTries": 16,
+            "modSpreadRange": 16,
+            "musicPriority": 50,
+            "musicBlocks": 15,
+            "musicDis": 25,
+            "monsterBlocks": 5,
+            "monsterLimit": 50,
+            "monsterDisMin": 75,
+            "monsterDisMax": 100,
+            "monsters": {
+                "fish": {
+                    "chance": 0.1,
+                    "pos": "underground"
+                }
+            }
+        }//,
+
+
+        //"tentacles": {
+        //    "music": "/music/tentacle-exploration1.ogg",
+        //    "undergroundMusic": "/music/tentacle-exploration1.ogg",
+        //    "spreadTypes": {
+        //        "material": [
+        //            "tentacleblock",
+        //            "jellyblock",
+        //            "tentaclepipe",
+        //            "brainsblock"
+        //        ],
+        //        "mod": [
+        //            "tentaclegrass"
+        //        ]
+        //    },
+        //    "spreadConversions": {
+        //        "material": {
+        //            "cobblestone": "tentacleblock",
+        //            "blaststone": "tentacleblock",
+        //            "direstone": "tentacleblock",
+        //            "geodestone": "tentacleblock",
+        //            "limestone": "tentacleblock",
+        //            "magmarock": "tentacleblock",
+        //            "moonrock": "tentacleblock",
+        //            "rock01": "tentacleblock",
+        //            "rock02": "tentacleblock",
+        //            "rock03": "tentacleblock",
+        //            "rock04": "tentacleblock",
+        //            "rock05": "tentacleblock",
+        //            "rock06": "tentacleblock",
+        //            "rock07": "tentacleblock",
+        //            "rock08": "tentacleblock",
+        //            "rock09": "tentacleblock",
+        //            "rock10": "tentacleblock",
+        //            "rock11": "tentacleblock",
+        //            "rock12": "tentacleblock",
+        //            "rock13": "tentacleblock",
+        //            "rock14": "tentacleblock",
+        //            "rock15": "tentacleblock",
+        //            "rock16": "tentacleblock",
+        //            "rock17": "tentacleblock",
+        //            "rock18": "tentacleblock",
+        //            "rock19": "tentacleblock",
+        //            "rock20": "tentacleblock",
+        //            "shadowblock": "tentacleblock",
+        //            "grassyrock": "tentacleblock",
+        //            "biorock": "tentacleblock",
+        //            "biorock2": "tentacleblock",
+        //            "rockbrick": "tentacleblock",
+        //            "sand": "jellyblock",
+        //            "ash": "jellyblock",
+        //            "sewage": "jellyblock",
+        //            "bonematerial": "stomachblock",
+        //            "eyepiles": "stomachblock",
+        //            "gravel": "stomachblock",
+        //            "slime": "stomachblock",
+        //            "stonerubble": "stomachblock",
+        //            "sand2": "dermisblock",
+        //            "drysand": "dermisblock",
+        //            "moondust": "dermisblock",
+        //            "sandstone01": "dermisblock",
+        //            "drydirt": "dermisblock",
+        //            "moonstone": "dermisblock",
+        //            "ice": "brainsblock",
+        //            "deadcore": "brainsblock",
+        //            "dirt": "tentacleblock",
+        //            "nitrogenice": "tentacleblock",
+        //            "clay": "jellyblock"
+        //        },
+        //        "mod": {
+        //            "aliengrass": "tentaclegrass",
+        //            "alpinegrass": "tentaclegrass",
+        //            "aridgrass": "tentaclegrass",
+        //            "charredgrass": "tentaclegrass",
+        //            "colourfulgrass": "tentaclegrass",
+        //            "crystalgrass": "tentaclegrass",
+        //            "fleshgrass": "tentaclegrass",
+        //            "flowerygrass": "tentaclegrass",
+        //            "hivegrass": "tentaclegrass",
+        //            "junglegrass": "tentaclegrass",
+        //            "savannahgrass": "tentaclegrass",
+        //            "slimegrass": "tentaclegrass",
+        //            "snowygrass": "tentaclegrass",
+        //            "tentaclegrass": "tentaclegrass",
+        //            "toxicgrass": "tentaclegrass",
+        //            "thickgrass": "tentaclegrass",
+        //            "tilled": "tentaclegrass",
+        //            "tilleddry": "tentaclegrass",
+        //            "grass": "tentaclegrass",
+        //            "sand": "tentaclegrass"
+        //        },
+        //        "liquid": {
+        //            "water": "poison",
+        //            "lava": "poison",
+        //            "fuel": "poison"
+        //        }
+        //    },
+        //    "spreadOverrides": {
+        //        "material": {},
+        //        "mod": {}
+        //    },
+        //    "matSpreadRange": 3,
+        //    "matSpreadChance": 0.05,
+        //    "matSpreadTries": 1,
+        //    "modSpreadChance": 0.5,
+        //    "modSpreadTries": 1,
+        //    "modSpreadRange": 16,
+        //    "musicPriority": 500,
+        //    "musicBlocks": 150,
+        //    "musicDis": 50,
+        //    "monsterBlocks": 150,
+        //    "monsterLimit": 10,
+        //    "monsterDisMin": 75,
+        //    "monsterDisMax": 100,
+        //    "monsters": {
+        //        "tentacleghost": {
+        //            "chance": 0.1,
+        //            "pos": "underground"
+        //        },
+        //        "ruintezan": {
+        //            "chance": 0.0005,
+        //            "pos": "air"
+        //        },
+        //        "tentaclespawner": {
+        //            "chance": 0.1
+        //        },
+        //        "ruinundivided": {
+        //            "chance": 0.001
+        //        }
+        //    }
+        //}
+    }
+}

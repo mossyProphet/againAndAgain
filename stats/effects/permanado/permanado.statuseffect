@@ -1,0 +1,14 @@
+{
+  "name" : "permanado",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "permanado.lua"
+  ],
+
+  "animationConfig" : "permanado.animation",
+
+  "label" : "Storm gets harsher!",
+  "icon" : "/interface/statuses/slow.png"
+}

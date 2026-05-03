@@ -1,0 +1,14 @@
+{
+  "name" : "windhazard",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "windhazard.lua"
+  ],
+
+  "animationConfig" : "permanado.animation",
+
+  "label" : "Erratic Winds",
+  "icon" : "/interface/cockpit/weather/permanado.png"
+}

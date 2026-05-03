@@ -1,0 +1,9 @@
+{
+"name" : "hellenidhead",
+  
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "hellenidhead.lua"
+  ]
+}

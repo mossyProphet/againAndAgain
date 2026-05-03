@@ -1,0 +1,36 @@
+{
+  "itemName" : "currentgizer",
+  "rarity" : "Common",
+  "price" : 240,
+  "category" : "drink",
+  "inventoryIcon" : "currentgizer.png",
+  "description" : "Charge-up. Overcharge-up, even",
+  "shortdescription" : "Current-Gizer",
+  "maxStack" : 1000,
+  "effects": [
+    [
+      {
+        "effect": "ragefood",
+        "duration": 60
+      },
+      {
+        "effect": "electrified",
+        "duration": 60
+      },
+      {
+        "effect": "weakpoison",
+        "duration": 5
+      },
+      {
+        "effect": "energyregen",
+        "duration": 60
+      },
+      {
+        "effect": "maxenergyscalingboostfood",
+        "duration": 60
+      }
+      
+    ]
+  ],
+  "emitters" : [ "drinking" ]
+}

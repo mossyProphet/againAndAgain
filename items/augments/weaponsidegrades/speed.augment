@@ -1,0 +1,20 @@
+{
+  "itemName": "speed",
+  "price": 2625,
+  "tooltipKind": "sidegrade",
+  "rarity": "legendary",
+  "itemTags": [ "weapon", "ranged", "pistol", "gun", "nonweapon" ],
+  "category": "weapon",
+  "tooltipFields": {
+    "subtitle": "Weapon Upgrade Kit"
+  },
+  "changes": {
+    "fireTime": 0.5,
+    "energyUsage": 2,
+    "baseDpsFactor": 0.5
+   },
+  "inventoryIcon": "speed.png",
+  "description": "Increases firing speed by half. ^red; Decreases damage per hit and increases energy consumption ^orange;BONUS: average DPS increased by 5 percent^reset;\n^gray;Apply with right-click",
+  "shortdescription": "Speed Sidegrade Kit",
+  "scripts": [ "/scripts/augments/weirder_upgrades.lua" ]
+}

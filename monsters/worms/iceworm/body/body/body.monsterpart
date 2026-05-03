@@ -1,0 +1,9 @@
+{
+  "name" : "iceworm",
+  "category" : "icewormbody",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "lumoth.png"
+  }
+}

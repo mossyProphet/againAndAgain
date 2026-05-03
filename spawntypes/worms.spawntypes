@@ -1,0 +1,19 @@
+[
+	{
+    "name" : "stormweaver",
+
+    "spawnParameters" : {
+      "area" : "air",
+      "region" : "all",
+      "time" : "all"
+    },
+    "groupSize" : [1, 1],
+    "spawnChance" : 0.002,
+    "monsterType" : [
+      [1.0, "icewormhead"]
+    ],
+    "monsterParameters" : {
+      "aggressive" : true
+    }
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "op": "replace",
+    "path": "/scripts",
+    "value": [
+      "bonkatomicflight.lua"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/defaultDuration",
+    "value": 0.125
+  }
+]

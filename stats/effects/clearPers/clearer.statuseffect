@@ -1,0 +1,14 @@
+{
+  "name" : "clearer",
+  
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "clearer.lua"
+  ]
+
+  //"animationConfig" : "clearer.animation"
+
+  //"label" : "Run Boost",
+  //"icon" : "/interface/statuses/haste.png"
+}

@@ -1,0 +1,19 @@
+
+[
+ {
+  "op": "add",
+  "path": "/toxicTreasure/0/1/pool/20",
+  "value": {
+   "weight": 0.3,
+   "item": "mutantbackhorned"
+  }
+ },
+ {
+  "op": "add",
+  "path": "/toxicTreasure/0/1/pool/21",
+  "value": {
+   "weight": 0.3,
+   "item": "mutantbacknurgle"
+  }
+ }
+]

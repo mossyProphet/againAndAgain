@@ -1,0 +1,483 @@
+{
+  "itemName": "prometheusdroneforge",
+  "price": 1440,
+  "maxStack": 1,
+  "level": 6,
+  "shortdescription": "Prometheus Drone Forge",
+  "tooltipKind": "base",
+  "description": "Constructs drones that can perform various attacks",
+  "rarity": "legendary",
+  "elementalType": "fire",
+  "category": "rocketLauncher",
+  "twoHanded": true,
+  "itemTags": [ "weapon", "ranged", "rocketlauncher" ],
+
+  "scriptDelta": 2,
+  "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
+
+  "animation": "/items/active/weapons/ranged/gun.animation",
+  "animationCustom": {
+    "animatedParts": {
+      "parts": {
+        "middle": {
+          "properties": {
+            "image": "/objects/ship/apexshipdoor/apexshiphatch.png:closed?replace;bed0d4=CABECC;909eaa=968998;596473=5C495F;40beff=D3C96D;0189df=C1B53B;003855=938501",
+            "offset": [ -2.9, -1.1 ],
+            "fullbright": false,
+            "centered": false
+          }
+        },
+        "butt": {
+          "properties": {
+            "image": "/items/active/weapons/ranged/sniperrifle/butt/9.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501?flipy",
+            "offset": [ -2.1, 1.7 ],
+            "fullbright": false,
+            "centered": false
+          }
+
+        },
+        "barrel": {
+          "properties": {
+            "firePosition": [ -0.1, 0.525 ],
+            "image": "/items/active/weapons/ranged/grenadelauncher/butt/6.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501",
+            "offset": [ -1, -0.5 ],
+            "fullbright": false,
+            "centered": false
+          }
+        }
+
+      }
+    },
+    "particleEmitters": {
+      "muzzleFlash": {
+        "offsetRegion": [ 0, 1.25, 0, 1.25 ],
+        "particles": [
+          { "particle": "defaultblue" },
+          { "particle": "defaultblue" },
+          { "particle": "defaultblue" }
+        ]
+      },
+      "altMuzzleFlash": {
+        "offsetRegion": [ 0, 1.25, 0, 1.25 ],
+        "particles": [ { "particle": "defaultblue" } ]
+      }
+    },
+    "sounds": {
+      "fire": [ "/sfx/gun/plasma_mp1.ogg" ],
+      "altFire": [ "/sfx/projectiles/spit1.ogg" ]
+    }
+  },
+  "inventoryIcon": [
+    {
+      "image": "/objects/ship/apexshipdoor/apexshiphatch.png:closed?replace;bed0d4=CABECC;909eaa=968998;596473=5C495F;40beff=D3C96D;0189df=C1B53B;003855=938501",
+      "position": [ 0.0, 2.0 ]
+    },
+    {
+      "image": "/items/active/weapons/ranged/sniperrifle/butt/9.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501?flipy",
+      "position": [ -10.0, 10.0 ]
+    },
+    {
+      "image": "/items/active/weapons/ranged/grenadelauncher/butt/6.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501",
+      "position": [ 0.0, -7.0 ]
+    }
+  ],
+  "muzzleOffset": [ 3.0, 1.5 ],
+  "baseOffset": [ 0, 0 ],
+  "primaryAbility": {
+    "class": "GunFire",
+    "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true
+
+      },
+      "fire": {
+        "duration": 0.3,
+        "armRotation": 0,
+        "weaponRotation": 6,
+        "twoHanded": true,
+        "allowRotate": false,
+        "allowFlip": false
+
+      },
+      "cooldown": {
+        "duration": 0.5,
+        "armRotation": 0,
+        "weaponRotation": 6,
+        "twoHanded": true,
+        "allowRotate": false,
+        "allowFlip": false
+
+      }
+    },
+    "baseDps": 3.2,
+    "energyUsage": 25,
+    "fireTime": 1.5,
+    "inaccuracy": 0.0,
+    "fireType": "auto",
+    "projectileCount": 1,
+    "projectileType": "invisibletentaclefist",
+    "projectileParameters": {
+      "statusEffects": [ "glow" ],
+      "controlForce": 25,
+      "actionOnCollide": [
+        {
+          "action": "sound",
+          "options": [ "/sfx/melee/sword_hit_metal5.ogg" ],
+          "time": 0.05,
+          "repeat": false
+        }
+      ],
+      "periodicActions": [
+        {
+          "action": "sound",
+          "options": [ "/sfx/projectiles/spit2.ogg" ],
+          "time": 0.05,
+          "repeat": false
+        },
+        {
+          "action": "sound",
+          "options": [ "/sfx/gun/fireblast.ogg" ],
+          "time": 0.1,
+          "repeat": true
+        },
+        {
+          "time": 0.01,
+          "repeat": true,
+          "action": "particle",
+          "rotate": true,
+          "specification": {
+            "type": "textured",
+            "image": "/items/active/weapons/ranged/assaultrifle/barrel/3.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501?flipy",
+            "timeToLive": 0.01,
+            "destructionTime": 0.01,
+            "size": 0.6,
+            "fullbright": false,
+            "destructionAction": "fade",
+            "position": [ -1.2, 0.9 ]
+          }
+        },
+        {
+          "time": 0.01,
+          "repeat": true,
+          "action": "particle",
+          "rotate": true,
+          "specification": {
+            "type": "textured",
+            "image": "/items/active/weapons/ranged/assaultrifle/barrel/3.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501",
+            "timeToLive": 0.01,
+            "destructionTime": 0.01,
+            "size": 0.6,
+            "fullbright": false,
+            "destructionAction": "fade",
+            "position": [ -1.2, -0.8 ]
+          }
+        },
+        {
+          "time": 0.01,
+          "repeat": true,
+          "action": "particle",
+          "rotate": true,
+          "specification": {
+            "type": "textured",
+            "image": "/items/active/weapons/ranged/rocketlauncher/barrel/4.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501",
+            "timeToLive": 0.01,
+            "destructionTime": 0.01,
+            "size": 1.1,
+            "fullbright": false,
+            "destructionAction": "fade",
+            "position": [ -0.5, 0.0 ]
+          }
+        },
+        {
+          "time": 0.01,
+          "repeat": true,
+          "action": "particle",
+          "rotate": true,
+          "specification": {
+            "type": "textured",
+            "image": "/items/active/weapons/ranged/assaultrifle/barrel/5.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501",
+            "timeToLive": 0.01,
+            "destructionTime": 0.01,
+            "size": 0.7,
+            "fullbright": false,
+            "destructionAction": "fade",
+            "position": [ 0.4, -0.7 ]
+          }
+        },
+        {
+          "time": 0.01,
+          "repeat": true,
+          "action": "particle",
+          "rotate": true,
+          "specification": {
+            "type": "textured",
+            "image": "/items/active/weapons/ranged/assaultrifle/barrel/5.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501?flipy",
+            "timeToLive": 0.01,
+            "destructionTime": 0.01,
+            "size": 0.7,
+            "fullbright": false,
+            "destructionAction": "fade",
+            "position": [ 0.4, 0.7 ]
+          }
+        },
+        {
+          "time": 0.0,
+          "repeat": false,
+          "action": "projectile",
+          "type": "glowgas",
+          "angleAdjust": 0,
+          "config": {
+            "power": 1.0,
+            "knockback": 0,
+            "speed": 0,
+            "processing": "?hueshift=0",
+            "timeToLive": 0.5,
+            "statusEffects": [ "glow" ],
+            "actionOnReap": []
+          }
+        },
+        {
+          "time": 0,
+          "action": "particle",
+          "specification": {
+            "type": "ember",
+            "size": 0.6,
+            "light": [ 230, 230, 50 ],
+            "color": [ 230, 230, 50, 150 ],
+            "initialVelocity": [ 0.0, 0.0 ],
+            "finalVelocity": [ 0.0, 0.0 ],
+            "approach": [ 0.0, -1.0 ],
+            "timeToLive": 0.3,
+            "fade": 1,
+            "destructionAction": "shrink",
+            "destructionTime": 1.1,
+            "layer": "back",
+            "variance": {
+              "initialVelocity": [ 0.0, 0.0 ],
+              "position": [ 0.1, 0.1 ],
+              "size": 1
+            }
+          }
+        }
+      ],
+      "processing": "?hueshift=180",
+      "bounces": -1,
+      "speed": 40,
+      "timeToLive": 6.0,
+      "power": 0.0,
+      "knockback": 20
+    }
+  },
+  "altAbilityType": "guidedrocket",
+  "altAbility": {
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "twoHanded": true,
+        "allowRotate": true,
+        "allowFlip": true
+
+      },
+      "fire": {
+        "duration": 0,
+        "armRotation": 0,
+        "weaponRotation": 6,
+        "twoHanded": true,
+        "allowRotate": false,
+        "allowFlip": false
+
+      },
+      "cooldown": {
+        "duration": 0.5,
+        "armRotation": 0,
+        "weaponRotation": 6,
+        "twoHanded": true,
+        "allowRotate": false,
+        "allowFlip": false
+
+      }
+    },
+    "scripts": [ "/items/active/weapons/ranged/abilities/guidedrocket/guidedrocket.lua" ],
+    "class": "GuidedRocket",
+    "firePositionPart": "barrel",
+    "physics": "laser",
+    "fireTime": 0.5,
+    "baseDps": 0.0,
+    "energyUsage": 90,
+    "projectileType": "guidedrocket",
+    "inaccuracy": 0.0,
+    "projectileCount": 1,
+    "projectileParameters": {
+      "physics": "laser",
+      "scriptDelta": 2,
+      "speed": 0.1,
+      "acceleration": 0,
+      "rotationRate": 8.0,
+      "maxTrackingAngle": 3.0,
+      "timeToLive": 7.0,
+      "power": 11,
+      "periodicActions": [
+        {
+          "action": "sound",
+          "options": [ "/sfx/projectiles/plasma1.ogg" ],
+          "time": 0.2,
+          "repeat": true
+        },
+        {
+          "time": 0.01,
+          "repeat": true,
+          "action": "particle",
+          "rotate": true,
+          "specification": {
+            "type": "textured",
+            "image": "/items/active/weapons/ranged/assaultrifle/barrel/3.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501?flipy",
+            "timeToLive": 0.01,
+            "destructionTime": 0.02,
+            "size": 0.6,
+            "fullbright": false,
+            "destructionAction": "fade",
+            "position": [ -1.2, 0.9 ]
+          }
+        },
+        {
+          "time": 0.01,
+          "repeat": true,
+          "action": "particle",
+          "rotate": true,
+          "specification": {
+            "type": "textured",
+            "image": "/items/active/weapons/ranged/assaultrifle/barrel/3.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501",
+            "timeToLive": 0.01,
+            "destructionTime": 0.02,
+            "size": 0.6,
+            "fullbright": false,
+            "destructionAction": "fade",
+            "position": [ -1.2, -0.8 ]
+          }
+        },
+        {
+          "time": 0.01,
+          "repeat": true,
+          "action": "particle",
+          "rotate": true,
+          "specification": {
+            "type": "textured",
+            "image": "/items/active/weapons/ranged/rocketlauncher/barrel/4.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501",
+            "timeToLive": 0.01,
+            "destructionTime": 0.02,
+            "size": 1.1,
+            "fullbright": false,
+            "destructionAction": "fade",
+            "position": [ -0.5, 0.0 ]
+          }
+        },
+        {
+          "time": 0.01,
+          "repeat": true,
+          "action": "particle",
+          "rotate": true,
+          "specification": {
+            "type": "textured",
+            "image": "/items/active/weapons/ranged/assaultrifle/barrel/5.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501",
+            "timeToLive": 0.01,
+            "destructionTime": 0.02,
+            "size": 0.7,
+            "fullbright": false,
+            "destructionAction": "fade",
+            "position": [ 0.4, -0.7 ]
+          }
+        },
+        {
+          "time": 0.01,
+          "repeat": true,
+          "action": "particle",
+          "rotate": true,
+          "specification": {
+            "type": "textured",
+            "image": "/items/active/weapons/ranged/assaultrifle/barrel/5.png?replace;808080=CABECC;606060=968998;404040=5C495F;e35f5d=D3C96D;b22042=C1B53B;871132=938501?flipy",
+            "timeToLive": 0.01,
+            "destructionTime": 0.02,
+            "size": 0.7,
+            "fullbright": false,
+            "destructionAction": "fade",
+            "position": [ 0.4, 0.7 ]
+          }
+        },
+        {
+          "time": 0.2,
+          "repeat": true,
+          "action": "projectile",
+          "type": "bullet-1",
+          "angleAdjust": 0,
+          "config": {
+            "power": 2.1,
+            "knockback": 0,
+            "speed": 90,
+            "processing": "?hueshift=0",
+            "timeToLive": 1.1,
+            "piercing": false,
+            "statusEffects": [ "glow" ],
+            "actionOnReap": []
+          }
+        },
+        {
+          "time": 0.0,
+          "repeat": false,
+          "action": "projectile",
+          "type": "glowgas",
+          "angleAdjust": 0,
+          "config": {
+            "power": 1.0,
+            "knockback": 0,
+            "speed": 0,
+            "processing": "?hueshift=0",
+            "timeToLive": 0.6,
+            "actionOnReap": []
+          }
+        }
+      ],
+      "knockback": 0,
+      "bounces": 0,
+      "actionOnReap": [
+        {
+          "time": 0.01,
+          "action": "projectile",
+          "type": "flamethrower",
+          "config": {
+            "statusEffects": [],
+            "speed": 0,
+            "timeToLive": 0.2,
+            "power": 15.0,
+            "knockback": 10
+          }
+        },
+        {
+          "action": "sound",
+          "options": [ "/sfx/gun/grenadeblast_fire3.ogg" ],
+          "time": 0.1,
+          "repeat": false
+        },
+        {
+          "time": 0.01,
+          "action": "projectile",
+          "type": "bouldersmashexplosion",
+          "processing": "?scalenearest=2.2",
+          "config": {
+            "statusEffects": [],
+            "speed": 0,
+            "timeToLive": 0.2,
+            "power": 15.0,
+            "knockback": 10
+          }
+        }
+      ]
+    }
+  },
+  "builder": "/items/buildscripts/buildweapon.lua"
+}

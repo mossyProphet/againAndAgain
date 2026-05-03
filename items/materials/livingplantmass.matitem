@@ -1,0 +1,11 @@
+{
+  "itemName": "livingplantmass",
+  "price": 1,
+  "category": "block",
+  "rarity": "Common",
+  "inventoryIcon": "livingplantmass.png",
+  "description": "Springy, wet mass of algae grown together",
+  "shortdescription": "Algae Mass",
+
+  "materialId": 575
+}

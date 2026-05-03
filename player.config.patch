@@ -1,0 +1,243 @@
+[
+  [
+    { "op" : "add", "path" : "/genericScriptContexts/cvcStagehands", "value" : "/scripts/player/growableblocks.lua" },
+
+
+
+    {
+      "op": "replace",
+      "path": "/companionsConfig/scripts/0",
+      "value": "/scripts/companions/cvc_player.lua"
+    },
+    
+   
+
+    {"op":"add","path":"/defaultBlueprints/tier1/-","value":{"item":"isn_resource_extractor"}},
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "zzzdynamite" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "wormwarder" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/0",
+      "value": { "item": "minionsaugment1" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/0",
+      "value": { "item": "minionsaugment2" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/0",
+      "value": { "item": "minionsaugment3" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/0",
+      "value": { "item": "orangestim" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/0",
+      "value": { "item": "coalore" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/0",
+      "value": { "item": "carbonash" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/0",
+      "value": { "item": "diamond" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "bouncycollar" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "damagecollar1" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "damagecollar2" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "damagecollar3" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "electricbombcollar" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "firebombcollar" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "healingcollar1" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "healingcollar2" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "healingcollar3" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "healthcollar1" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "healthcollar2" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "healthcollar3" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "icebombcollar" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "lightcollar" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "obliviouscollar" }
+    },
+    {
+      "op": "add",
+      "path": "/defaultBlueprints/tier1/-",
+      "value": { "item": "poisonbombcollar" }
+    },
+
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/stats/activePetsDynamicLimit",
+      "value": { "baseValue": 100 }
+    },
+
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/stats/specialBarMax",
+      "value": {
+        "baseValue": 500
+      }
+    },
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/resources/specialBar",
+      "value": {
+        "maxStat": "specialBarMax",
+        "deltaValue": 35.0,
+        //"initualValue": 0
+        "initialPercentage": 0.0
+      }
+    },
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/stats/gunHeatMax",
+      "value": {
+        "baseValue": 100.0
+      }
+    },
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/resources/gunHeat",
+      "value": {
+        "maxStat": "gunHeatMax",
+        "initialValue": 0.0,
+        //"initialPercentage": 0.0,
+        "deltaStat": "gunHeatRegen"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/stats/gunHeatRegen",
+      "value": {
+        "baseValue": -20.0
+      }
+    },
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/stats/minionStatsBonus",
+      "value": {
+        "baseValue": 1
+      }
+    },
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/resources/setBonusHead",
+      "value": {
+        //1 stands for predator suit
+        //2 stands for hellinid suit
+        //3 stands for dronehunter suit
+        "baseValue": 0
+      }
+    },
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/resources/setBonusChest",
+      "value": {
+        //1 stands for predator suit
+        //2 stands for hellinid suit
+        //3 stands for dronehunter suit
+        "baseValue": 0
+      }
+    },
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/resources/setBonusLegs",
+      "value": {
+        //1 stands for predator suit
+        //2 stands for hellinid suit
+        //3 stands for dronehunter suit
+        "baseValue": 0
+      }
+    },
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/resources/onMinionCooldown",
+      "value": {
+        "baseValue": 0
+      }
+    },
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/resources/rechargeCooldown",
+      "value": {
+        "maxStat": "maxEnergy",
+        "deltaValue": 35.0,
+        "initialPercentage": 1.0
+      }
+    }
+  ]
+]

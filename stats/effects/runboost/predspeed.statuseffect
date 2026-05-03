@@ -1,0 +1,21 @@
+{
+  "name" : "predspeed",
+  "effectConfig": {
+    "statusEffects": [
+      {
+        "effect": "predburst",
+        "duration": 8
+      }
+    ]
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "runboostslaan.lua"
+  ],
+
+  "animationConfig" : "predspeed.animation"
+
+  //"label" : "Run Boost",
+  //"icon" : "/interface/statuses/haste.png"
+}

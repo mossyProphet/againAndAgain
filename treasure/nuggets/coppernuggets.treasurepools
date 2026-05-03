@@ -1,0 +1,32 @@
+{																																		   
+  "coppernugget1" : [
+    [1, {
+      "pool": [
+        {
+          "weight": 0.35,
+          "item": "coppernuggeta"
+        },
+        {
+          "weight": 0.4,
+          "item": "coppernuggetb"
+        },
+        {
+          "weight": 0.0625,
+          "pool": "augments"
+        },
+        {
+          "weight": 0.0625,
+          "pool": "petcollars"
+        },
+        {
+          "weight": 0.0625,
+          "pool": "instrument"
+        },
+        {
+          "weight": 0.0625,
+          "pool": "costume"
+        }
+      ]
+    }]
+  ]
+  }

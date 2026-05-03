@@ -1,0 +1,16 @@
+{
+  "input" : [
+    { "item" : "solariumstar", "count" : 2 },
+    { "item" : "minionsaugment2", "count" : 1 },
+    { "item" : "capturepod", "count" :  10},
+    { "item" : "liquidNitrogen", "count" :  1000},
+    { "item" : "battery", "count" : 1 },
+    { "item" : "wire", "count" : 6 },
+    { "item" : "siliconboard", "count" : 3 }
+  ],
+  "output" : {
+    "item" : "minionsaugment3",
+    "count" : 1
+  },
+  "groups" : [ "capturestation", "all" ]
+}

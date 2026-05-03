@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "precursomium", "count" : 20 }
+  ],
+  "output" : {
+    "item" : "essence",
+    "count" : 1000
+  },
+  "duration" : 0,
+  "groups" : [ "terraforge"]
+}

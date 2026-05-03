@@ -1,0 +1,43 @@
+{
+"metadata" : {
+    "name" : "icefortress",
+    "species" : "avian",
+    "rules" : [],
+    "anchor" : [ "base" ],
+    "gravity" : 40,
+    "maxRadius" : 1000000,
+    "maxParts" : 300,
+    //"extendSurfaceFreeSpace" : 10,
+    "protected" : false
+  },
+  "parts": [
+    {
+      "name": "base",
+      "rules": [
+        [
+          "maxSpawnCount",
+          [ 1 ]
+        ],
+        [
+          "doNotCombineWith",
+          []
+        ],
+        [
+          "doNotConnectToPart",
+          [ "base" ]
+        ]
+      ],
+      "def": [ "tmx", "icefortressbiggerbase.json" ],
+      "chance": 1
+    },
+    {
+      "name": "air",
+      "rules": [
+        [ "ignorePartMaximumRule" ]
+        
+      ],
+      "def": [ "tmx", "icefortressempty.json" ],
+      "chance": 1
+    }
+  ]
+}

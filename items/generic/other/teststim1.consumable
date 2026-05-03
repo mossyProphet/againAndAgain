@@ -1,0 +1,17 @@
+{
+  "itemName" : "teststim1",
+  "rarity" : "Common",
+  "price" : 100,
+  "category" : "medicine",
+  "inventoryIcon" : "violetstim.png",
+  "description" : "TEST",
+  "shortdescription" : "Violet Stim Pack",
+  "effects" : [ [
+      {
+        "effect" : "hellenidhead",
+        "duration" : 12
+      }
+    ] ],
+  "emote" : "",
+  "emitters" : [ "stimuse" ]
+}

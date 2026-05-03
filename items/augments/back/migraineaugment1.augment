@@ -1,0 +1,21 @@
+{
+  "itemName": "migraineaugment1",
+  "price": 15000,
+  "rarity": "Uncommon",
+  "category": "eppAugment",
+  "inventoryIcon": "migraineaugment.png",
+  "description": "Putting this experimental augment boosts your energy. Do not forget to move around to keep the migraine at bay!",
+  "shortdescription": "Experimental Energy Augment",
+
+  "augment": {
+    "type": "back",
+    "name": "migraine",
+    "displayName": "Energetic Migraine",
+    "displayIcon": "/items/augments/back/migraineaugment.png",
+    "effects": [ "migraine" ]
+  },
+
+  "radioMessagesOnPickup": [ "pickupaugment" ],
+
+  "scripts": [ "/scripts/augments/augment.lua" ]
+}

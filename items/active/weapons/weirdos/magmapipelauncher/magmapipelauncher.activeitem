@@ -1,0 +1,130 @@
+{
+  "itemName": "magmapipelauncher",
+  "price": 640,
+  "maxStack": 1,
+  "rarity": "Rare",
+  "description": "Woe, magma be upon ye",
+  "shortdescription": "Magma Pipe Launcher",
+  "tooltipKind": "gun",
+  "category": "grenadelauncher",
+  "twoHanded": true,
+  "itemTags": [ "weapon", "ranged", "grenadelauncher" ],
+  "level": 6,
+
+  "inventoryIcon": "magmapipelauncher.png",
+
+  "animation": "/items/active/weapons/weirdos/magmapipelauncher/magmapipelauncher.animation",
+  "animationParts": {
+    //"butt": "butt.png",
+    "middle": "magmapipelauncher.png",
+    //"middle": "middle.png",
+    //"barrel": "barrel.png",
+    "muzzleFlash": "/items/active/weapons/weirdos/magmapipelauncher/magmapipelauncher_muzzleflash.png"
+    //"muzzleFlash": "/items/active/weapons/ranged/muzzleflash.png"
+  },
+  "animationCustom": {
+    "sounds": {
+      "fire": [ "/sfx/gun/dragonhead_fire1.ogg" ]
+    }
+  },
+
+  "baseOffset": [ 0.8, 0.85 ],
+  "muzzleOffset": [ 1.6, 2.5 ],
+  "barrelOffset": [ 2.0, 0.85 ],
+
+  "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
+
+  "elementalType": "fire",
+
+  "primaryAbility": {
+    "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+    "class": "GunFire",
+
+    "fireTime": 1.05,
+    "baseDps": 15,
+    "energyUsage": 60,
+    "inaccuracy": 0.02,
+
+    "projectileCount": 1,
+    "fireType": "auto",
+
+    "projectileType": "magma_pipe",
+    "projectileParameters": {
+      "knockback": 10
+    },
+    "stances": {
+      "idle": {
+        "armRotation": -45,
+        "weaponRotation": 45,
+        "twoHanded": true,
+
+        "allowRotate": true,
+        "allowFlip": true
+      },
+      "fire": {
+        "duration": 0, 
+        "armRotation": -45,
+        "weaponRotation": 48,
+        "twoHanded": true,
+
+        "allowRotate": false,
+        "allowFlip": false
+      },
+      "cooldown": {
+        "duration": 0.15,
+        "armRotation": -45,
+        "weaponRotation": 45,
+        "twoHanded": true,
+
+        "allowRotate": false,
+        "allowFlip": false
+      }
+    }
+  },
+  "altAbility": {
+    "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+    "class": "GunFire",
+
+    "fireTime": 1.05,
+    "baseDps": 30,
+    "energyUsage": 80,
+    "inaccuracy": 0.32,
+
+    "projectileCount": 3,
+    "fireType": "auto",
+
+    "projectileType": "magma_pipe",
+    "projectileParameters": {
+      "knockback": 10
+    },
+    "stances": {
+      "idle": {
+        "armRotation": -45,
+        "weaponRotation": 45,
+        "twoHanded": true,
+
+        "allowRotate": true,
+        "allowFlip": true
+      },
+      "fire": {
+        "duration": 0,
+        "armRotation": -45,
+        "weaponRotation": 48,
+        "twoHanded": true,
+
+        "allowRotate": false,
+        "allowFlip": false
+      },
+      "cooldown": {
+        "duration": 0.15,
+        "armRotation": -45,
+        "weaponRotation": 45,
+        "twoHanded": true,
+
+        "allowRotate": false,
+        "allowFlip": false
+      }
+    }
+  },
+  "builder": "/items/buildscripts/buildunrandweapon.lua"
+}

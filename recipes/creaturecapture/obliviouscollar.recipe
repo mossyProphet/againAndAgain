@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "goldbar", "count" : 1 },
+	{ "item" : "leather", "count" : 3 },
+	{ "item" : "diamond", "count" : 1 },
+	{ "item" : "phasematter", "count" : 1 },
+    { "item" : "petball", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "obliviouscollar",
+    "count" : 1
+  },
+  "groups" : [ "capturestation", "all" ]
+}

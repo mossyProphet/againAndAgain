@@ -1,0 +1,44 @@
+{
+  "type" : "cultistmage",
+  "baseType" : "hostile",
+
+  "persistent" : true,
+
+  "dropPools" : [ "cultisttreasure" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : "/dialog/cultist.config:attack"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "tezanweirdeyes" } ],
+            "chest" : [ { "name" : "cultistchest" } ],
+            "back" : [ { "name" : "armoredcultistback" } ],
+            "legs" : [ { "name" : "cultistlegs" } ],
+            "primary" : [ "npcpetcapturepod" ],
+            "sheathedprimary": [ "npcweirdstaff" ],
+            "alt" : [ "npcpistol" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {    
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 279.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 2.7
+      },
+      "protection" : {
+        "baseValue" : 0.45
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "type": "dungeater",
+  "baseType": "hostile",
+
+  "persistent": true,
+
+  "dropPools": [ "cultisttreasure" ],
+
+  "scriptConfig": {
+    "dialog": {
+      "attack": "/dialog/dungeater.config:attack"
+    }
+  },
+
+  "items": {
+    "override": [
+      [
+        0,
+        [
+          {
+            "head": [ { "name": "mutanthead", "parameters": { "colorIndex": 10 } } ],
+            "chest": [ { "name": "mutantchest", "parameters": { "colorIndex": 10 } } ],
+            "back": [ { "name": "mutantbacknurgle", "parameters": { "colorIndex": 10 } } ],
+            "legs": [
+              {
+                "name": "mutantpants",
+                "parameters": { "colorIndex": 10 }
+              }
+            ],
+            "primary": [
+              {
+                "name": "meleegun",
+                "parameters": {
+                }
+              }
+             
+            ],
+            "sheathedprimary" : [ "oilgland" ]
+          }
+        ]
+      ]
+    ]
+  },
+  "statusControllerSettings": {
+    "stats": {
+      "maxHealth": {
+        "baseValue": 150.0
+      },
+      "regeneration": {
+        "baseValue": 2.0
+      },
+      "powerMultiplier": {
+        "baseValue": 1.4
+      },
+      "protection": {
+        "baseValue": 0.9
+      }
+    }
+  }
+}

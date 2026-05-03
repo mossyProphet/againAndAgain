@@ -1,0 +1,56 @@
+{ "compressionlevel":-1,
+ "height":92,
+ "infinite":false,
+ "layers":[
+        {
+         "compression":"zlib",
+         "data":"eJzt1TEOgzAQRFHEgak4AEeP0kfCSJAdL6\/43RT4gfC6LMsqSZKG2vVovGu9R7\/\/7aS37p7636Sfm\/c7drx5d97x5t15x5t35x1v3p13vHl33vHm3XnHm3fnHW\/enXe8eXfe8e7hrd\/x7uH9tv\/OXS68s72vvpd0x6p7kDfvpF21J++sqn14ZzryztxVe\/LOqtqHd6Yj78xdtSfvrKp9eGc68s7cVXvyzqrah3emI+\/MXbUn76z2ZlV78s5q9Dm77Krr4jOL99XzDNxbx7ftpKu7dbxyK97zxZs3b96854w3b968ec8Zb968efOeM968efPmPWe8eb\/Be6DjiXjz\/of3wG7I5+4db96SJEmSJKmmD+LdT3U=",
+         "encoding":"base64",
+         "height":92,
+         "id":1,
+         "name":"back",
+         "opacity":0.5,
+         "type":"tilelayer",
+         "visible":true,
+         "width":92,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJzt2rENwjAQhtGMblEzC2MwRlgFKJCiYCIENocv70nXWHLz1f80AcSZb3fZ+c1fV3z2qqve223e6Vr7r\/dnvStv5X56x\/Y+xl3JfI++697nuCuZb90bAAAAAAAA4F\/MizvEXMl68+JqvU8xV7LeVm\/7E\/uTDGd\/AgAAAAAAAIyu404lfCfSYlfSs\/fe9ye\/7G1\/Ut+V9Optf2JXAgAAAAAAAFDTeKeSblfSWuOdSrpdSWuNdyoRu5Ihe4+6TRmtNwAAANDXFe89+FM=",
+         "encoding":"base64",
+         "height":92,
+         "id":2,
+         "name":"front",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":92,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":3,
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.11.2",
+ "tileheight":8,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"..\/..\/..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Starbound\/assets\/Packed\/tilesets\/packed\/miscellaneous.json"
+        }, 
+        {
+         "firstgid":25,
+         "source":"..\/..\/..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Starbound\/assets\/Packed\/tilesets\/packed\/materials.json"
+        }, 
+        {
+         "firstgid":222,
+         "source":"..\/..\/..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Starbound\/mods\/againandagain\/tilesets\/moogCity\/chemcryoprom.json"
+        }],
+ "tilewidth":8,
+ "type":"map",
+ "version":1.1,
+ "width":92
+}

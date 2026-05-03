@@ -1,0 +1,47 @@
+[
+    {
+        "op": "replace",
+        "path": "/root/children/13/children/1/children/1/parameters/time/value",
+        "value": 0.5
+    },
+    {
+        "op": "remove",
+        "path": "/root/children/13/children/1/children/0/children/1/children/0/children/0/child/children/3"
+    },
+    {
+        "op": "remove",
+        "path": "/root/children/13/children/1/children/0/children/1/children/0/children/0/child/children/2/parameters/projectileType"
+    },
+    {
+        "op": "remove",
+        "path": "/root/children/13/children/1/children/0/children/1/children/0/children/0/child/children/2/parameters/projectileConfig"
+    },
+    {
+        "op": "remove",
+        "path": "/root/children/13/children/1/children/0/children/1/children/0/children/0/child/children/2/parameters/offset"
+    },
+    {
+        "op": "remove",
+        "path": "/root/children/13/children/1/children/0/children/1/children/0/children/0/child/children/2/parameters/aimVector"
+    },
+    {
+        "op": "add",
+        "path": "/root/children/13/children/1/children/0/children/1/children/0/children/0/child/children/2/parameters/time",
+        "value": {
+            "value": [
+                0.125,
+                0.25
+            ]
+        }
+    },
+    {
+        "op": "replace",
+        "path": "/root/children/13/children/1/children/0/children/1/children/0/children/0/child/children/2/name",
+        "value": "timer"
+    },
+    {
+        "op": "replace",
+        "path": "/root/children/13/children/1/children/0/children/1/children/0/children/0/child/children/2/title",
+        "value": "timer"
+    }
+]

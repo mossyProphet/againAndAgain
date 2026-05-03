@@ -1,0 +1,17 @@
+[
+	{
+		"op": "add",
+		"path": "/buffzone",
+		"value": "/items/active/weapons/staff/abilities/effectzone/buffzone.weaponability"
+	},
+	{
+		"op": "add",
+		"path": "/rayeye",
+		"value": "/items/active/weapons/melee/abilities/generic/scouteye/rayeye.weaponability"
+	},
+	{
+		"op": "add",
+		"path": "/buffingray",
+		"value": "/items/active/weapons/ranged/abilities/wrangler/buffingray.weaponability"
+	}
+]

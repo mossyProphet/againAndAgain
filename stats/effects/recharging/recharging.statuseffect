@@ -1,0 +1,14 @@
+{
+  "name" : "recharging",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "recharging.lua"
+  ],
+
+  "animationConfig" : "recharging.animation",
+
+  "label" : "Energy is now manually recharged",
+  "icon" : "/interface/statuses/activereload.png"
+}

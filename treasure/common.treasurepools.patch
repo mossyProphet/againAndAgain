@@ -1,0 +1,44 @@
+[
+
+  
+  {
+    "op": "replace",
+    "path": "/weapon/2/1/pool/7/weight",
+    "value": 0.12
+  },
+  {
+    "op": "add",
+    "path": "/weapon/2/1/pool/8",
+    "value": {
+      "weight": 0.12,
+      "item": "supportstaff"
+    }
+  },
+  {
+    "op": "replace",
+    "path": "/weapon/1/1/pool/7/weight",
+    "value": 0.12
+  },
+  {
+    "op": "add",
+    "path": "/weapon/1/1/pool/8",
+    "value": {
+      "weight": 0.12,
+      "item": "supportstaff"
+    }
+  },
+  
+  {
+    "op": "replace",
+    "path": "/uniqueWeapon/1/1/pool/10/weight",
+    "value": 0.5
+  },
+  {
+    "op": "add",
+    "path": "/uniqueWeapon/1/1/pool/13",
+    "value": {
+      "weight": 0.5,
+      "item": "fleshwrangler"
+    }
+  }
+]

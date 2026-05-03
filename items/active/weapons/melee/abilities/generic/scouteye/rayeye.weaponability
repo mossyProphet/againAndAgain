@@ -1,0 +1,43 @@
+{
+  "animationParts" : { },
+  "animationCustom" : { },
+
+  "ability" : {
+    "name" : "The Wrangling",
+    "type" : "rayeye",
+    "scripts" : ["/items/active/weapons/melee/abilities/generic/scouteye/scouteye.lua"],
+    "class" : "ScoutEye",
+
+    "energyUsage" : 20,
+    "cooldownTime" : 1.5,
+
+    "projectileType" : "rayeye",
+    "projectileParameters" : {
+      "timeToLive" : 4.0,
+      "speed" : 46
+    },
+    "fireOffset" : [0, 0],
+
+    "stances" : {
+      "windup" : {
+        "duration" : 0.4,
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+        "weaponOffset" : [0.0, 0.0],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "scout" : {
+        "armRotation" : 0,
+        "weaponRotation" : -90,
+        "twoHanded" : true,
+        "weaponOffset" : [0.0, 0.0],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
+    }
+  }
+}

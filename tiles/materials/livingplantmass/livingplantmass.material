@@ -1,0 +1,25 @@
+{
+  "materialId": 575,
+  "materialName": "livingplantmass",
+  "particleColor": [ 255, 155, 43, 255 ],
+  "itemDrop": "livingplantmass",
+  "shortdescription": "Living Plant Mass",
+  "description": "Springy, green mass of algae growing as a massive lump",
+  "glitchdescription": "ORGANIC MATTER DETECTED, possible fuel usages theorised",
+  "florandescription": "Floran likesss plantsss of watersss...",
+  "novakiddescription": "Wonder how it burns in a bonfire",
+  "footstepSound": "/sfx/blocks/footstep_brains.ogg",
+  "health": 4,
+  "category": "materials",
+  "damageTable": "/tiles/flammableDamage.config",
+
+  "renderTemplate": "/tiles/classicmaterialtemplate.config",
+  "renderParameters": {
+    "texture": "livingplantmass.png",
+    "variants": 4,
+    "lightTransparent": false,
+    "occludesBelow": false,
+    "multiColored": true,
+    "zLevel": 1880
+  }
+}

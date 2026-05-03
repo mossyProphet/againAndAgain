@@ -1,0 +1,11 @@
+{
+  "input" : [
+    {
+      "item": "coalore",
+      "count": 600
+    }
+  ],
+  "output" : { "item" : "diamond", "count" : 1 },
+  "duration" : 0.05,
+  "groups": [ "craftingfurnace3", "ingredients", "all" ]
+}

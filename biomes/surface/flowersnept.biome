@@ -1,0 +1,184 @@
+{
+  "name": "flowersnept",
+  "friendlyName": "Flowers of Gas Giants",
+
+  "mainBlock": "biorock",
+  "subBlocks": [ "biorock", "biorock2", "dirt" ],
+  "ores": "surface",
+
+  "spawnProfile": {
+    "groups": [
+      {
+        "select": 7,
+        "pool": [
+          [ 0.999375, "paratail" ],
+          [ 0.000625, "stormweaver" ],
+
+          [ 1.25, "squeem" ],
+          [ 1.25, "pteropod" ],
+          [ 1.25, "monopus" ],
+          [ 1.25, "cvc_nautileech" ]
+        ]
+      },
+      {
+        "select": 1,
+        "pool": [
+          [ 0.4, "polarmoth" ],
+          [ 0.3, "orphanfly" ],
+          [ 0.3, "snowskater" ]
+        ]
+      },
+      {
+        "select": 1,
+        "pool": "generatedGroundAggroDay"
+      },
+      {
+        "select": 3,
+        "pool": "nightTerrors"
+      },
+      {
+        "select": 2,
+        "pool": "generatedGround"
+      },
+      {
+        "select": 2,
+        "pool": "generatedFlying"
+      },
+      {
+        "select": 1,
+        "pool": [
+          [ 0.3, "passiveLargeFlying" ],
+          [ 0.7, "aggroLargeFlying" ]
+        ]
+      },
+      {
+        "select": 2,
+        "pool": [
+          [ 1, "frozenowlcritter" ],
+          [ 1, "sealcritter" ],
+          [ 1, "icescabcritter" ],
+          [ 1, "dancercritter" ],
+          [ 1, "snowbcritter" ]
+        ]
+      }
+    ]
+  },
+
+    "surfacePlaceables": {
+      "grassMod": [ "grass" ],
+      "grassModDensity": 0.9,
+
+      "items": [
+        {
+          "mode": "floor",
+          "priority": 1.0,
+          "variants": 3,
+          "distribution": "/biomes/distributions.config:denseLarge",
+
+          "type": "tree",
+          "treeFoliageHueShiftMax": 120,
+          "treeStemHueShiftMax": 60,
+          "treeStemList": [ "colourfulstem", "balloonbubble" ],
+          "treeFoliageList": [ "balloonbigleaf", "ballooncircle" ]
+        },
+        {
+          "mode": "ceiling",
+          "priority": 1.0,
+          "variants": 3,
+          "distribution": "/biomes/distributions.config:denseLarge",
+
+          "type": "tree",
+          "treeFoliageHueShiftMax": 120,
+          "treeStemHueShiftMax": 60,
+          "treeStemList": [ "colourfulvine" ],
+          "treeFoliageList": [ "colourfulleaves" ]
+        },
+        {
+          "mode": "floor",
+          "priority": 1.0,
+          "variants": 1,
+          "distribution": "/biomes/distributions.config:surfaceCapsules",
+
+          "type": "object",
+          "objectSets": [
+            {
+              "pool": [
+                [ 0.35, "capsulesmall" ],
+                [ 0.35, "capsulemed" ],
+                [ 0.35, "capsulebig" ]
+              ],
+              "parameters": {}
+            }
+          ]
+        },
+        {
+          "mode": "floor",
+          "priority": 3.0,
+          "variants": 1,
+          "distribution": "/biomes/distributions.config:denseSmall",
+
+          "type": "grass",
+          "grasses": [ "testflower", "testflower2", "testflower3" ]
+        },
+        {
+          "mode": "floor",
+          "priority": 1,
+          "variants": 4,
+          "distribution": "/biomes/distributions.config:mainBiomeEncounterDungeon",
+
+          "type": "microdungeon",
+          "microdungeons": [ "encounterdungeons" ]
+        },
+        {
+          "mode": "floor",
+          "priority": 1.0,
+          "variants": 1,
+          "distribution": "/biomes/distributions.config:denseSmall",
+
+          "type": "object",
+          "objectSets": [
+            {
+              "pool": [
+                [ 0.35, "flowerred" ],
+                [ 0.35, "flowerblue" ],
+                [ 0.35, "floweryellow" ]
+              ],
+              "parameters": { "startingStage": 2 }
+            }
+          ]
+        },
+
+
+        //{
+        //  "mode": "floor",
+        //  "priority": 0.0000125,
+        //  "variants": 1,
+        //  "distribution": "/biomes/distributions.config:undergroundBiomeEncounterDungeon",
+        //
+        //  "type": "microdungeon",
+        //  "microdungeons": [ "astray-player-shack" ]
+        //},
+
+        //{
+        //  "mode": "floor",
+        //  "priority": 0.125,
+        //  "variants": 1,
+        //  "distribution": "/biomes/distributions.config:undergroundBiomeEncounterDungeon",
+        //
+        //  "type": "microdungeon",
+        //  "microdungeons": [ "miniboss" ]
+        //},
+
+        {
+          "mode": "floor",
+          "priority": 3.3,
+          "variants": 1,
+          "distribution": "/biomes/distributions.config:undergroundBiomeEncounterDungeon",
+
+          "type": "microdungeon",
+          "microdungeons": [ "encounterdungeons" ]
+        }
+
+      ]
+    }
+  }

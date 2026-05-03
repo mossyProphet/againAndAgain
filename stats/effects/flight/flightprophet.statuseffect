@@ -1,0 +1,16 @@
+{
+  "name": "flightprophet",
+  "effectConfig": {
+    
+        "glideSpeed": 3
+      
+    
+  },
+  "defaultDuration": 5,
+
+  "scripts": [
+    "flight.lua"
+  ],
+
+  "animationConfig": "flight.animation"
+}

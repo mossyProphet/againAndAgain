@@ -1,0 +1,10 @@
+{
+  "itemName" : "liquidExoticGas",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "liquidexoticgasicon.png",
+  "shortdescription" : "Exotic Gas",
+  "description" : "A measure of bubbling, chilly liquid.",
+
+  "liquid" : "exoticgases"
+}

@@ -1,0 +1,11 @@
+{
+  "itemName" : "precursomium",
+  "price" : 100,
+  "rarity" : "Uncommon",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "precursomium.png",
+  "description" : "This substance recently started behaving.... weirdly. It even has a heartbeat",
+  "shortdescription" : "Solidified Esosubstance",
+  "itemTags" : [ "reagent" ],
+  "radioMessagesOnPickup" : [ "pickupore" ]
+}

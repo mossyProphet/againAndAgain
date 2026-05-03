@@ -1,0 +1,18 @@
+{
+  "itemName": "spray",
+  "price": 2625,
+  "tooltipKind": "sidegrade",
+  "rarity": "legendary",
+  "itemTags": [ "weapon", "ranged", "pistol", "gun", "nonweapon" ],
+  "category": "weapon",
+  "tooltipFields": {
+    "subtitle": "Weapon Upgrade Kit"
+  },
+  "changes": {
+    "inaccuracy": 1.5
+   },
+  "inventoryIcon": "spray.png",
+  "description": "^red;Increase inaccuracy by half, but gives more recoil ^gray; and damage. ^orange;BONUS: average DPS increased by 5 percent^reset;\n^gray;Apply with right-click",
+  "shortdescription": "Spray n' Pray Sidegrade",
+  "scripts": [ "/scripts/augments/weirder_upgrades.lua" ]
+}

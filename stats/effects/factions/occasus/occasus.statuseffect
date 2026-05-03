@@ -1,0 +1,10 @@
+{
+  "name" : "occasus",
+
+  "effectConfig" : {},
+  "defaultDuration" : 3,
+
+
+  "label" : "You are an Occasus faction member",
+  "icon" : "/stats/effects/occasus/occasus.png"
+}

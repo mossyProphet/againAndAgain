@@ -1,0 +1,23 @@
+{
+  "projectileName": "bossshard",
+  "image": "bossshard.png",
+  "animationCycle": 0.25,
+  "frameNumber": 1,
+  "damageKindImage": "icon.png",
+  "pointLight": false,
+  "timeToLive": 3,
+  "physics": "grenade",
+  "actionOnReap": [
+    {
+      "action": "config",
+      "file": "/projectiles/explosions/burstexplosion/bloodfireburstexplosion.config"
+    }
+  ],
+  "power": 3.0,
+  "damageKind": "default",
+  "piercing": false,
+  "statusEffects": [
+    "meltdown",
+    "burning"
+  ]
+}

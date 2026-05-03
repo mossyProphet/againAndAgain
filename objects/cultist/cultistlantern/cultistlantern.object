@@ -1,0 +1,93 @@
+{
+  "objectName": "cultistlantern",
+  "colonyTags": [ "copper", "light" ],
+  "rarity": "Common",
+  "category": "light",
+  "price": 20,
+
+  "description": "A lantern made of some evil material.... it stares",
+  "shortdescription": "Malevolent Lantern",
+  "race": "generic",
+  "printable": false,
+
+  "apexDescription": "....it watches",
+  "avianDescription": "This lantern begs to clean it",
+  "floranDescription": "Floran doesssnt like where it is going with this stare",
+  "glitchDescription": "Observant. Diodes are quite weird in this light.",
+  "humanDescription": "I dont like the way it looks at me",
+  "hylotlDescription": "The light of it resembles some deepsea predator's eye",
+  "novakidDescription": "A lantern made outta copper... and I dont like dis sorta copper",
+
+  "statusEffects": [],
+
+  "lightColor": [ 89, 5, 107 ],
+
+  "flickerPeriod": 0.3,
+  "flickerMinIntensity": 0.95,
+  "flickerMaxIntensity": 1,
+  "flickerPeriodVariance": 0.075,
+  "flickerIntensityVariance": 0.025,
+
+  "inventoryIcon": "cultistlanternicon.png",
+  "orientations": [
+
+    {
+      "image": "cultistlantern.png:<color>.<frame>",
+      "imagePosition": [ 0, 0 ],
+      "direction": "right",
+
+      "spaces": [
+        [ 0, 0 ],
+        [ 0, 1 ]
+      ],
+      "fgAnchors": [ [ 0, -1 ] ]
+    },
+
+    {
+      "image": "cultistlantern.png:<color>.<frame>",
+      "imagePosition": [ 0, 0 ],
+      "direction": "right",
+
+      "spaces": [
+        [ 0, 0 ],
+        [ 0, 1 ]
+      ],
+      "bgAnchors": [ [ 0, 1 ] ]
+    },
+
+    {
+      "image": "cultistlantern.png:<color>.<frame>",
+      "imagePosition": [ 0, 0 ],
+      "direction": "right",
+
+      "spaces": [
+        [ 0, 0 ],
+        [ 0, 1 ]
+      ],
+      "bgAnchors": [ [ 0, 0 ] ]
+    }
+  ],
+
+  "soundEffect": "/sfx/objects/oillantern.ogg",
+
+  "animation": "cultistlantern.animation",
+  "animationParts": {
+    "bg": "cultistlantern.png",
+    "fg": "cultistlanternlit.png"
+  },
+  "animationCustom": {
+    "sounds": {
+      "on": [ "/sfx/objects/oillantern_on.ogg" ],
+      "off": [ "/sfx/objects/oillantern_off.ogg" ]
+    }
+  },
+  "animationPosition": [ 0, 0 ],
+
+  "scripts": [ "/objects/wired/light/light.lua" ],
+  "scriptDelta": 60,
+
+  "interactive": true,
+
+  "inputNodes": [ [ 0, 0 ] ]
+
+}

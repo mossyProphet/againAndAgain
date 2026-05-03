@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "healingcollar1", "count" : 1 },
+	{ "item" : "diamond", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "healingcollar2",
+    "count" : 1
+  },
+  "groups" : [ "capturestation", "all" ]
+}

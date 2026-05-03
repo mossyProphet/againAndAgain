@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "goldbar", "count" : 1 },
+	{ "item" : "leather", "count" : 3 },
+	{ "item" : "diamond", "count" : 1 },
+    { "item" : "bomb", "count" : 1 },
+	{ "item" : "scorchedcore", "count" : 5 }
+  ],
+  "output" : {
+    "item" : "firebombcollar",
+    "count" : 1
+  },
+  "groups" : [ "capturestation", "all" ]
+}

@@ -1,0 +1,14 @@
+{
+  "itemName": "nitrogenice",
+  "price": 1,
+  "category": "block",
+  "rarity": "Common",
+  "inventoryIcon": "nitrogenice.png",
+  "shortdescription": "Solid Nitrogen",
+  "description": "Solid nitrogen, tingly to the touch. It bit grows each time I breathe onto it",
+  "glitchdescription": "Observant. It appears this nitrogen is naturally frozen. Maybe...",
+  "florandescription": "Frossty ssolid ice.... OUCH",
+  "novakiddescription": "Buncha ice, but it makes me feel... not well.",
+
+  "materialId": 574
+}

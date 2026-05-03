@@ -1,0 +1,55 @@
+{
+	"metadata": {
+		"name": "gasgiantsanctuary",
+		"species": "generic",
+		"rules": [],
+		"anchor": [ "novakidfloatingfarmbase", "novakidfloatingfarmbasement", "novakidfloatingfarmobsidian", "novakidfloatingfarmobsidian"],
+		"gravity": 80,
+		"maxRadius": 1000000,
+		"maxParts": 1,
+		"protected": false
+	},
+
+	"parts": [
+		{
+			"name": "novakidfloatingfarmbase",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				]
+			],
+			"def": [ "tmx", "novakidfloatingfarmbase.json" ]
+		},
+		{
+			"name": "novakidfloatingfarmbasement",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				]
+			],
+			"def": [ "tmx", "novakidfloatingfarmbasement.json" ]
+		},
+		{
+			"name": "novakidfloatingfarmbioluminescence",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				]
+			],
+			"def": [ "tmx", "novakidfloatingfarmbioluminescence.json" ]
+		},
+		{
+			"name": "novakidfloatingfarmobsidian",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				]
+			],
+			"def": [ "tmx", "novakidfloatingfarmobsidian.json" ]
+		}
+	]
+}

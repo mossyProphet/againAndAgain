@@ -1,0 +1,98 @@
+{
+  "itemName": "meleegun",
+  "price": 1960,
+  "level": 6,
+  "maxStack": 1,
+  "rarity": "Legendary",
+  "description": "This reactive flame launcher, fortunately, can be and is used as a club",
+  "shortdescription": "Ragemonster Firelauncher",
+  "tooltipKind": "base",
+  "category": "broadsword",
+  "twoHanded": true,
+  "itemTags": [ "weapon", "melee", "broadsword", "rocketlauncher" ],
+
+  "inventoryIcon": "meleegunicon.png",
+
+  "animation": "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts": {
+    "handle": "handle.png"
+    //"handleFullbright": "handlefullbright.png",
+    //"blade": "blade.png"
+  },
+
+ 
+  "animationCustom": {
+    "sounds": {
+      "fire": [ "/sfx/gun/rocket1.ogg", "/sfx/gun/rocket2.ogg", "/sfx/gun/rocket3.ogg" ],
+      "fire2": [ "/sfx/gun/rocket1.ogg", "/sfx/gun/rocket2.ogg", "/sfx/gun/rocket3.ogg" ],
+      "fire3": [ "/sfx/gun/rocket1.ogg", "/sfx/gun/rocket2.ogg", "/sfx/gun/rocket3.ogg" ],
+      "fireStart": [ "/sfx/gun/rocket1.ogg", "/sfx/gun/rocket2.ogg", "/sfx/gun/rocket3.ogg" ],
+      "fireBlast": [ "/sfx/melee/barrier_create_electric.ogg" ]
+    }
+  },
+
+  "scripts": [ "/items/active/weapons/melee/meleeweapon.lua" ],
+
+  "activeTime": 3.0,
+
+  "elementalType": "fire",
+
+  "primaryAbilityType": "broadswordcombo",
+  "primaryAbility": {
+    "fireTime": 1.33,
+    "baseDps": 11.5,
+    "energyUsage": 10,
+    "stances": {
+      "windup1": {
+        "duration": 0.35,
+        "weaponRotation": -90,
+        "weaponOffset": [ -0.125, -0.5 ]
+      }
+    }
+  },
+
+  "altAbilityType": "flamethrowersword",
+  "altAbility": {
+    "name": "Ranged Shot",
+    "type": "flamethrowersword",
+    "scripts": [ "/items/active/weapons/melee/abilities/spear/rocketspear/rocketspear.lua" ],
+    "class": "RocketSpear",
+
+    "baseDps": 16,
+    "cooldownTime": 1.5,
+    "energyUsage": 80,
+    "fireTime": 1,
+    "inaccuracy": 0.0005,
+
+
+    "projectileType": "flamethrower",
+
+    "projectileParameters": {
+      "speed": 80
+    },
+
+    "stances": {
+      "windup": {
+        "duration": 0.5,
+        "armRotation": 0,
+        "weaponRotation": -90,
+        "twoHanded": true,
+        "weaponOffset": [ -0.75, -2.5 ],
+        "allowRotate": true,
+        "allowFlip": true
+      },
+      "fire": {
+        "armRotation": 0,
+        "weaponRotation": -90,
+        "twoHanded": true,
+        "weaponOffset": [ -0.75, -2.5 ],
+        "allowRotate": true,
+        "allowFlip": true
+      }
+    }
+
+  },
+
+
+  "builder": "/items/buildscripts/buildunrandweapon.lua"
+}

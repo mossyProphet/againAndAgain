@@ -1,0 +1,23 @@
+{
+  "projectileName" : "ripjack_hyperblade",
+  "image" : "ripjack_hyperblade.png",
+  "animationCycle" : 0.10,
+  "frameNumber" : 3,
+  "damageKindImage" : "icon.png",
+  "flippable" : false,
+  "orientationLocked" : true,
+  "actionOnReap" : [ ],
+  "statusEffects" : [ ],
+  "damagePoly" : [[-8, 4], [-4, 8], [4, 8], [8, 4], [8, -4], [4, -8], [-4, -8], [-8, -4]],
+  "power" : 5.0,
+  "speed" : 90,
+  "damageKind": "sawblade",
+  "damageTeam": { "type": "indiscriminate" }, 
+  "physics" : "grenade",
+  "bounces" : -1,
+  "piercing" : true,
+  "timeToLive" : 5,
+  "emitters" : [ ],
+
+  "persistentAudio" : "/sfx/objects/sawblade.ogg"
+}

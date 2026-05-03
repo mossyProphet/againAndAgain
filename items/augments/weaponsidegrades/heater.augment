@@ -1,0 +1,19 @@
+{
+  "itemName": "heater",
+  "price": 2625,
+  "tooltipKind": "sidegrade",
+  "rarity": "legendary",
+  "itemTags": [ "weapon", "ranged", "pistol", "gun", "nonweapon" ],
+  "category": "weapon",
+  "tooltipFields": {
+    "subtitle": "Weapon Upgrade Kit"
+  },
+  "changes": {
+    "gunHeat": 1.5,
+    "baseDpsFactor": 1.25
+   },
+  "inventoryIcon": "heater.png",
+  "description": "^red;Increases heat production by half, ^white;but increases damage by 25 percent. ^orange;BONUS: average DPS increased by 5 percent^reset;\n^gray;Apply with right-click",
+  "shortdescription": "Overcharging Sidegrade Kit",
+  "scripts": [ "/scripts/augments/weirder_upgrades.lua" ]
+}

@@ -1,0 +1,12 @@
+{
+  "author" : "Chaka the Mossy, Terrabound, FoLFo, HЭД",
+  "description" : "Mod that adds various adjusts to the main game. As for now, not quite full-release, but  here is [h2]what it does:[/h2]\n[h1] Combat corrections: [/h1]\n- Pets now are actually useful. Amount of them being out at once now progresses, being basis for class based on using pets to do the bidding\n- Whips increase their damage depending on the amount of minion slots that player can occupy at current moment. Lucaine Energy Whip has its alt ability scale with minion slots as well\n- Predator armor is reworked, juust a bit(all damage, no armor or health. Hey, you can run faster)\n\n- Corresponding masks of Florans and Apex are now giving obscene buffs to your minions. Dont worry, they die just a little bit slower\n- Weapons work two times faster. NPCs can utilize this. Can you?\n[h1] World corrections: [/h1]\n- Gas giants are now indeed visitable and not too hostile.... just grab more ropes and grappling hooks! The wind is blowing, and deep inside them you might find someone actively hiding...\n- Every boss has some platforming, rework of bosses upcoming\n- Remember Esther? She now doesn't bother with order of missions related to artifacts. Now you can do Glitch mission first if you found them first\n[h1] Combat additions: [/h1]\n- Look for staves and weapons that provide your minions and friends with buffs!\n- funny speedrunner weapon. I mean not exactly, but try digging out something with it, after you find some titanium.\n\n\n\n\n- COMPATIBLE WITH ZTARBOUND, PANDORA'S BOX(LEGACY), CUSTOMIZABLECREW+ AND CORBENT'SINTERACTIVECREW\n- Shouldn't conflict with most of the mods on the workshop",
+  "friendlyName" : "Grand Unbreaking",
+  "friendlyname" : "EtUltra",
+  "link" : "steam://url/CommunityFilePage/3292101143",
+  "name" : "zzzcvc",
+  "priority" : 100,
+  "steamContentId" : "3292101143",
+  "tags" : "Planets and Environments|NPCs and Creatures|Weapons|Quests|Dungeons|Mechanics|Armor and Clothes",
+  "version" : "0.5.2"
+}

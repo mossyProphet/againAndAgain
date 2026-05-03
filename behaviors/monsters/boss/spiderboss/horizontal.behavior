@@ -1,0 +1,107 @@
+{
+  "name": "spiderboss-horizontal",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/math.lua",
+    "/scripts/actions/position.lua",
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/monster.lua",
+    "/scripts/actions/projectiles.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/sensor.lua"
+  ],
+  "parameters": {
+    "acidSprayConfig": { "power": 20 }
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      
+
+        
+        {
+          "title": "repeater",
+          "type": "decorator",
+          "name": "repeater",
+          "parameters": {
+            "maxLoops": { "value": 40 }
+          },
+          "child": {
+            "title": "sequence",
+            "type": "composite",
+            "name": "sequence",
+            "parameters": {},
+            "children": [
+              //{
+              //  "title": "playSound",
+              //  "type": "action",
+              //  "name": "playSound",
+              //  "parameters": {
+              //    "sound": { "value": "vomit" }
+              //  }
+              //},
+              {
+                "title": "playSound",
+                "type": "action",
+                "name": "playSound",
+                "parameters": {
+                  "sound": { "value": "spit" }
+                }
+              },
+              {
+                "title": "vecRotate",
+                "type": "action",
+                "name": "vecRotate",
+                "parameters": {
+                  "direction": { "key": "toTarget" },
+                  "vector": { "value": [ 0, 0 ] }
+                },
+                "output": {
+                  "vector": "fireOffsetTu"
+                }
+              },
+              {
+                "title": "vecRotate",
+                "type": "action",
+                "name": "vecRotate",
+                "parameters": {
+                  "angle": { "value": 3.0 },
+                  "vector": { "key": "fireVector" }
+                },
+                "output": {
+                  "vector": "fireVector"
+                }
+              },
+              {
+                "title": "spawnProjectile",
+                "type": "action",
+                "name": "spawnProjectile",
+                "parameters": {
+                  "aimVector": { "key": "fireVector" },
+                  "offset": { "key": "fireOffsetTu" },
+                  "projectileConfig": { "value": "<acidSprayConfig>" },
+                  "projectileType": { "value": "acidglobule" }
+                }
+              },
+              {
+                "title": "timer",
+                "type": "action",
+                "name": "timer",
+                "parameters": {
+                  "time": { "value": 0.05 }
+                }
+              }
+
+
+
+            ]
+          }
+        }
+      
+    ]
+  }
+}

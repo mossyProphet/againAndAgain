@@ -1,0 +1,26 @@
+[
+    {
+        "op": "add",
+        "path": "/so_occasusrep",
+        "value": {
+            "representativeItem": "so_occasusrep",
+            "playerMax": 999999
+        }
+    },
+    {
+        "op": "add",
+        "path": "/so_hrassrep",
+        "value": {
+            "representativeItem": "so_hrassrep",
+            "playerMax": 999999
+        }
+    },
+    {
+        "op": "add",
+        "path": "/so_chempromrep",
+        "value": {
+            "representativeItem": "so_chempromrep",
+            "playerMax": 999999
+        }
+    }
+]

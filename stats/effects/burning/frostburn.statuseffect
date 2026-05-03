@@ -1,0 +1,16 @@
+{
+  "name" : "frostburn",
+  "blockingStat" : "iceStatusImmunity",
+
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "frostburn.lua"
+  ],
+
+  "animationConfig" : "frostburn.animation",
+
+  "label" : "Ultracold Oxidation",
+  "icon" : "/interface/statuses/ice.png"
+}

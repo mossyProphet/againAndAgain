@@ -1,0 +1,14 @@
+{
+  "name" : "afterstim",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "afterstim.lua"
+  ]
+
+  //"animationConfig" : "glow.animation",
+
+  //"label" : "Abscentive Syndrome",
+  //"icon" : "/interface/statuses/glow.png"
+}

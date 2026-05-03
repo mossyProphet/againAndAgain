@@ -1,0 +1,14 @@
+{
+  "name" : "dronehead",
+  
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "dronehead.lua"
+  ]
+
+  //"animationConfig" : "dronehead.animation"
+
+  //"label" : "Run Boost",
+  //"icon" : "/interface/statuses/haste.png"
+}

@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "durasteelbar", "count" : 30 },
+    { "item" : "diamond", "count" : 1 },
+    { "item" : "capturepod", "count" :  10},
+    { "item" : "battery", "count" : 1 },
+    { "item" : "wire", "count" : 6 },
+    { "item" : "siliconboard", "count" : 3 }
+  ],
+  "output" : {
+    "item" : "minionsaugment1",
+    "count" : 1
+  },
+  "groups" : [ "capturestation", "all" ]
+}

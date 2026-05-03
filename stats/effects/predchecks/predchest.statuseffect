@@ -1,0 +1,14 @@
+{
+  "name" : "predchest",
+  
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "predchest.lua"
+  ]
+
+  //"animationConfig" : "predchest.animation"
+
+  //"label" : "Run Boost",
+  //"icon" : "/interface/statuses/haste.png"
+}

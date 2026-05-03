@@ -1,0 +1,9 @@
+{
+  "name" : "iceworm",
+  "category" : "icewormtail",
+  "type" : "bodylit",
+
+  "frames" : {
+    "bodylit" : "lumothlit.png"
+  }
+}

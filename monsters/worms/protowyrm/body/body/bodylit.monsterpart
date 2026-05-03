@@ -1,0 +1,9 @@
+{
+  "name" : "protowyrm",
+  "category" : "protowyrmbody",
+  "type" : "bodylit",
+
+  "frames" : {
+    "bodylit" : "lumothlit.png"
+  }
+}

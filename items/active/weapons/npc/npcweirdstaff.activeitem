@@ -1,0 +1,97 @@
+{
+  "itemName": "npcweirdstaff",
+  "price": 0,
+  "maxStack": 1,
+  "rarity": "Common",
+  "description": "Powerfully strong to cover long distances.",
+  "shortdescription": "NPC Staff",
+  "tooltipKind": "gun",
+  "category": "staff",
+  "twoHanded": true,
+  "itemTags": [ "weapon", "ranged", "staff" ],
+  // "level" : 1,
+
+  "animation": "/items/active/weapons/ranged/gun.animation",
+  "animationParts": {},
+  "animationCustom": {},
+  "baseOffset": [ -1.25, 0.25 ],
+  "muzzleOffset": [ 0.0, 0.0 ],
+
+  "scripts": [ "/items/active/weapons/ranged/gun.lua" ],
+  "scriptDelta": 2,
+
+  "elementalType": "electric",
+
+  "primaryAbility": {
+    "scripts": [ "/items/active/weapons/ranged/gunfire.lua" ],
+    "class": "GunFire",
+
+    "fireTime": 0.5,
+    "baseDps": 7.5,
+    "energyUsage": 36.0,
+    "inaccuracy": 0.8,
+    "projectileCount": [ 1, 3 ],
+
+    "projectileType": "tzeentchdelayedfire",
+    "projectileParameters": {
+      "knockbackRange": [ 10, 30 ]
+    },
+
+    "stances": {
+      "idle": {
+        "armRotation": 0,
+        "weaponRotation": 0,
+        "twoHanded": true,
+
+        "allowRotate": true,
+        "allowFlip": true
+      },
+      "fire": {
+        "duration": 0,
+        "armRotation": 5,
+        "weaponRotation": 5,
+        "twoHanded": true,
+
+        "allowRotate": false,
+        "allowFlip": false
+      },
+      "cooldown": {
+        "duration": 0.25,
+        "armRotation": 5,
+        "weaponRotation": 5,
+        "twoHanded": true,
+
+        "allowRotate": false,
+        "allowFlip": false
+      }
+    }
+  },
+  "fireSounds": [ "/sfx/gun/sniper1.ogg", "/sfx/gun/sniper2.ogg", "/sfx/gun/sniper3.ogg", "/sfx/gun/sniper4.ogg" ],
+
+  "builder": "/items/buildscripts/buildweapon.lua",
+  "builderConfig": [
+    {
+      "animationParts": {
+        "butt": {
+          "path": "/items/active/weapons/staff/gunstaff/handle/<variant>.png",
+          "variants": 13,
+          "paletteSwap": true
+        },
+        "middle": {
+          "path": "/items/active/weapons/staff/gunstaff/crown/<variant>.png",
+          "variants": 6,
+          "paletteSwap": true
+        },
+        "barrel": {
+          "path": "/items/active/weapons/staff/gunstaff/stone/electric.png"
+
+        },
+        "muzzleFlash": "/items/active/weapons/ranged/muzzleflash.png"
+      },
+      //"gunParts": [ "butt", "middle", "barrel" ],
+      "altAbilities": [],
+      "palette": "/items/active/weapons/colors/ranged.weaponcolors",
+      "iconDrawables": [ "butt", "middle", "barrel" ]
+    }
+  ]
+}

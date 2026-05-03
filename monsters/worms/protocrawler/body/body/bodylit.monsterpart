@@ -1,0 +1,9 @@
+{
+  "name" : "protocrawler",
+  "category" : "protocrawlerbody",
+  "type" : "bodylit",
+
+  "frames" : {
+    "bodylit" : "lumothlit.png"
+  }
+}

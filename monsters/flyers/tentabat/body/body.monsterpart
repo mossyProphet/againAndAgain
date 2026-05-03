@@ -1,0 +1,9 @@
+{
+  "name" : "tentabat",
+  "category" : "tentabat",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "tentabat.png"
+  }
+}

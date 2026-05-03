@@ -1,0 +1,2317 @@
+[
+  [
+    {
+      "op": "add",
+      "path": "/ruinUndividedDrop",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "item": [ "fleshstrand", 42 ] },
+              { "item": [ "rawtentacle", 3 ] },
+              { "item": [ "bandage", 17 ] },
+              {
+                "item": [ "meleegun", 1 ]
+              }
+            ],
+            "pool": [
+
+              {
+                "weight": 0.6,
+                "pool": "goodWeapon"
+              }
+
+
+            ],
+            "poolRounds": [
+              [ 1, 1 ]
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/ruinTezanDrop",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "item": [ "fleshstrand", 42 ] },
+              { "item": [ "rawtentacle", 3 ] },
+              { "item": [ "oculemonmeringue", 9 ] },
+              {
+                "item": [ "cowmangler", 1 ]
+              }
+            ],
+            "pool": [
+
+              {
+                "weight": 0.6,
+                "pool": "goodWeapon"
+              }
+
+
+            ],
+            "poolRounds": [
+              [ 1, 1 ]
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/ruinKhorneDrop",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "item": [ "fleshstrand", 40 ] },
+              { "item": [ "rawtentacle", 3 ] },
+              { "item": [ "boneboo", 8 ] },
+              {
+                "item": [ "khornesword", 1 ]
+              }
+            ],
+            "pool": [
+
+              {
+                "weight": 0.6,
+                "pool": "goodWeapon"
+              }
+
+
+            ],
+            "poolRounds": [
+              [ 1, 1 ]
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/ruinNurgleDrop",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "item": [ "fleshstrand", 40 ] },
+              { "item": [ "rawtentacle", 3 ] },
+              { "item": [ "leather", 8 ] },
+              {
+                "item": [ "oilgland", 1 ]
+              }
+            ],
+            "pool": [
+
+              {
+                "weight": 0.6,
+                "pool": "goodWeapon"
+              }
+
+
+            ],
+            "poolRounds": [
+              [ 1, 1 ]
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/dreadwingDrop/0/1/fill",
+      "inverse": true
+    },
+    {
+      "op": "add",
+      "path": "/dreadwingDrop/0/1/fill",
+      "value": []
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/dreadwingDrop/0/1/fill/-",
+      "value": { "pool": "newdreadwingDrop" }
+    },
+    {
+      "op": "add",
+      "path": "/newdreadwingDrop",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "item": [ "titaniumbar", 42 ] },
+              { "item": [ "diamond", 3 ] },
+              { "item": [ "capturepod", 3 ] },
+              { "item": [ "bandage", 17 ] }
+            ],
+            "pool": [
+
+              {
+                "weight": 0.8,
+                "pool": "goodWeapon"
+              },
+              {
+                "weight": 0.2,
+                "item": "dreadwingaf"
+              }
+            ],
+            "poolRounds": [
+              [ 1, 1 ]
+            ]
+          }
+        ]
+      ]
+
+    }
+  ],
+
+
+
+
+  [
+    {
+      "op": "test",
+      "path": "/asranoxTreasure/0/1/fill",
+      "inverse": true
+    },
+    {
+      "op": "add",
+      "path": "/asranoxTreasure/0/1/fill",
+      "value": []
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/asranoxTreasure/0/1/fill/-",
+      "value": { "pool": "newasranoxTreasure" }
+    },
+    {
+      "op": "add",
+      "path": "/newasranoxTreasure",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "item": [ "money", 4000 ] },
+              { "item": "asranoxaf" },
+              { "item": "soluskatana" },
+              { "item": "oculemonmeringue" },
+              { "item": [ "bandage", 20 ] }
+            ],
+            "pool": [
+
+
+            ],
+            "poolRounds": [
+              [ 1, 1 ]
+            ]
+          }
+        ]
+      ]
+
+    }
+  ],
+
+
+  [
+    {
+      "op": "test",
+      "path": "/shockhopperDrop/0/1/fill",
+      "inverse": true
+    },
+    {
+      "op": "add",
+      "path": "/shockhopperDrop/0/1/fill",
+      "value": []
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/shockhopperDrop/0/1/fill/-",
+      "value": { "pool": "newshockhopperDrop" }
+    },
+    {
+      "op": "add",
+      "path": "/newshockhopperDrop",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "item": "bossshockhopper-codex" },
+              { "item": [ "durasteelore", 40 ] },
+              { "item": [ "redstim", 2 ] },
+              { "item": [ "bandage", 22 ] },
+              { "item": [ "diamond", 5 ] }
+            ],
+            "pool": [
+              {
+                "weight": 0.8,
+                "pool": "goodWeapon"
+              },
+              {
+                "weight": 0.2,
+                "item": "shockhoppermkiaf"
+              }
+            ],
+            "poolRounds": [
+              [ 1, 1 ]
+            ]
+          }
+        ]
+      ]
+
+    }
+  ],
+
+
+
+
+
+  [
+    {
+      "op": "test",
+      "path": "/guardianTreasure/0/1/fill",
+      "inverse": true
+    },
+    {
+      "op": "add",
+      "path": "/guardianTreasure/0/1/fill",
+      "value": []
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/guardianTreasure/0/1/fill/-",
+      "value": { "pool": "newguardianTreasure" }
+    },
+    {
+      "op": "add",
+      "path": "/newguardianTreasure",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "pool": "microformerTreasure" },
+              { "pool": "microformerTreasure" },
+
+              { "item": [ "money", 5000 ] }
+            ],
+            "pool": [
+            ],
+            "poolRounds": [
+              [ 1, 1 ]
+            ]
+          }
+        ]
+      ]
+
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/erchiushorrorTreasure/0/1/fill",
+      "inverse": true
+    },
+    {
+      "op": "add",
+      "path": "/erchiushorrorTreasure/0/1/fill",
+      "value": []
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/erchiushorrorTreasure/0/1/fill/-",
+      "value": { "pool": "newerchiushorrorTreasure" }
+    },
+    {
+      "op": "add",
+      "path": "/newerchiushorrorTreasure",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "item": [ "money", 2000 ] },
+              { "item": "erchiushorroraf" },
+              { "item": "erchiuseye" },
+              { "item": [ "salve", 25 ] }
+            ]
+          }
+        ]
+      ]
+
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ixodoomTreasure/0/1/fill",
+      "inverse": true
+    },
+    {
+      "op": "add",
+      "path": "/ixodoomTreasure/0/1/fill",
+      "value": []
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/ixodoomTreasure/0/1/fill/-",
+      "value": { "pool": "newixodoomTreasure" }
+    },
+    {
+      "op": "add",
+      "path": "/newixodoomTreasure",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "item": [ "money", 3000 ] },
+              { "item": "ixodoomaf" },
+              { "item": "ixodoomclaw" },
+              { "item": [ "salve", 30 ] },
+              { "item": [ "plantfibre", 32 ] },
+              { "item": "toxicjuice" }
+            ]
+          }
+        ]
+      ]
+
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/kluexavatarTreasure/0/1/fill",
+      "inverse": true
+    },
+    {
+      "op": "add",
+      "path": "/kluexavatarTreasure/0/1/fill",
+      "value": []
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/kluexavatarTreasure/0/1/fill/-",
+      "value": { "pool": "newkluexavatarTreasure" }
+    },
+    {
+      "op": "add",
+      "path": "/newkluexavatarTreasure",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "item": [ "money", 5000 ] },
+              { "item": "kluexavataraf" },
+              { "item": "kluexstaff" },
+              { "item": [ "bandage", 25 ] }
+            ]
+          }
+        ]
+      ]
+
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/bigapeTreasure/0/1/fill",
+      "inverse": true
+    },
+    {
+      "op": "add",
+      "path": "/bigapeTreasure/0/1/fill",
+      "value": []
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/bigapeTreasure/0/1/fill/-",
+      "value": { "pool": "newbigapeTreasure" }
+    },
+    {
+      "op": "add",
+      "path": "/newbigapeTreasure",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "item": [ "money", 5000 ] },
+              { "item": "bigapeaf" },
+              { "item": "miniknoglauncher" },
+              { "item": [ "bandage", 25 ] },
+              { "item": [ "medkit", 5 ] },
+              { "item": [ "redstim", 5 ] },
+              { "item": [ "banana", 1 ] },
+              { "item": [ "banana", 1 ] }
+            ]
+          }
+        ]
+      ]
+
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/bonedragonTreasure/0/1/fill",
+      "inverse": true
+    },
+    {
+      "op": "add",
+      "path": "/bonedragonTreasure/0/1/fill",
+      "value": []
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/bonedragonTreasure/0/1/fill/-",
+      "value": { "pool": "newbonedragonTreasure" }
+    },
+    {
+      "op": "add",
+      "path": "/newbonedragonTreasure",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "item": [ "money", 6000 ] },
+              { "item": "bonedragonaf" },
+              { "item": "dragonhead" },
+              { "item": [ "bandage", 30 ] }
+            ]
+          }
+        ]
+      ]
+
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/swansongTreasure/0/1/fill",
+      "inverse": true
+    },
+    {
+      "op": "add",
+      "path": "/swansongTreasure/0/1/fill",
+      "value": []
+    }
+  ],
+  [
+    {
+      "op": "add",
+      "path": "/swansongTreasure/0/1/fill/-",
+      "value": { "pool": "newswansongTreasure" }
+    },
+    {
+      "op": "add",
+      "path": "/newswansongTreasure",
+      "value": [
+        [
+          1,
+          {
+            "fill": [
+              { "item": [ "money", 12000 ] },
+              { "item": "swansongaf" },
+              { "item": "mecharmsoluskatana" },
+              { "item": "mechblueprint5" },
+              { "item": "mechblueprint6" }
+            ]
+          }
+        ]
+      ]
+
+    }
+  ],
+
+
+
+  [
+    {
+      "op": "replace",
+      "path": "/essenceDrop",
+      "value": [
+        [
+          0,
+          {
+            "pool": [
+              {
+                "weight": 0.5,
+                "item": [ "essence", 5 ]
+              },
+              {
+                "weight": 0.75,
+                "item": [ "essence", 7 ]
+              },
+              {
+                "weight": 1.00,
+                "item": [ "essence", 8 ]
+              },
+              {
+                "weight": 0.75,
+                "item": [ "essence", 10 ]
+              },
+              {
+                "weight": 0.5,
+                "item": [ "essence", 12 ]
+              }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "op": "add",
+      "path": "/newRuin",
+      "value": [
+        [
+          0,
+          {
+            "fill": [
+              { "pool": "rareSpaceItem" },
+              { "pool": "uniqueWeapon" }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "op": "add",
+      "path": "/newasranoxRuinTreasure",
+      "value": [
+        [
+          1,
+          {
+            "pool": [
+              {
+                "weight": 0.8,
+                "item": [ "money", 1500 ]
+              },
+              {
+                "weight": 0.1,
+                "item": "asranoxaf"
+              },
+              {
+                "weight": 0.1,
+                "item": "soluskatana"
+              }
+            ],
+            "poolRounds": [
+              [ 1, 1 ]
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+
+
+
+
+  // ================================
+  //       TROPHY EXTENSIONS
+  // ================================
+
+  [
+    {
+      "op": "test",
+      "path": "/ixolingTreasure/0/1/poolRounds"
+    },
+    {
+      "op": "add",
+      "path": "/ixolingTreasure/0/1/poolRounds/-",
+      "value": [ 0.018, 1 ]
+    }
+  ],
+
+
+  [
+    {
+      "op": "test",
+      "path": "/adultpoptopTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/adultpoptopTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "adultpoptopaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/motherpoptopTreasure/0/1/fill"
+    },
+    {
+      "op": "add",
+      "path": "/motherpoptopTreasure/0/1/fill/-",
+      "value": { "item": [ "salve", 5 ] }
+    },
+    {
+      "op": "add",
+      "path": "/motherpoptopTreasure/0/1/fill/-",
+      "value": { "item": [ "plantfibre", 72 ] }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/anglureTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/anglureTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "anglureaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/agrobatTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/agrobatTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "agrobataf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/batongTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/batongTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "batongaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/bobfaeTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/bobfaeTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "bobfaeaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/bobotTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/bobotTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "bobotaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/bulbopTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/bulbopTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "bulbopaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/capricoatTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/capricoatTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "capricoataf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/crabcanoTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/crabcanoTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "crabcanoaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/crustoiseTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/crustoiseTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "crustoiseaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/crutterTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/crutterTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "crutteraf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/fennixTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/fennixTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "fennixaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gleapTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/gleapTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "gleapaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/hemogoblinTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/hemogoblinTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "hemogoblinaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/hypnareTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/hypnareTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "hypnareaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ignomeTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/ignomeTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "ignomeaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/iguarmorTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/iguarmorTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "iguarmoraf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/kluexsentryTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/kluexsentryTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.01,
+        "item": "kluexsentryaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/lilodonTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/lilodonTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "lilodonaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/lumothTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/lumothTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "lumothaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/mandrafloraTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/mandrafloraTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "mandrafloraaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/miasmopTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/miasmopTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "miasmopaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/monopusTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/monopusTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "monopusaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/narfinTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/narfinTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "narfinaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/nutmidgelingTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/nutmidgelingTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "nutmidgeaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/oculobTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/oculobTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "oculobaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ooglerTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/ooglerTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "oogleraf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/orbideTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/orbideTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "orbideaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/paraspriteTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/paraspriteTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.01,
+        "item": "paraspriteaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/cosmicintruderTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/cosmicintruderTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "cosmicintruderaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/paratailTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/paratailTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "paratailaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/peblitTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/peblitTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "peblitaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/petricubTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/petricubTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "petricubaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/pipkinTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/pipkinTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "pipkinaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/poptopTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/poptopTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "poptopaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/pteropodTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/pteropodTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "pteropodaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/pulpinTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/pulpinTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "pulpinaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/pyromantleTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/pyromantleTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "pyromantleaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/quagmuttTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/quagmuttTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "quagmuttaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ringramTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/ringramTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "ringramaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scandroidTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/scandroidTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "scandroidaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scaveranTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/scaveranTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "scaveranaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/skimbusTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/skimbusTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "skimbusaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/smoglinTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/smoglinTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "smoglinaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/snagglerTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/snagglerTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "snaggleraf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/snauntTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/snauntTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "snauntaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/snuffishTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/snuffishTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "snuffishaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/spookitTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/spookitTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "spookitaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/sporgusTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/sporgusTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "sporgusaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/squeemTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/squeemTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "squeemaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gosmetTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/gosmetTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "gosmetaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/taroniTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/taroniTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "taroniaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/tinticTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/tinticTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "tinticaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/toumingoTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/toumingoTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "toumingoaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/trictusTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/trictusTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "trictusaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/triplodTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/triplodTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "triplodaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/voltipTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/voltipTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "voltipaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/wisperTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/wisperTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "wisperaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/yokatTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/yokatTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.003,
+        "item": "yokataf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/adultpoptopVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/adultpoptopVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "adultpoptopaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/anglureVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/anglureVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "anglureaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/agrobatVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/agrobatVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "agrobataf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/batongVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/batongVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "batongaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/bobfaeVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/bobfaeVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "bobfaeaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/bobotVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/bobotVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "bobotaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/bulbopVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/bulbopVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "bulbopaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/capricoatVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/capricoatVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "capricoataf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/crabcanoVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/crabcanoVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "crabcanoaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/crustoiseVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/crustoiseVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "crustoiseaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/crutterVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/crutterVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "crutteraf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/fennixVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/fennixVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "fennixaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/gleapVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/gleapVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "gleapaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/hemogoblinVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/hemogoblinVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "hemogoblinaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/hypnareVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/hypnareVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "hypnareaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ignomeVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/ignomeVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "ignomeaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/iguarmorVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/iguarmorVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "iguarmoraf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/lilodonVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/lilodonVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "lilodonaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/lumothVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/lumothVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "lumothaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/mandrafloraVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/mandrafloraVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "mandrafloraaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/miasmopVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/miasmopVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "miasmopaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/monopusVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/monopusVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "monopusaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/narfinVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/narfinVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "narfinaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/nutmidgelingVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/nutmidgelingVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "nutmidgeaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/oculobVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/oculobVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "oculobaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ooglerVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/ooglerVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "oogleraf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/orbideVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/orbideVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "orbideaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/paratailVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/paratailVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "paratailaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/peblitVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/peblitVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "peblitaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/petricubVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/petricubVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "petricubaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/pipkinVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/pipkinVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "pipkinaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/poptopVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/poptopVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "poptopaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/pteropodVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/pteropodVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "pteropodaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/pulpinVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/pulpinVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "pulpinaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/pyromantleVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/pyromantleVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "pyromantleaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/quagmuttVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/quagmuttVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "quagmuttaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/ringramVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/ringramVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "ringramaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scandroidVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/scandroidVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "scandroidaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/scaveranVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/scaveranVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "scaveranaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/skimbusVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/skimbusVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "skimbusaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/smoglinVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/smoglinVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "smoglinaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/snagglerVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/snagglerVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "snaggleraf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/snauntVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/snauntVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "snauntaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/snuffishVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/snuffishVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "snuffishaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/spookitVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/spookitVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "spookitaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/sporgusVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/sporgusVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "sporgusaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/squeemVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/squeemVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "squeemaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/taroniVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/taroniVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "taroniaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/tinticVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/tinticVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "tinticaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/toumingoVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/toumingoVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "toumingoaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/trictusVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/trictusVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "trictusaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/triplodVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/triplodVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "triplodaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/voltipVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/voltipVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "voltipaf"
+      }
+    }
+  ],
+  [
+    {
+      "op": "test",
+      "path": "/wisperVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/wisperVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "wisperaf"
+      }
+    }
+  ],
+
+  [
+    {
+      "op": "test",
+      "path": "/yokatVaultTreasure/0/1/pool"
+    },
+    {
+      "op": "add",
+      "path": "/yokatVaultTreasure/0/1/pool/-",
+      "value": {
+        "weight": 0.012,
+        "item": "yokataf"
+      }
+    }
+  ],
+
+  [
+
+    {
+      "op": "add",
+      "path": "/pugziodTreasure",
+      "value": [
+        [
+          1,
+          {
+            "pool": [
+              {
+                "weight": 0.79,
+                "pool": "money"
+              },
+              {
+                "weight": 0.10,
+                "item": "alienmeat"
+              },
+              {
+                "weight": 0.01,
+                "pool": "basicTreasure"
+              },
+              {
+                "weight": 0.5,
+                "item": "cookedtentacle"
+              },
+              {
+                "weight": 0.5,
+                "item": "rawtentacle"
+              }
+            ]
+          }
+        ]
+      ]
+    }
+
+  ]
+]
+

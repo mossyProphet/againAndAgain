@@ -1,0 +1,10 @@
+{
+  "name" : "combatron",
+  "category" : "combatron",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "combatron.png",
+    "bodyfullbright" : "combatronfullbright.png"
+  }
+}

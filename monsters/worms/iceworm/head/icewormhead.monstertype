@@ -1,0 +1,230 @@
+{
+  "type": "icewormhead",
+  "shortdescription": "Atmospheric Gliderion",
+  "description": "In the dense atmosphere of a gas giant, this worm doesn't need much to move. Same is, weirdly, true for the usual, breathable atmosphere",
+
+  "categories": [ "icewormhead" ],
+  "parts": [ "body", "bodylit" ],
+
+  "animation": "icewormhead.animation",
+
+  "dropPools": [
+    {
+      "default": "wisperTreasure",
+      "bow": "wisperHunting"
+    }
+  ],
+
+  "baseParameters": {
+    "scripts": [
+      "/scripts/spizdili/wormheadflier.lua"
+    ],
+    //"flip": true,
+    "size": 10,
+    "bodySegment": "icewormbody",
+    "speed": 13,
+    "capturedLevel": 7,
+    "treatLiquidAsGround": true,
+    "treatOffscreenAsGround": true,
+    "renderLayer": "Monster-3",
+    "behavior": "monster",
+
+    "behaviorConfig": {
+      "damageOnTouch": true,
+
+      "targetQueryRange": 20,
+      "targetOnDamage": true,
+      "keepTargetInSight": true,
+      "keepTargetInRange": 30,
+      "targetOutOfSightTime": 5.0,
+
+      "foundTargetActions": [],
+
+      "fleeActions": [],
+
+      "hostileActions": [
+        
+      ],
+
+      "periodicActions": [],
+
+      "approachActions": [
+        {
+          "name": "approach-swarm",
+          "parameters": {
+            "usePathfinding": false
+          }
+        }
+      ],
+
+      "followActions": [
+        {
+          "name": "approach-teleport",
+          "parameters": {
+          }
+        },
+        {
+          "name": "approach-fly",
+          "parameters": {
+            "usePathfinding": false
+          }
+        }
+      ],
+
+      "wanderActions": [
+        {
+          "name": "emerge-fly"
+        },
+        {
+          "name": "wander-fly",
+          "parameters": {
+            "wanderTime": [ 2, 4 ],
+            "groundDistance": 22,
+            "ceilingDistance": 22,
+            "xVelocity": 20,
+            "yVelocity": 20
+          }
+        }
+      ],
+
+      "concurrentActions": [],
+
+      "concurrentHostileActions": []
+    },
+
+    "touchDamage": {
+      "poly": [
+        [ 0.125, 1.125 ],
+        [ 0.5, 0.75 ],
+        [ 0.5, -0.75 ],
+        [ 0.125, -1.125 ],
+        [ -0.125, -1.125 ],
+        [ -0.5, -0.75 ],
+        [ -0.5, 0.75 ],
+        [ -0.125, 1.125 ]
+      ],
+      "damage": 10,
+
+      "teamType": "enemy",
+      "damageSourceKind": "lash",
+      "knockback": 20,
+      "statusEffects": []
+    },
+
+    "metaBoundBox": [ -4, -4, 4, 4 ],
+    "scale": 1.0,
+
+    "movementSettings": {
+      "collisionEnabled": false,
+      "collisionPoly": [
+        [ 0.125, 1.125 ],
+        [ 0.5, 0.75 ],
+        [ 0.5, -0.75 ],
+        [ 0.125, -1.125 ],
+        [ -0.125, -1.125 ],
+        [ -0.5, -0.75 ],
+        [ -0.5, 0.75 ],
+        [ -0.125, 1.125 ]
+      ],
+
+      "mass": 0.5,
+      "walkSpeed": 4,
+      "runSpeed": 10,
+      "gravityEnabled": false,
+
+      "airFriction": 2,
+      "airForce": 50,
+      "flySpeed": 10
+    },
+
+    "bodyMaterialKind": "robotic",
+
+    "knockoutTime": 0.3,
+    "knockoutAnimationStates": {
+      "damage": "stunned"
+    },
+    "deathParticles": "deathPoof",
+    "knockoutEffect": "",
+
+    "statusSettings": {
+      "statusProperties": {
+        "targetMaterialKind": "robotic"
+      },
+
+      "appliesEnvironmentStatusEffects": false,
+      "appliesWeatherStatusEffects": true,
+      "minimumLiquidStatusEffectPercentage": 0.1,
+
+      "primaryScriptSources": [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta": 5,
+
+      "stats": {
+        "knockbackStunTime": {
+          "baseValue": 0.25
+        },
+        "knockbackThreshold": {
+          "baseValue": 9
+        },
+        "maxHealth": {
+          "baseValue": 300
+        },
+        "protection": {
+          "baseValue": 0.0
+        },
+        "healthRegen": {
+          "baseValue": 0.0
+        },
+        "powerMultiplier": {
+          "baseValue": 1.0
+        },
+        "physicalResistance": {
+          "baseValue": 0.0
+        },
+        "fireResistance": {
+          "baseValue": 0.0
+        },
+        "fireStatusImmunity": {
+          "baseValue": 0.0
+        },
+        "iceResistance": {
+          "baseValue": 0.0
+        },
+        "iceStatusImmunity": {
+          "baseValue": 0.0
+        },
+        "electricResistance": {
+          "baseValue": -0.5
+        },
+        "electricStatusImmunity": {
+          "baseValue": 0.0
+        },
+        "poisonResistance": {
+          "baseValue": 0.5
+        },
+        "poisonStatusImmunity": {
+          "baseValue": 1.0
+        }
+      },
+
+      "resources": {
+        "stunned": {
+          "deltaValue": -1.0,
+          "initialValue": 0.0
+        },
+        "health": {
+          "maxStat": "maxHealth",
+          "deltaStat": "healthRegen",
+          "defaultPercentage": 100
+        }
+      }
+    },
+
+    "mouthOffset": [ 0, 0 ],
+    "feetOffset": [ 0, -8 ],
+    "capturable": true,
+    "captureHealthFraction": 0.5,
+    "nametagColor": [ 4, 255, 255 ]
+  }
+}

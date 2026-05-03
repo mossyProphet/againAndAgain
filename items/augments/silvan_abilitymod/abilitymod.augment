@@ -1,0 +1,21 @@
+{
+  "itemName": "silvan_abilitymod",
+  "price": 1500,
+  "rarity": "common",
+  "itemTags": ["weapon", "ranged", "pistol", "gun", "nonweapon"],
+  "sb_unupgradeable": true,
+  "category": "pistol",
+  "tooltipFields": {
+    "subtitle": "Weapon Mod"
+  },
+  "subtitle": "Weapon Mod (%s)",
+  "description": "Replaces the %s^reset; ability of a generated weapon if it can naturally have this ability.\n^gray;Apply with right-click",
+  "slotNames": {
+    "primary": "^blue;primary",
+    "alt": "^red;special"
+  },
+  "elementalNameDescription": "Element", //This replaces <elementalName> in ability names. ie "Fire Rain" becomes "Element Rain"
+  "shortdescription": "",
+  "scripts": ["/scripts/augments/sb_ability.lua"],
+  "builder": "/items/buildscripts/starbound/buildabilitymod.lua"
+}

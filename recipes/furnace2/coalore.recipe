@@ -1,0 +1,11 @@
+{
+  "input" : [
+    {
+      "item": "logblock",
+      "count": 20
+    }
+  ],
+  "output" : { "item" : "coalore", "count" : 1 },
+  "duration" : 0.05,
+  "groups" : [ "craftingfurnace2", "bars", "all" ]
+}

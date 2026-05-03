@@ -1,0 +1,9 @@
+{
+"name" : "hellenidlegs",
+  
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "hellenidlegs.lua"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "goldnuggetb", "count" : 1 }
+  ],
+  "output" : { "item" : "goldbar", "count" : 45 },
+  "duration" : 2.15,
+  "groups" : [ "craftingfurnace2", "bars", "all" ]
+}

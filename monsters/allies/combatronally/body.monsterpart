@@ -1,0 +1,10 @@
+{
+  "name" : "combatronally",
+  "category" : "combatronally",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "combatronally.png",
+    "bodyfullbright" : "combatronallyfullbright.png"
+  }
+}

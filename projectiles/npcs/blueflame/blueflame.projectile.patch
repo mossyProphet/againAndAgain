@@ -1,0 +1,29 @@
+[
+  {
+    "op": "replace",
+    "path": "/statusEffects/0",
+    "value": "frostburn"
+  },
+  {
+    "op": "replace",
+    "path": "/hydrophobic",
+    "value": false
+  },
+  {
+    "op": "replace",
+    "path": "/damageKindImage",
+    "value": "/interface/statuses/ice.png"
+  },
+  {
+    "op": "replace",
+    "path": "/damageKind",
+    "value": "ice"
+  },
+  
+  {
+    "op": "replace",
+    "path": "/bounces",
+    "value": -1
+  }
+
+]

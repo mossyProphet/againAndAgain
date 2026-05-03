@@ -1,0 +1,12 @@
+																		   
+[
+ {
+  "op": "add",
+  "path": "/chain/waveform",
+  "value": {
+   "frequency": 10,
+   "movement": 1000,
+   "amplitude": 4
+  }
+ }
+]

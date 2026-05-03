@@ -1,0 +1,9 @@
+{
+  "name" : "tentaclemortar",
+  "category" : "tentaclemortar",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "tentaclemortar.png"
+  }
+}

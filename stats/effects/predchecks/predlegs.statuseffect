@@ -1,0 +1,14 @@
+{
+  "name" : "predlegs",
+  
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "predlegs.lua"
+  ]
+
+  //"animationConfig" : "predlegs.animation"
+
+  //"label" : "Run Boost",
+  //"icon" : "/interface/statuses/haste.png"
+}

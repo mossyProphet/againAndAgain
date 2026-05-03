@@ -1,0 +1,27 @@
+{
+  "projectileName" : "ruinousmat",
+  "physics" : "grenade",
+  "image" : "ruinousmat.png",
+  "animationCycle" : 1,
+  "frameNumber" : 1,
+  "power" : 20,
+
+  "speed" : 45,
+
+  "actionOnReap" : [
+    {
+      "action" : "tile",
+      "materials" : [
+        {"kind" : "tentacleblock"}
+      ]
+    },
+    {
+      "action" : "tile",
+      "materials" : [
+        {"kind" : "jellyblock"}
+      ]
+    }
+  ],
+  "damageKind" : "default"//,
+  //"emitters" : [ "javelinred" ]
+}

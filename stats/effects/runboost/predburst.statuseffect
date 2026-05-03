@@ -1,0 +1,17 @@
+{
+  "name" : "predburst",
+  "effectConfig": {
+    "powerModifier": 1.40,
+    "speedModifier": 2.60
+  },
+  "defaultDuration" : 15,
+
+  "scripts" : [
+    "predburst.lua"
+  ],
+
+  "animationConfig" : "predburst.animation",
+
+  "label" : "Rampage!",
+  "icon" : "/interface/statuses/rage.png"
+}

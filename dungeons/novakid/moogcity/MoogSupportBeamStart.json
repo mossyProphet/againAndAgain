@@ -1,0 +1,56 @@
+{ "compressionlevel":-1,
+ "height":25,
+ "infinite":false,
+ "layers":[
+        {
+         "compression":"zlib",
+         "data":"eJw7zsDAcHwUj+JRPIpH8SgexTTDAHK3cU0=",
+         "encoding":"base64",
+         "height":25,
+         "id":2,
+         "name":"back",
+         "opacity":0.47,
+         "type":"tilelayer",
+         "visible":true,
+         "width":19,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "compression":"zlib",
+         "data":"eJzt0lsKACEIBdB22+razKxovoJBvA9hIAgFP7I4pTSGjsc4k8UqpGPNkKjWVlunrP2fXYt5K5z7rlG92h97b8VCPTIL3a2szMtmwuaFZqbe5Ow7FusxWupe13IcZaE53m79kS+q5a5D",
+         "encoding":"base64",
+         "height":25,
+         "id":1,
+         "name":"front",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":19,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":3,
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.10.2",
+ "tileheight":8,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Packed\/tilesets\/packed\/materials.json"
+        }, 
+        {
+         "firstgid":198,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Packed\/tilesets\/packed\/miscellaneous.json"
+        }, 
+        {
+         "firstgid":222,
+         "source":"..\/..\/..\/..\/..\/Program Files (x86)\/Steam\/steamapps\/common\/Packed\/tilesets\/packed\/objects-by-colonytag\/novakid.json"
+        }],
+ "tilewidth":8,
+ "type":"map",
+ "version":1.1,
+ "width":19
+}

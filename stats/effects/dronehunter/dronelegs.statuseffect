@@ -1,0 +1,14 @@
+{
+  "name" : "dronelegs",
+  
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "dronelegs.lua"
+  ]
+
+  //"animationConfig" : "dronelegs.animation"
+
+  //"label" : "Run Boost",
+  //"icon" : "/interface/statuses/haste.png"
+}

@@ -1,0 +1,30 @@
+{
+  "itemName" : "zzzdynamite",
+  "price" : 200,
+  "rarity" : "Common",
+  "category" : "throwableItem",
+  "inventoryIcon" : "zzzdynamite.png",
+  "image" : "zzzdynamite.png",
+  "shortdescription" : "Dynamite Stick",
+  "description" : "Heavy, heavy load of explosives. Also try speedruns!",
+
+  "ammoUsage" : 1,
+
+  "edgeTrigger" : true,
+  "windupTime" : 0.0,
+  "cooldown" : 1.6,
+
+  "projectileType" : "zzzdynamite",
+  "projectileConfig" : {
+    "speed" : 15,
+    "power" : 320,
+    "periodicActions" : [
+      {
+        "time" : 0,
+        "repeat" : false,
+        "action" : "sound",
+        "options" : [ "/sfx/projectiles/throw_item.ogg" ]
+      }
+    ]
+  }
+}

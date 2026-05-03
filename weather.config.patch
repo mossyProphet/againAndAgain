@@ -1,0 +1,43 @@
+[{
+	"op": "add",
+	"path": "/neptune",
+	"value": [[0.1, "permanado"],
+    [0.9, "snowstorm"]]
+},
+
+
+ {
+  "op": "replace",
+  "path": "/tentacles/0/1",
+  "value": "storm"
+ },
+ {
+  "op": "replace",
+  "path": "/tentacles/0/0",
+  "value": 0.25
+ },
+ {
+  "op": "add",
+  "path": "/tentacles/1",
+  "value": [
+   0.25,
+   "acidrain"
+  ]
+ },
+ {
+  "op": "add",
+  "path": "/tentacles/2",
+  "value": [
+   0.25,
+   "ruinousmeat"
+  ]
+ },
+ {
+  "op": "add",
+  "path": "/tentacles/3",
+  "value": [
+   0.25,
+   "snowstorm"
+  ]
+ }
+]

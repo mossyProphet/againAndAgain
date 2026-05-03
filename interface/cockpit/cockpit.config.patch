@@ -1,0 +1,104 @@
+[
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/neptune",
+    "value": [
+      "What did you expected amidst ^#00808a;strongest winds in the Galaxy?^white;",
+      "Now, usually nobody does land here. Neither will you - ^#00808a;its a gas giant, dummy^white;",
+      "^#00808a;A swirling mass of vibrant clouds and fierce storms.^white; Advised to use ^#00808a;anti-wind protection^white;",
+      "This gas giant features ^#00808a;fluffy, cotton-like clouds that hide powerful storms beneath.^white; You can use floating observation platforms.... just find them first",
+      "This is a gas giant with ^#00808a;constant, raging storms that create a cacophony of sounds.^white; Wear ear-protection!"
+    ]
+  },
+
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/tentacle",
+    "value": [
+      "^#A39180;Odd energy signatures,^white; reminiscent of those radiated by the remnants of Earth",
+      "This world looks oddly... ^#A39180;chaotic.^white; Proceed with caution",
+      "Readings indicate that the landing site is of unusual hue. ^#A39180; It also shifts and whispers^white;"
+    ]
+  },
+
+  {
+    "op": "add",
+    "path": "/planetTypeNames/tentacle",
+    "value": "Unmade Planet"
+  },
+
+  {
+    "op": "add",
+    "path": "/planetTypeColors/tentacle",
+    "value": [ 95, 85, 75 ]
+  },
+
+  {
+    "op": "add",
+    "path": "/planetTypeNames/neptune",
+    "value": "Gas Giant"
+  },
+
+  {
+    "op": "add",
+    "path": "/planetTypeColors/neptune",
+    "value": [ 135, 135, 35 ]
+  },
+
+
+  {
+    "op": "add",
+    "path": "/visitableTypeDescription/neutronswarm",
+    "value": [
+      "Swarm of asteroids orbits around neutron star"
+    ]
+  },
+
+  {
+    "op": "add",
+    "path": "/planetTypeNames/neutronswarm",
+    "value": "Neutron Swarm"
+  },
+
+  {
+    "op": "add",
+    "path": "/planetTypeColors/neutronswarm",
+    "value": [ 125, 235, 255 ]
+  },
+
+
+  {
+    "op": "add",
+    "path": "/starTypeNames/blackhole",
+    "value": "Black Hole"
+  },
+
+  {
+    "op": "add",
+    "path": "/displayWeathers/permanado",
+    "value": {
+      "displayName": "Snownado",
+      "icon": "/interface/cockpit/weather/permanado.png"
+    }
+  },
+
+  {
+    "op": "add",
+    "path": "/starTypeColors/blackhole",
+    "value": [
+      120,
+      90,
+      6,
+      255
+    ]
+  },
+
+  {
+    "op": "add",
+    "path": "/displayOres/precursomium",
+    "value": {
+      "displayName": "Precursomium",
+      "icon": "/items/generic/crafting/precursomium.png"
+    }
+  }
+]

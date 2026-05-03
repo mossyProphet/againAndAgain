@@ -1,0 +1,52 @@
+{
+  "projectileName": "slaaneshaim",
+  "physics": "laser",
+  "timeToLive": 0.5,
+  "image": "slaaneshaim.png",
+  "animationCycle": 0.8,
+  "frameNumber": 8,
+  "windupFrames": 1,
+  "winddownFrames": 1,
+  "periodicActions": [
+    {
+      "time": 9.7,
+      "repeat": false,
+      "action": "sound",
+      "options": [ "/sfx/tech/vehicle_disappear1.ogg" ]
+    }
+  ],
+  "actionOnReap": [
+    {
+      "action": "config",
+      "file": "/projectiles/explosions/slaaneshblast/slaaneshblast.config"
+    }
+  ],
+  "speed": 0,
+  "power": 0,
+
+  "onlyHitTerrain": true,
+
+  "boundBox": [ -7, -7, 7, 7 ],
+  "physicsForces": {
+    "pull": {
+      "type": "RadialForceRegion",
+      "categoryWhitelist": [ "monster", "player", "npc", "vehicle", "itemdrop" ],
+      "outerRadius": 7,
+      "innerRadius": 3,
+      "targetRadialVelocity": -40,
+      "controlForce": 60
+    }
+  },
+
+  "renderLayer": "Player+1",
+  "orientationLocked": true,
+  "fullbright": true,
+  "emitters": [],
+
+  "piercing": true,
+  "bounces": -1,
+
+  "scripts": [ "/projectiles/activeitems/staff/staffprojectile.lua" ],
+
+  "persistentAudio": "/sfx/projectiles/zone_pull_loop.ogg"
+}

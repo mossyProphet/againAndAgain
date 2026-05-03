@@ -1,0 +1,49 @@
+[
+  {
+    "op": "replace",
+    "path": "/statusControllerSettings/stats/maxHealth/baseValue",
+    "value": 120.0
+  },
+  {
+    "op": "replace",
+    "path": "/statusControllerSettings/stats/maxEnergy/baseValue",
+    "value": 80.0
+  },
+  {
+    "op": "replace",
+    "path": "/statusControllerSettings/stats/energyRegenPercentageRate/baseValue",
+    "value": 16.125
+  },
+  {
+    "op": "replace",
+    "path": "/statusControllerSettings/stats/powerMultiplier/baseValue",
+    "value": 1.2
+  },
+
+
+  {
+      "op": "add",
+      "path": "/statusControllerSettings/stats/gunHeatMax",
+      "value": {
+        "baseValue": 100.0
+      }
+    },
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/resources/gunHeat",
+      "value": {
+        "maxStat": "gunHeatMax",
+        "initialValue": 0.0,
+        //"initialPercentage": 0.0,
+        "deltaStat": "gunHeatRegen"
+      }
+    },
+    {
+      "op": "add",
+      "path": "/statusControllerSettings/stats/gunHeatRegen",
+      "value": {
+        "baseValue": -30.0
+      }
+    }
+
+]

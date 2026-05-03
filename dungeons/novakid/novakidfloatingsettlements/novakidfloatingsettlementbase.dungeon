@@ -1,0 +1,96 @@
+{
+	"metadata": {
+		"name": "novakidfloatingsettlementbase",
+		"species": "generic",
+		"rules": [],
+		"anchor": [ "base" ],
+		"gravity": 280,
+		"maxRadius": 1000000,
+		"maxParts": 40,
+		"protected": false
+		//"extendSurfaceFreeSpace": 18
+	},
+
+	"parts": [
+		{
+			"name": "base",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				]//,
+				//[
+				//	"doNotCombineWith": ["base"]
+				//]
+			],
+			"def": [ "tmx", "novakidfloatingsettlementbase.json" ]
+		},
+		{
+			"name": "centerbit1",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 3 ]
+				]
+			],
+			"def": [ "tmx", "novakidfloatingsettlementbasecentralbit1.json" ],
+			"chance": 1.0
+		},
+		
+		{
+			"name": "livingbit1",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 3 ]
+				]
+			],
+			"def": [ "tmx", "novakidfloatingsettlementbasecivilianspacelivingroom1.json" ],
+			"chance": 1.0
+		},
+		{
+			"name": "livingbit2",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				]
+			],
+			"def": [ "tmx", "novakidfloatingsettlementbasecivilianspacelivingroom2.json" ],
+			"chance": 1.0
+		},
+		{
+			"name": "livingbit3",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 3 ]
+				]
+			],
+			"def": [ "tmx", "novakidfloatingsettlementbasecivilianspacelivingroom3.json" ],
+			"chance": 1.0
+		},
+		{
+			"name": "nolivingbit1",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 3 ]
+				]
+			],
+			"def": [ "tmx", "novakidfloatingsettlementbasenonlivingspace1.json" ],
+			"chance": 1.0
+		},
+		{
+			"name": "nolivingbit2",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 3 ]
+				]
+			],
+			"def": [ "tmx", "novakidfloatingsettlementbasenonlivingspace2.json" ],
+			"chance": 1.0
+		}
+	]
+}

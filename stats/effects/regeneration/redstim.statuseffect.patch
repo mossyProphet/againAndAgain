@@ -1,0 +1,14 @@
+[
+  {
+    "op": "replace",
+    "path": "/scripts",
+    "value": [
+      "redstim.lua"
+    ]
+  },
+  {
+    "op": "replace",
+    "path": "/defaultDuration",
+    "value": 10
+  }
+]

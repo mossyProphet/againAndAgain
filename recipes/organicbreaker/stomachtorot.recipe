@@ -1,0 +1,7 @@
+{
+  "input" : [
+    { "item" : "stomachblock", "count" : 1 }
+  ],
+  "output" : { "item" : "rottenfood", "count" : 30 },
+  "groups" : [ "organicbreaker" ]
+}

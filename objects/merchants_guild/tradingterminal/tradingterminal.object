@@ -1,0 +1,118 @@
+{
+  "objectName": "tradingterminal",
+  "colonyTags": [ "human", "humanbunker", "mechanical", "commerce" ],
+  "rarity": "Common",
+  "description": "Ooh, what should I get?",
+  "shortdescription": "Trading Terminal",
+  "race": "human",
+  "category": "decorative",
+  "price": 150,
+  "lightColor": [ 113, 115, 216 ],
+  "printable": false,
+
+  "apexDescription": "A vending machine. No banana-flavoured snacks, sadly.",
+  "avianDescription": "Perfect to stave off hunger.",
+  "floranDescription": "Clever machine gives Floran treatsss.",
+  "glitchDescription": "Indecisive. I can't decide what to buy.",
+  "humanDescription": "Oh boy, it's the kind of vending machine where you win every time!",
+  "hylotlDescription": "A vending machine for sugary drinks. They will have to do.",
+  "novakidDescription": "A vendin' machine for sugary type drinks.",
+
+  "interactAction": "OpenMerchantInterface",
+  "interactData": {
+    "config": "/interface/windowconfig/merchant.config",
+    "paneLayoutOverride": {
+      "windowtitle": {
+        "title": " Trading Terminal",
+        "subtitle": " Also summons AI consultants!"
+      }
+    },
+    "buyFactor": 2.5,
+    "sellFactor": 0.2,
+    "items": [
+      { "item": "oculemonade" },
+      { "item": "soda" },
+      { "item": "bottledwater" }
+    ]
+  },
+
+  "npctypes": [
+    {
+      "type": "sseth",
+      "species": [ "human" ]
+    }
+  ],
+
+  "inventoryIcon": "tradingterminalicon.png",
+
+  "orientations": [
+    {
+      "imageLayers": [
+        {
+          "image": "tradingterminalleft.png:<color>.<frame>",
+          "fullbright": true
+        },
+        { "image": "tradingterminalleftlit.png:<color>.<frame>" }
+      ],
+      "imagePosition": [ -12, 0 ],
+      "direction": "left",
+      "flipImages": true,
+
+      "spaceScan": 0.1,
+      "anchors": [ "bottom" ],
+      "collision": "platform"
+    },
+    {
+      "imageLayers": [
+        {
+          "image": "tradingterminalright.png:<color>.<frame>",
+          "fullbright": true
+        },
+        { "image": "tradingterminalrightlit.png:<color>.<frame>" }
+      ],
+      "imagePosition": [ -12, 0 ],
+      "direction": "right",
+
+      "spaceScan": 0.1,
+      "anchors": [ "bottom" ],
+      "collision": "platform"
+    }
+  ],
+
+  "soundEffect": "/sfx/objects/fluorescent_light_loud.ogg",
+  "soundEffectRangeMultiplier": 0.5,
+
+  "scripts": [
+    "/scripts/npcToyObject.lua",
+    "tradingterminal.lua"
+  ],
+  "scriptDelta": 60,
+
+  "npcToy": {
+    "influence": [
+      "vendingmachineActivate",
+      "vendingmachineCollect",
+      "vendingmachineConsume",
+      "vendingmachineComplete"
+    ],
+    "defaultReactions": {
+      "vendingmachineActivate": [
+        [ 1.0, "pressbutton" ]
+      ],
+      "vendingmachineCollect": [
+        [ 1.0, "crouchcollect" ]
+      ],
+      "vendingmachineConsume": [
+        [ 1.0, "drink" ]
+      ],
+      "vendingmachineComplete": [
+        [ 1.0, "smile" ],
+        [ 0.1, "vomit" ]
+      ]
+    },
+    "preciseStandPositionLeft": [ -0.5, 1.0 ],
+    "preciseStandPositionRight": [ 2.0, 1.0 ],
+    "maxNpcs": 1
+  }
+}
+

@@ -1,0 +1,16 @@
+{
+  "name" : "activereload",
+  "effectConfig" : {
+    "powerModifier" : 1.60
+  },
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "activereload.lua"
+  ],
+
+  "animationConfig" : "activereload.animation",
+
+  "label" : "activereload",
+  "icon" : "/interface/statuses/activereload.png"
+}

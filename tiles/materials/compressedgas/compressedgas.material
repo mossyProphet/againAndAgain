@@ -1,0 +1,24 @@
+{
+  "materialId" : 572,
+  "materialName" : "compressedgas",
+  "particleColor" : [36, 39, 96, 255],
+  "itemDrop" : "compressedgas",
+  "description" : "This gas is dense enough to be solid despite being this warm",
+  "shortdescription" : "Compressed Gas",
+  "glitchDescription" : "OVERHEATED MATTER DETECTED",
+  "floranDescription" : "Floran likesss the warmth...",
+  "novakidDescription" : "Like my own body on touch",
+  "footstepSound" : "/sfx/blocks/footstep_ice.ogg",
+  "health" : 4,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "compressedgas.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 100
+  }
+}

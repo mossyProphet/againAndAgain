@@ -1,0 +1,10 @@
+{
+  "name" : "hrass",
+
+  "effectConfig" : {},
+  "defaultDuration" : 3,
+
+
+  "label" : "You are an Occasus faction member",
+  "icon" : "/stats/effects/hrass/hrass.png"
+}

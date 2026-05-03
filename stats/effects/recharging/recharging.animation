@@ -1,0 +1,13 @@
+{
+  "particleEmitters": {
+    "flames": {
+      "enabled": true,
+      "emissionRate": 22.0,
+      "particles": [
+        {
+          "particle": "greenblood"
+        }
+      ]
+    }
+  }
+}

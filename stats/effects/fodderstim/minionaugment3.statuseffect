@@ -1,0 +1,11 @@
+{
+    "name": "minionaugment3",
+    "effectConfig": {
+      "minionBonus": 3
+    },
+    "defaultDuration": 15,
+
+    "scripts": [
+      "minionboost.lua"
+    ]
+}

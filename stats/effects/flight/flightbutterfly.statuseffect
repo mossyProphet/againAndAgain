@@ -1,0 +1,16 @@
+{
+  "name": "flightbutterfly",
+  "effectConfig": {
+    
+        "glideSpeed": 1.75
+      
+    
+  },
+  "defaultDuration": 5,
+
+  "scripts": [
+    "flight.lua"
+  ],
+
+  "animationConfig": "flight.animation"
+}

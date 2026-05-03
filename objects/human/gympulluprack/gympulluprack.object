@@ -1,0 +1,32 @@
+{
+  "objectName" : "gympulluprack",
+  "colonyTags" : ["human", "cultist", "evil"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 60,
+  "description" : "I never got to do the pull-ups properly anyway...",
+  "shortdescription" : "Pull-Up Rack",
+  "race" : "human",
+
+  //"apexDescription" : "A secure server. Inaccessible.",
+  //"avianDescription" : "There are many blinking lights.",
+  //"floranDescription" : "Box of lights makes clicky ssound.",
+  //"glitchDescription" : "Ashamed. A server protected by security even I can not bypass.",
+  //"humanDescription" : "It looks like a data server. No way we're getting anything from this.",
+  //"hylotlDescription" : "This server would contain enough data to fill a thousand Hylotl libraries.",
+  //"novakidDescription" : "This piece of technology stores information.",
+
+  "inventoryIcon" : "gympulluprackicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "gympulluprack.png:<color>",
+      "imagePosition" : [-12, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}

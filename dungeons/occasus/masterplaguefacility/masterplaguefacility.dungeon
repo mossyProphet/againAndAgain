@@ -1,0 +1,110 @@
+{
+	"metadata": {
+		"name": "masterplaguefacility",
+		"species": "generic",
+		"rules": [],
+		"anchor": [ "entrance" ],
+		"gravity": 84,
+		"maxRadius": 1000000,
+		"maxParts": 40,
+		"protected": false,
+		"extendSurfaceFreeSpace": 49
+	},
+
+	"parts": [
+		{
+			"name": "base",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				["doNotConnectToPart", []]
+			],
+			"def": [ "tmx", "occasusmasterplaguefacilitycenterroom.json" ],
+			"chance": 1.0
+		},
+		
+		{
+			"name": "entrance",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				["doNotConnectToPart", []]
+			],
+			"def": [ "tmx", "occasusmasterplaguefacilityentrance.json" ],
+			"chance": 1.0
+		},
+		{
+			"name": "predbannikright",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				["doNotConnectToPart", ["predbannikleft"]]
+			],
+			"def": [ "tmx", "occasusmasterplaguefacilitypredbannikright.json" ],
+			"chance": 1.0
+		},
+		{
+			"name": "predbannikleft",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				["doNotConnectToPart", ["predbannikright"]]
+			],
+			"def": [ "tmx", "occasusmasterplaguefacilitypredbannikleft.json" ],
+			"chance": 1.0
+		},
+		
+		{
+			"name": "ascent",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 28 ]
+				],
+				["doNotConnectToPart", []]
+			],
+			"def": [ "tmx", "occasusmasterplaguefacilityascent.json" ],
+			"chance": 0.125
+		},
+
+		{
+			"name": "walkway",
+			"rules": [
+				//[
+				//	"maxSpawnCount",
+				//	[ 1 ]
+				//],
+				["doNotConnectToPart", ["predbannikleft", "predbannikright"]]
+			],
+			"def": [ "tmx", "occasusmasterplaguefacilitywalkway.json" ],
+			"chance": 0.125
+		},
+
+		{
+			"name": "bookroom",
+			"rules": [
+				
+			],
+			"def": [ "tmx", "occasusbookroom.json" ],
+			"chance": 0.125
+		},
+
+		{
+			"name": "barrackroom",
+			"rules": [
+				
+			],
+			"def": [ "tmx", "occasusbarracksroom.json" ],
+			"chance": 0.125
+		}
+		
+	]
+}

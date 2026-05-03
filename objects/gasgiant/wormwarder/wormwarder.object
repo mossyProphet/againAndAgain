@@ -1,0 +1,64 @@
+{
+  "objectName": "wormwarder",
+  "colonyTags": [ "hylotl", "novakid", "light" ],
+  "rarity": "Common",
+  "category": "light",
+  "lightColor": [ 128, 119, 89 ],
+  "price": 105,
+  "description": "Can't just let these teal bastards ram you like a train of pain",
+  "shortdescription": "Worm Warder",
+  "race": "novakid",
+
+  "apexDescription": "An unremarkable post.",
+  "humanDescription": "This post seems quite wobbly. The symbolic resembles that of Protectorate...",
+  "hylotlDescription": "This provides an pleasing outside light source. What an elegant way to ward off enemies.",
+  "novakidDescription": "A post with a lantern. Shine on, buddy. We need that",
+
+  "inventoryIcon": "wormwardericon.png",
+  "orientations": [
+    {
+      "dualImage": "wormwarder.png:<color>.<frame>",
+      "imagePosition": [ -8, 0 ],
+      "animationPosition": [ -8, 0 ],
+      "animationParts": {
+        "bg": "wormwarder.png",
+        "fg": "wormwarderlit.png"
+      },
+      "spaceScan": 0.1,
+      "anchors": [ "bottom" ]
+
+    }
+  ],
+
+  "animation": "/objects/wired/projectiletrap/projectiletrap.animation",
+  "animationParts": {
+    "bg": "wormwarder.png",
+    "fg": "wormwarderlit.png"
+  },
+  "animationCustom": {
+    "sounds": {
+      "on": [ "/sfx/objects/oillantern_on.ogg" ],
+      "off": [ "/sfx/objects/oillantern_off.ogg" ]
+    }
+  },
+
+  "scripts": [ "/objects/wired/projectiletrap/projectiletrap.lua" ],
+  "scriptDelta": 2,
+
+
+  "inactiveLightColor": [ 0, 0, 0 ], // light color to emit when the object is 'off'
+  "activeLightColor": [ 201, 154, 0 ], // light color to emit when the object is 'on'
+
+  "fireTime": 7, // rate of fire
+  "fireTimeVariance": 0.015, // variation in rate of fire
+  "projectile": "wormshield", // name of projectile (required)
+  "projectileConfig": { // extra configuration overrides for projectile
+    "damageTeam": { "type": "assistant" },
+    "power": 90,
+    "speed": 0
+  },
+
+
+
+  "inputNodes": [ [ -1, 3 ] ]
+}

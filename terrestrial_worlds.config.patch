@@ -1,0 +1,623 @@
+[
+  //[
+  //  {
+  //    "op": "add",
+  //    "path": "/planetTypes/arctic/layers/surface",
+  //    "value": {
+  //      "dungeons": [
+  //        [ 1.0, "novakidvillage" ],
+  //        [ 1.0, "apextestfacility" ],
+  //        [ 1.0, "apexbase" ],
+  //        [ 1.0, "apexcamp" ],
+  //        [ 0.3, "moogcity" ],
+  //        [ 1.0, "humanprison" ]
+  //      ]
+  //    }
+  //  },
+  //  {
+  //    "op": "add",
+  //    "path": "/planetTypes/arctic/layers/core",
+  //    "value": {
+  //      "dungeons": [
+  //
+  //        [ 0.3, "moogcity" ]
+  //
+  //      ]
+  //    }
+  //  },
+  //  {
+  //    "op": "add",
+  //    "path": "/planetTypes/arctic/layers/surface",
+  //    "value": {
+  //      "dungeonCountRange": [ 2, 5 ]
+  //    }
+  //  },
+  //{
+  //  "op": "add",
+  //  "path": "/planetTypes/tundra/layers/atmosphere/",
+  //  "value": {
+  //    "atmosphere": {
+  //      "dungeonCountRange": [ 1, 3 ],
+  //      "dungeons": [
+  //        [ 1.0, "icefortress" ]
+  //      ]
+  //      }
+  //   }
+  //},
+  {
+    "op": "add",
+    "path": "/planetTypes/neptune",
+    "value": {
+      "threatRange": [ 7, 7 ],
+      "layers": {
+        "atmosphere": {
+          "primaryRegion": [ "neptuneatmosphere" ],
+          "secondaryRegions": [ "flowersair" ],
+          "dungeonCountRange": [ 6, 12 ],
+          "dungeons": [
+            [ 1.0, "novakidvillage" ],
+            [ 1.0, "apextestfacility" ],
+            [ 1.0, "apexbase" ],
+            [ 1.0, "apexcamp" ],
+            [ 1.0, "humanprison" ],
+            [ 1.0, "moogcity" ]
+
+          ]
+        },
+        "surface": {
+          "primaryRegion": [ "neptune" ],
+          "secondaryRegions": [ "bioluminescenceislands", "prismislands", "flowersnept", "geodeislands" ],
+          "dungeonCountRange": [ 1, 6 ],
+          "dungeons": [
+            [ 1.0, "buoyantbase" ]
+          ]
+        },
+        "subsurface": {
+          "primaryRegion": [ "neptuneunderground2" ],
+          "secondaryRegions": [ "bioluminescence", "prism", "geode", "neptuneore" ]
+        },
+        "underground1": {
+          "primaryRegion": [ "neptuneunderground4" ],
+          "secondaryRegions": [ "bioluminescence", "prism", "geode", "neptuneore" ]
+        },
+        "underground2": {
+          "primaryRegion": [ "neptuneunderground6" ],
+          "secondaryRegions": [ "bioluminescence", "prism", "geode" ]
+
+        },
+        "underground3": {
+          "primaryRegion": [ "neptunecorelayer" ],
+          "secondaryRegions": [ "bioluminescence", "prism", "geode", "steamspring" ]
+
+        },
+        "core": {
+          "primaryRegion": [ "neptunecorelayer" ],
+          "secondaryRegions": [ "bioluminescence", "prism", "geode" ]//,
+          //"dungeonCountRange": [ 1, 6 ],
+          //"dungeons": [
+          //  [ 1.0, "normalbarracks" ]
+          //]
+        }
+      }
+    }
+  },
+
+
+  {
+    "op": "add",
+    "path": "/regionTypes/neptuneatmosphere",
+    "value": {
+      "bgCaveSelector": [ "empty" ],
+      "biome": [
+        [
+          0,
+          [ "neptune" ]
+        ]
+      ],
+      "blockSelector": [ "clouds" ],
+      "fgCaveSelector": [ "empty" ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/flowersair",
+    "value": {
+      "blockSelector": [ "clouds" ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [
+        [
+          0,
+          [ "flowersnept" ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/bioluminescenceislands",
+    "value": {
+      "bgCaveSelector": [ "empty" ],
+      "biome": [
+        [
+          0,
+          [ "bioluminescenceislands" ]
+        ]
+      ],
+      "blockSelector": [ "clouds" ],
+      "fgCaveSelector": [ "empty" ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/prismislands",
+    "value": {
+      "bgCaveSelector": [ "empty" ],
+      "biome": [
+        [
+          0,
+          [ "prismislands" ]
+        ]
+      ],
+      "blockSelector": [ "clouds" ],
+      "fgCaveSelector": [ "empty" ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/geodeislands",
+    "value": {
+      "bgCaveSelector": [ "empty" ],
+      "biome": [
+        [
+          0,
+          [ "geodeislands" ]
+        ]
+      ],
+      "blockSelector": [ "clouds" ],
+      "fgCaveSelector": [ "empty" ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/neptune",
+    "value": {
+      "oceanLiquid": [ "nitrogen" ],
+      "oceanLevelOffset": -30,
+      "blockSelector": [ "clouds" ],
+      "fgCaveSelector": [ "empty" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [
+        [
+          0,
+          [ "neptunenether" ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/flowersnept",
+    "value": {
+      "oceanLiquid": [ "water" ],
+      "oceanLevelOffset": -30,
+      "blockSelector": [ "clouds" ],
+      "fgCaveSelector": [ "surfaceCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [
+        [
+          0,
+          [ "flowersnept" ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/neptuneunderground2",
+    "value": {
+      "oceanLiquid": [ "nitrogen" ],
+      "oceanLevelOffset": 1300,
+      "blockSelector": [ "clouds" ],
+      "fgCaveSelector": [ "empty" ],
+      "bgCaveSelector": [ "empty" ],
+      "caveLiquidSeedDensityRange": [ 2.5, 2.5 ],
+      "biome": [
+        [
+          0,
+          [ "neptunebottom" ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/neptuneunderground4",
+    "value": {
+      "caveLiquid": [ "water" ],
+      "blockSelector": [ "ledgesSurface" ],
+      "caveLiquidSeedDensityRange": [ 2.5, 2.5 ],
+      "biome": [
+        [
+          0,
+          [ "neptunebottom" ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/neptuneunderground6",
+    "value": {
+      "caveLiquid": [ "nitrogen" ],
+      "fgCaveSelector": [ "moonCaves" ],
+      "caveLiquidSeedDensityRange": [ 2.5, 2.5 ],
+      "biome": [
+        [
+          0,
+          [ "neptunebottom" ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/neptuneore",
+    "value": {
+      "caveLiquid": [ "nitrogen" ],
+      "fgCaveSelector": [ "moonCaves" ],
+      "caveLiquidSeedDensityRange": [ 2.5, 2.5 ],
+      "biome": [
+        [
+          0,
+          [ "neptune" ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/bioluminescencecave",
+    "value": {
+      "caveLiquid": [ "nitrogen" ],
+      "fgCaveSelector": [ "moonCaves" ],
+      "caveLiquidSeedDensityRange": [ 2.5, 2.5 ],
+      "biome": [
+        [
+          0,
+          [ "bioluminescencecave" ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/prismcave",
+    "value": {
+      "caveLiquid": [ "nitrogen" ],
+      "fgCaveSelector": [ "moonCaves" ],
+      "caveLiquidSeedDensityRange": [ 2.5, 2.5 ],
+      "biome": [
+        [
+          0,
+          [ "prismcave" ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/geodecave",
+    "value": {
+      "caveLiquid": [ "nitrogen" ],
+      "fgCaveSelector": [ "moonCaves" ],
+      "caveLiquidSeedDensityRange": [ 2.5, 2.5 ],
+      "biome": [
+        [
+          0,
+          [ "geodecave" ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/neptunecorelayer",
+    "value": {
+      "caveLiquid": [ "nitrogen" ],
+      "caveLiquidSeedDensityRange": [ 4.0, 4.0 ],
+      "oceanLiquid": [ "nitrogen" ],
+      "oceanLevelOffset": -30,
+      "fgCaveSelector": [ "coreCaves" ],
+      "bgCaveSelector": [ "coreCaves" ],
+      "biome": [
+        [
+          0,
+          [ "neptunebottom" ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/volcanic/layers/surface/dungeons/-",
+    "value": [
+      8.0,
+      "skullfoundry"
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/magma/layers/surface",
+    "value": { "dungeons" : [
+       [
+          8.0,
+          "skullfoundry"
+       ]
+    ]
+  }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/jungle/layers/surface/dungeons/-",
+    "value": [
+      3.5,
+      "masterplaguefacility"
+    ]
+  },
+  
+  {
+    "op": "add",
+    "path": "/planetTypes/alien/layers/surface/dungeons/-",
+    "value": 
+        [
+          3.5,
+          "masterplaguefacility"
+        ]
+      
+    
+  },
+  
+
+  {
+    "op": "add",
+    "path": "/planetTypes/neutronswarm",
+    "value": {
+      "threatRange": [ 7, 7 ],
+      "layers": {
+        "atmosphere": {
+          "primaryRegion": [ "neutronswarm" ],
+          "dungeonCountRange": [ 1, 1 ],
+          "dungeons": [
+            [ 2.0, "novakidvillage" ]
+          ]
+        },
+        "surface": {
+          "primaryRegion": [ "neutronswarm" ],
+          "secondaryRegions": [ "prism", "geode", "steamspring" ],
+          "dungeonCountRange": [ 1, 4 ],
+          "dungeons": [
+            [ 2.0, "novakidvillage" ],
+            [ 2.0, "skullfoundry" ]
+          ]
+        },
+        "subsurface": {
+          "primaryRegion": [ "neutronswarmunderground2" ]
+        },
+        "underground1": {
+          "primaryRegion": [ "midunderground" ]
+        },
+        "underground2": {
+          "primaryRegion": [ "deepunderground" ]
+        },
+        "underground3": {
+          "primaryRegion": [ "deepunderground" ]
+        },
+        "core": {
+          "primaryRegion": [ "core" ]
+        }
+      }
+    }
+  },
+
+  {
+    "op": "add",
+    "path": "/regionTypes/neutronswarm",
+    "value": {
+      "blockSelector": [ "asteroids" ],
+      "fgCaveSelector": [ "empty" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [
+        [
+          0,
+          [ "neutronswarm" ]
+        ]
+      ],
+      "subRegion": [ "geode", "rust", "steamspring" ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/neutronswarmunderground2",
+    "value": {
+      "blockSelector": [ "asteroids" ],
+      "oceanLiquid": [ "lava" ],
+      "oceanLevelOffset": 1300,
+      "fgCaveSelector": [ "coreCaves" ],
+      "bgCaveSelector": [ "empty" ],
+      "caveLiquid": [ "lava" ],
+      "caveLiquidSeedDensityRange": [ 2.5, 12.5 ],
+      "biome": [
+        [
+          0,
+          [ "neutronswarm" ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/neutronswarmunderground4",
+    "value": {
+      "caveLiquid": [ "water" ],
+      "blockSelector": [ "ledgesSurface" ],
+      "fgCaveSelector": [ "coreCaves" ],
+      "bgCaveSelector": [ "coreCaves" ],
+      "caveLiquidSeedDensityRange": [ 2.5, 2.5 ],
+      "biome": [
+        [
+          0,
+          [ "geodecave" ]
+        ]
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/regionTypes/neutronswarmunderground6",
+    "value": {
+      "caveLiquid": [ "nitrogen" ],
+      "fgCaveSelector": [ "moonCaves" ],
+      "caveLiquidSeedDensityRange": [ 2.5, 2.5 ],
+      "biome": [
+        [
+          0,
+          [ "underground1c" ]
+        ]
+      ]
+    }
+  },
+
+  {
+    "op": "add",
+    "path": "/regionTypes/neutronswarmcorelayer",
+    "value": {
+      "fgCaveSelector": [ "empty" ],
+      "bgCaveSelector": [ "empty" ],
+      "biome": [
+        [
+          0,
+          [ "mooncorelayer" ]
+        ]
+      ]
+    }
+  },
+
+
+  {
+    "op": "add",
+    "path": "/planetSizes/kilomoreLarge",
+    "value": {
+      "size": [ 8000, 4000 ],
+      "gravityRange": [ 80, 110 ],
+      "dayLengthRange": [ 1500, 4000 ],
+      "layerDefaults": {
+        "secondaryRegionPeriod": [ 1200, 3000 ],
+        "secondaryRegionSize": [ 0.2, 0.92 ],
+        "secondaryRegionCount": [ 1, 3 ],
+        "subRegionSize": [ 0.13, 0.47 ],
+        "dungeonCountRange": [ 4, 8 ]
+      },
+      "layers": {
+        "space": {
+          "baseHeight": 3500,
+          "layerLevel": 3000
+        },
+        "atmosphere": {
+          "baseHeight": 3000,
+          "layerLevel": 2000
+        },
+        "surface": {
+          "baseHeight": 1700,
+          "layerLevel": 1400
+        },
+        "subsurface": {
+          "baseHeight": 1300,
+          "layerLevel": 1100
+        },
+        "underground1": {
+          "baseHeight": 900,
+          "layerLevel": 900
+        },
+        "underground2": {
+          "baseHeight": 700,
+          "layerLevel": 600
+        },
+        "underground3": {
+          "baseHeight": 500,
+          "layerLevel": 300
+        },
+        "core": {
+          "baseHeight": 80,
+          "layerLevel": 0
+        }
+      }
+    }
+  },
+
+
+  {
+    "op": "add",
+    "path": "/planetSizes/megamoreLarge",
+    "value": {
+      "size": [ 11000, 7000 ],
+      "gravityRange": [ 85, 150 ],
+      "dayLengthRange": [ 1800, 4400 ],
+      "layerDefaults": {
+        "secondaryRegionPeriod": [ 1500, 3000 ],
+        "secondaryRegionSize": [ 0.2, 0.92 ],
+        "secondaryRegionCount": [ 1, 4 ],
+        "subRegionSize": [ 0.15, 0.5 ],
+        "dungeonCountRange": [ 8, 16 ]
+      },
+      "layers": {
+        "space": {
+          "baseHeight": 6500,
+          "layerLevel": 6200
+        },
+        "atmosphere": {
+          "baseHeight": 5500,
+          "layerLevel": 5400
+        },
+        "surface": {
+          "baseHeight": 4000,
+          "layerLevel": 3800
+        },
+        "subsurface": {
+          "baseHeight": 3000,
+          "layerLevel": 2600
+        },
+        "underground1": {
+          "baseHeight": 1500,
+          "layerLevel": 1200
+        },
+        "underground2": {
+          "baseHeight": 1100,
+          "layerLevel": 800
+        },
+        "underground3": {
+          "baseHeight": 700,
+          "layerLevel": 400
+        },
+        "core": {
+          "baseHeight": 300,
+          "layerLevel": 0
+        }
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/planetTypes/tundra/layers/atmosphere",
+    "value": {
+      
+        "dungeonCountRange": [ 1, 3 ],
+        "dungeons": [
+          [ 1.0, "icefortress" ]
+        ]
+      
+    }
+  }
+
+
+]

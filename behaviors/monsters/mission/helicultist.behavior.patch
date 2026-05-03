@@ -1,0 +1,12 @@
+[
+  {
+    "op": "replace",
+    "path": "/root/children/4/children/1/children/1/children/3/children/1/parameters/velocity/value",
+    "value": 20
+  },
+  {
+    "op": "replace",
+    "path": "/root/children/4/children/1/children/1/children/3/children/1/parameters/force/value",
+    "value": 10000
+  }
+]

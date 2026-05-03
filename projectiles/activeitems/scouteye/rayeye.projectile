@@ -1,0 +1,82 @@
+{
+  "projectileName": "rayeye",
+  "clientEntityMode": "ClientPresenceMaster",
+  "image": "eye.png",
+  "physics": "laser",
+  "animationCycle": 1,
+  "frameNumber": 1,
+  "power": 0.0,
+  "speed": 45,
+  "lightColor": [ 150, 20, 20 ],
+  "damageType": "NoDamage",
+  "timeToLive": 1.5,
+  "bounces": -1,
+  "piercing": false,
+  "emitters": [],
+  "damagePoly": [],
+  "damageKind": "default",
+  "damageTeam": { "type": "enemy" },
+  "periodicActions": [
+    {
+      "time": 0.25,
+      "action": "particle",
+      "specification": {
+        "type": "ember",
+        "size": 3,
+        "color": [ 240, 250, 80, 200 ],
+        "initialVelocity": [ 0.0, 20.0 ],
+        "finalVelocity": [ 0.0, -10.0 ],
+        "approach": [ 2.0, 25.0 ],
+        "timeToLive": 0.25,
+        "fade": 0.8,
+        "destructionAction": "shrink",
+        "destructionTime": 0.25,
+        "layer": "back",
+        "variance": {
+          "initialVelocity": [ 3.0, 1.0 ],
+          "size": 4.0
+        }
+      }
+    }
+  ],
+  "actionOnReap": [
+    {
+      "action": "projectile",
+      "type": "mobzone",
+      "fuzzAngle": 0,
+      "angleAdjust": 0
+    },
+    {
+      "action": "sound",
+      "options": [ "/sfx/blocks/footstep_mud.ogg" ]
+    },
+    {
+      "action": "loop",
+      "count": 6,
+      "body": [
+        {
+          "action": "particle",
+          "specification": {
+            "type": "ember",
+            "size": 7,
+            "color": [ 240, 250, 80, 200 ],
+            "initialVelocity": [ 0.0, 4.0 ],
+            "finalVelocity": [ 0.0, -10.0 ],
+            "approach": [ 2.0, 25.0 ],
+            "timeToLive": 0.25,
+            "fade": 0.8,
+            "destructionAction": "shrink",
+            "destructionTime": 0.25,
+            "layer": "middle",
+            "variance": {
+              "initialVelocity": [ 4.0, 2.0 ],
+              "size": 1.0
+            }
+          }
+        }
+      ]
+    }
+  ],
+
+  "scripts": [ "/projectiles/killablephasing.lua" ]
+}

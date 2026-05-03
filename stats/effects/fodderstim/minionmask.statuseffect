@@ -1,0 +1,14 @@
+{
+  "name" : "minionmask",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "minionmask.lua"
+  ]
+
+  //"animationConfig" : "glow.animation",
+
+  //"label" : "Abscentive Syndrome",
+  //"icon" : "/interface/statuses/glow.png"
+}

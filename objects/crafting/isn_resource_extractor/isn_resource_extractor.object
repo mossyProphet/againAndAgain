@@ -1,0 +1,46 @@
+{
+  "objectName" : "isn_resource_extractor",
+  "rarity" : "Rare",
+  "description" : "Destroys natural blocks to find useful reagents.",
+  "shortdescription" : "^orange;Resource Extractor^white;",
+  "race" : "generic",
+  "category" : "storage",
+  "price" : 500,
+  "objectType" : "container",
+  "printable" : false,
+
+  "apexDescription" : "This machine can turn unwanted cruft into valuable reagents.",
+  "avianDescription" : "Ashes to riches, dust to stuff.",
+  "floranDescription" : "Weird thing ssscrabble through garbage, find good rock. Floran throw at fishman.",
+  "glitchDescription" : "Identification. This is a high power disintegrator capable of extracting valuable reagents.",
+  "humanDescription" : "Instant treasure, just add useless crap!",
+  "hylotlDescription" : "A device to seek diamonds in the rough. Oddly poetic.",
+  "novakidDescription" : "This here'll make me rich if I keep at it.",
+  
+  "scripts" : [ "/objects/crafting/isn_resource_extractor/isn_resource_extractor.lua"],
+  "scriptDelta" : 5,
+  
+  "openSounds" : [ "/sfx/objects/metalbox_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/metalbox_close.ogg" ],
+  "slotCount" : 25,
+  "uiConfig" : "/objects/crafting/isn_resource_extractor/isn_resource_extractor.config",
+  "frameCooldown" : 67,
+  "autoCloseCooldown" : 3600,
+  
+  "animation" : "/objects/crafting/isn_resource_extractor/isn_resource_extractor.animation",
+
+  "animationParts" : {
+    "isn_resource_extractor" : "isn_resource_extractor.png"
+  },
+  "animationPosition" : [0, 0],
+  
+  "inventoryIcon" : "isn_resource_extractor_inv.png",
+  "orientations" : [
+    {
+      "image" : "isn_resource_extractor.png:<color>.idle",
+      "imagePosition" : [0, 0],
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

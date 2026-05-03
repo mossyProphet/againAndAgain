@@ -1,0 +1,33 @@
+{
+  "projectileName": "tezangravitymine",
+  "physics": "laser",
+  "bounces": 4,
+  "pointLight": true,
+  "lightColor": [ 70, 140, 140 ],
+  "image": "tezangravitymine.png",
+  "animationCycle": 0.5,
+  "frameNumber": 4,
+  "actionOnReap": [
+    {
+      "action": "projectile",
+      "inheritDamageFactor": 0,
+      "inheritSpeedFactor": 0.5,
+      "type": "gravitysphere"
+    },
+    {
+      "action": "sound",
+      "options": [ "/sfx/projectiles/gravitymine_detonate.ogg" ]
+    }
+  ],
+  "speed": 10,
+  "power": 0,
+  "damageType": "NoDamage",
+  "damageKind": "default",
+  "onlyHitTerrain": true,
+
+  "timeToLive": 9,
+
+  "scripts": [ "/scripts/projectiles/remotedetonatedprojectile.lua" ],
+
+  "triggerDelayRange": [ 0, 0 ]
+}

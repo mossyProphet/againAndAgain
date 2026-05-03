@@ -1,0 +1,148 @@
+{
+  "name": "neutronswarm",
+  "friendlyName": "Neutron Swarm",
+  "airless": true,
+
+  "hueShiftOptions": [ -50, 25, 125 ],
+
+  "weather": [
+    [
+      0,
+      [
+        "/weather.config:moon"
+      ]
+    ]
+  ],
+
+  "skyOptions": [
+    {
+      "mainColor": [ 255, 255, 255 ],
+
+      "morningColors": [
+        [ 255, 224, 129 ],
+        [ 252, 230, 164 ]
+      ],
+      "dayColors": [
+        [ 255, 152, 107 ],
+        [ 255, 183, 152 ]
+      ],
+      "eveningColors": [
+        [ 254, 121, 69 ],
+        [ 254, 165, 129 ]
+      ],
+      "nightColors": [
+        [ 60, 0, 0, 30 ],
+        [ 20, 0, 0, 50 ]
+      ],
+
+      "morningLightColor": [ 202, 177, 100 ],
+      "dayLightColor": [ 202, 138, 100 ],
+      "eveningLightColor": [ 202, 100, 100 ],
+      "nightLightColor": [ 40, 17, 17 ]
+    }
+  ],
+
+  "spawnProfile": {
+    "groups": [
+      {
+        "select": 1,
+        "pool": [
+          [ 0.125, "pyromantle" ],
+          [ 0.125, "scandroid" ],
+          [ 0.125, "firespookit" ],
+          [ 0.125, "firewisper" ],
+          [ 0.125, "firelumoth" ],
+          [ 0.125, "firemonopus" ],
+          [ 0.125, "firegosmet" ],
+          [ 0.125, "firesqueem" ]
+        ]
+      },
+      {
+        "select": 1,
+        "pool": [
+          [ 0.4, "flameroach" ],
+          [ 0.3, "orphanfly" ],
+          [ 0.3, "gasgiant" ]
+        ]
+      },
+      {
+        "select": 1,
+        "pool": "generatedGroundAggroDay"
+      },
+      {
+        "select": 3,
+        "pool": "nightTerrors"
+      },
+      {
+        "select": 2,
+        "pool": "generatedGround"
+      },
+      {
+        "select": 2,
+        "pool": "generatedFlying"
+      },
+      {
+        "select": 1,
+        "pool": [
+          [ 0.3, "passiveLargeFlying" ],
+          [ 0.7, "aggroLargeFlying" ]
+        ]
+      },
+      {
+        "select": 2,
+        "pool": [
+          [ 1, "firekrawlcritter" ],
+          [ 1, "firerockcritter" ],
+          [ 1, "magmawormcritter" ],
+          [ 1, "dancercritter" ],
+          [ 1, "orenibblercritter" ]
+        ]
+      }
+    ],
+    "monsterParameters": {
+      "colors": "volcanic"
+    }
+  },
+
+  "mainBlock": "compressedgas",
+  "subBlocks": [ "magmarock" ],
+  "ores": "depth3",
+
+  "parallax": "/parallax/surface/asteroidfield.parallax",
+
+  "ambientNoises": {
+    "day": {
+      "tracks": [ "/sfx/environmental/space_loop1.ogg" ]
+    },
+    "night": {
+      "tracks": [ "/sfx/environmental/space_loop1.ogg" ]
+    }
+  },
+
+  "musicTrack": {
+    "day": {
+      "tracks": [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/great-attractor.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg", "/music/horsehead-nebula.ogg", "/music/psyche.ogg", "/music/large-magellanic-cloud.ogg", "/music/m54.ogg", "/music/nomads.ogg", "/music/on-the-beach-at-night.ogg" ]
+    },
+    "night": {
+      "tracks": [ "/music/jupiter.ogg", "/music/arctic-constellation1.ogg", "/music/great-attractor.ogg", "/music/arctic-constellation2.ogg", "/music/mercury.ogg", "/music/mira.ogg", "/music/tranquility-base.ogg", "/music/accretion-disc.ogg", "/music/horsehead-nebula.ogg", "/music/psyche.ogg", "/music/large-magellanic-cloud.ogg", "/music/m54.ogg", "/music/nomads.ogg", "/music/on-the-beach-at-night.ogg" ]
+    }
+  },
+
+  "surfacePlaceables": {
+    "grassMod": [ "sand" ],
+    "grassModDensity": 0.0,
+    "items": [
+      {
+        "mode": "floor",
+        "priority": 3.0,
+        "variants": 1,
+        "distribution": "/biomes/distributions.config:randomEncounter",
+
+        "type": "microdungeon",
+        "microdungeons": [ "asteroidencounter" ]
+      }
+    ]
+  },
+
+  "undergroundPlaceables": {}
+}

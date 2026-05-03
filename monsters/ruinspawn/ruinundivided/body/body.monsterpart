@@ -1,0 +1,9 @@
+{
+  "name" : "ruinundivided",
+  "category" : "ruinundivided",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "noxling.png"
+  }
+}

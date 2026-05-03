@@ -1,0 +1,72 @@
+{
+	"metadata": {
+		"name": "normalbarracks",
+		"species": "generic",
+		"rules": [],
+		"anchor": [ "base" ],
+		"gravity": 80,
+		"maxRadius": 1000000,
+		"maxParts": 20,
+		"protected": false
+		//"extendSurfaceFreeSpace": 18
+	},
+
+	"parts": [
+		{
+			"name": "base",
+			"rules": [
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "crossway" ]
+				]
+			],
+			"def": [ "tmx", "minibossroom.json" ]
+		},
+		{
+			"name": "crossway",
+			"rules": [
+				[
+					"doNotConnectToPart",
+					[ "crossway" ]
+				]
+			],
+			"def": [ "tmx", "occasuscrossway.json" ]
+		},
+		{
+			"name": "passage",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"doNotConnectToPart",
+					[ "passage" ]
+				]
+			],
+			"def": [ "tmx", "occasuspassway.json" ]
+		},
+		{
+			"name": "room",
+			"rules": [
+				[ "ignorePartMaximumRule" ]
+			],
+			"def": [ "tmx", "occasusbaselineroom.json" ]
+		},
+		{
+			"name": "barrack",
+			"rules": [
+				[ "ignorePartMaximumRule" ]
+			],
+			"def": [ "tmx", "occasusbarracksroom.json" ]
+		},
+		{
+			"name": "books",
+			"rules": [
+				[ "ignorePartMaximumRule" ]
+			],
+			"def": [ "tmx", "occasusbookroom.json" ]
+		}
+	]
+}

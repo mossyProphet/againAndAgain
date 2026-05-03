@@ -1,0 +1,25 @@
+
+[
+ {
+  "op": "replace",
+  "path": "/primaryAbility/baseDps",
+  "value": 15
+ },
+ {
+  "op": "add",
+  "path": "/primaryAbility/projectileCount",
+  "value": 4
+ },
+ {
+  "op": "add",
+  "path": "/primaryAbility/fireTime",
+  "value": 0.05
+ },
+ {
+  "op": "add",
+  "path": "/primaryAbility/projectileParameters",
+  "value": {
+   "speed": 47
+  }
+ }
+]

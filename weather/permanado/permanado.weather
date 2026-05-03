@@ -1,0 +1,84 @@
+{
+  "name" : "permanado",
+
+  "particles": [
+    {
+
+      "density": 0.15,
+      "autoRotate": true,
+
+      "particle": {
+        "type": "textured",
+        "image": "/particles/fog/1.png",
+        "velocity": [ 0, -2 ],
+        "approach": [ 15, 15 ],
+        "angularVelocity": 0,
+        "timeToLive": 20,
+        "collidesForeground": true,
+        "collidesLiquid": true,
+        "destructionAction": "shrink",
+        "destructionTime": 2,
+        "ignoreWind": false
+      }
+    },
+    {
+      "density": 0.15,
+      "particle": {
+        "type": "ember",
+        "color": [ 112, 219, 247 ],
+        "size": 1.0,
+        "velocity": [ 0, -12 ],
+        "timeToLive": 20,
+        "collidesForeground": true,
+        "collidesLiquid": true,
+        "ignoreWind": false
+      }
+    },
+    {
+      "density": 0.15,
+      "particle": {
+        "type": "ember",
+        "color": [ 39, 242, 254 ],
+        "size": 1.0,
+        "velocity": [ 0, -11 ],
+        "timeToLive": 20,
+        "collidesForeground": true,
+        "collidesLiquid": true,
+        "ignoreWind": false
+      }
+    },
+    {
+      "density": 0.15,
+      "particle": {
+        "type": "ember",
+        "color": [ 46, 250, 250 ],
+        "size": 1.0,
+        "velocity": [ 0, -14 ],
+        "timeToLive": 20,
+        "collidesForeground": true,
+        "collidesLiquid": true,
+        "ignoreWind": false
+      }
+    }
+  ],
+
+  "projectiles" : [
+    {
+      "projectile": "extremesnowstorm",
+      "parameters": {
+        "power": 0
+      },
+      "velocity": [ 0, 0 ],
+      "ratePerX": 0.02,
+      "spawnAboveRegion": 10,
+      "spawnHorizontalPad": 10,
+      "windAffectAmount": 2
+    }
+  ],
+
+  "statusEffects" : ["permanado", "windhazard"],
+
+  "duration" : [50, 240],
+  "maximumWind" : 42.0,
+  "weatherNoises" : [ "/sfx/weather/sandstorm.ogg" ]
+}

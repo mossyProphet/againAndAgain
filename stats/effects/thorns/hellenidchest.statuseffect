@@ -1,0 +1,9 @@
+{
+"name" : "hellenidchest",
+  
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "hellenidchest.lua"
+  ]
+}

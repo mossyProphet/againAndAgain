@@ -1,0 +1,17 @@
+{
+  "projectileName" : "acidglobule",
+  "image" : "acidglobule.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 4,
+  "damageKindImage" : "icon.png",
+  "pointLight" : true,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/acidspitexplosion/acidspitexplosion.config"
+    }
+  ],
+  "power" : 45.0,
+  "damageKind" : "acid",
+  "emitters" : [ "poisonplasma", "largepoisonswoosh" ]
+}

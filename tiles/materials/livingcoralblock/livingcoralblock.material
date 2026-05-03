@@ -1,0 +1,25 @@
+{
+  "materialId": 573,
+  "materialName": "livingcoralblock",
+  "particleColor": [ 255, 155, 43, 255 ],
+  "itemDrop": "livingcoralblock",
+  "shortdescription": "Living Coral Block",
+  "description": "Funny coral",
+  "glitchdescription": "Wonderous. This coral can grow to large sizes",
+  "florandescription": "Floran likesss lazy meat...",
+  "novakiddescription": "Colorful like many of my folks",
+  "footstepSound": "/sfx/blocks/footstep_ice.ogg",
+  "health": 4,
+  "category": "materials",
+  "damageTable": "/tiles/flammableDamage.config",
+
+  "renderTemplate": "/tiles/classicmaterialtemplate.config",
+  "renderParameters": {
+    "texture": "livingcoralblock.png",
+    "variants": 4,
+    "lightTransparent": false,
+    "occludesBelow": false,
+    "multiColored": true,
+    "zLevel": 1880
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "projectileName": "scannerprojectile",
+  "image": "scannerprojectile.png",
+  "frameNumber": 1,
+  "speed": 0,
+  "damagePoly": [
+    [ -1, 0 ],
+    [ -1, -1 ],
+    [ 0, -1 ],
+    [ 1, -1 ],
+    [ 1, 0 ],
+    [ 1, 1 ],
+    [ 0, 1 ],
+    [ -1, 1 ]
+  ],
+  "animationLoops": false,
+  "flippable": true,
+  "damageTeam": { "type": "ghostly" },
+  "damageKind": "default",
+  "lightColor": [ 235, 235, 205 ],
+  "movementSettings": {
+    "collisionEnabled": false,
+    "gravityEnabled": false
+  }
+}

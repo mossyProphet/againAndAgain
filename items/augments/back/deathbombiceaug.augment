@@ -1,0 +1,21 @@
+{
+  "itemName": "deathbombiceaug",
+  "price": 5000,
+  "rarity": "Uncommon",
+  "category": "eppAugment",
+  "inventoryIcon": "deathbombiceaug.png",
+  "description": "Dont you feel like you wanna just spontaneously explode into ice shards?",
+  "shortdescription": "Explosion Module(ice)",
+
+  "augment": {
+    "type": "back",
+    "name": "deathbombiceaug",
+    "displayName": "Explosion of ice",
+    "displayIcon": "/items/augments/back/deathbombiceaug.png",
+    "effects": [ "deathbombiceaug" ]
+  },
+
+  "radioMessagesOnPickup": [ "pickupaugment" ],
+
+  "scripts": [ "/scripts/augments/augment.lua" ]
+}

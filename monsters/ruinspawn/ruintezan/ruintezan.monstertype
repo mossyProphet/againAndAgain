@@ -1,0 +1,356 @@
+{
+  "type": "ruintezan",
+  "shortdescription": "Neural Ruin Spawn",
+  "description": "Once scientist, now twisted oracle. Neurally overloaded to the point of disturbing continuum",
+
+  "categories": [ "ruintezan" ],
+  //"parts": [ "body", "eye" ],
+  "parts": [ "body" ],
+
+  "animation": "ruintezan.animation",
+
+  "dropPools": [
+    {
+      "default": "ruinTezanDrop"
+    }
+  ],
+
+  "baseParameters": {
+    "damageBar": "special",
+    "monsterClass": "boss",
+
+
+
+    "scripts": [
+      "/monsters/monster.lua",
+      "/scripts/actions/animator.lua",
+      "/scripts/actions/position.lua",
+      "/scripts/actions/movement.lua",
+      "/scripts/actions/math.lua",
+      "/scripts/actions/time.lua",
+      "/scripts/actions/projectiles.lua",
+      "/scripts/behavior.lua",
+      "/scripts/behavior/bdata.lua"
+    ],
+
+    "behavior": "monster",
+
+    "behaviorConfig": {
+      "damageOnTouch": true,
+
+      "targetQueryRange": 108,
+      "targetOnDamage": true,
+      "keepTargetInSight": true,
+      "keepTargetInRange": 125,
+      "targetOutOfSightTime": 1.5,
+
+      "foundTargetActions": [],
+
+      "fleeActions": [],
+
+
+
+      "hostileActions": [
+        
+        
+        {
+          "name": "action-fire",
+          "cooldown": 3.0,
+          "parameters": {
+            "aimVector": { "key": "aimVector" },
+            "position": { "key": "self" },
+            "target": { "key": "target" },
+            "trackSource": { "value": true },
+            "requireLineOfSight": true,
+            "maximumRange": 81,
+            "minimumRange": 1,
+            "onGround": false,
+            "windupStopForce": 50,
+            "windupState": "chargewindup",
+            "windupTime": 0.5,
+
+            "projectileType": "tzeentchdelayedfire",
+            "projectileParameters": {
+              "speed": 81,
+              "timeToLive": 0.5,
+              "power": 6
+            },
+            "fireOffset": [ 0.0, 0.0 ],
+            "aimAtTarget": true,
+            "inaccuracy": 1,
+            "projectileCount": 3,
+            "projectileInterval": 0.0,
+            "fireState": "charge",
+            "fireDelay": 0.0,
+            "fireSound": "fire",
+
+            "winddownState": "chargewinddown",
+            "winddownTime": 0.5
+          }
+        },
+        {
+          "name": "action-fire",
+          "cooldown": 3.0,
+          "parameters": {
+            "aimVector": { "key": "aimVector" },
+            "position": { "key": "self" },
+            "target": { "key": "target" },
+            "trackSource": { "value": true },
+            "requireLineOfSight": true,
+            "maximumRange": 279,
+            "minimumRange": 1,
+            "onGround": false,
+            "windupStopForce": 50,
+            "windupState": "chargewindup",
+            "windupTime": 0.5,
+
+            "projectileType": "bidenblast",
+            "projectileParameters": {
+              "speed": 180.5,
+              "timeToLive": 2.0,
+              "power": 3
+            },
+            "fireOffset": [ 0.0, 0.0 ],
+            "aimAtTarget": true,
+            "inaccuracy": 0.0729,
+            "projectileCount": 2,
+            "projectileInterval": 0.0,
+            "fireState": "charge",
+            "fireDelay": 0.0,
+            "fireSound": "fire",
+
+            "winddownState": "chargewinddown",
+            "winddownTime": 0.5
+          }
+        },
+        {
+          "name": "action-fire",
+          "cooldown": 9.0,
+          "parameters": {
+            "aimVector": { "key": "aimVector" },
+            "position": { "key": "self" },
+            "target": { "key": "target" },
+            "trackSource": { "value": true },
+            "requireLineOfSight": true,
+            "maximumRange": 45,
+            "minimumRange": 1,
+            "onGround": false,
+            "windupStopForce": -15,
+            "windupState": "blinkIn",
+            "windupTime": 0.5,
+
+            "projectileType": "tezangravitymine",
+            "projectileParameters": {
+              "speed": 27.9,
+              "timeToLive": 2.0,
+              "power": 1.25
+            },
+            "fireOffset": [ 0.0, 0.0 ],
+            "aimAtTarget": false,
+            "inaccuracy": 3.14,
+            "projectileCount": 9,
+            "projectileInterval": 0.0,
+            "fireState": "blinkIn",
+            "fireDelay": 0.0,
+            "fireSound": "fire",
+
+            "winddownState": "blinkOut",
+            "winddownTime": 2.7
+          }
+        }
+      ],
+
+      "periodicActions": [],
+
+      "approachActions": [
+        {
+          "name": "approach-fly",
+          "parameters": {
+            "minRange": 9,
+            "maxRange": 54
+          }
+        }
+      ],
+
+      "followActions": [
+        {
+          "name": "approach-teleport",
+          "parameters": {
+          }
+        },
+        {
+          "name": "approach-fly"
+        }
+      ],
+
+      "wanderActions": [
+        {
+          "name": "wander-fly",
+          "parameters": {
+            "wanderTime": [ 2, 4 ],
+            "groundDistance": 8,
+            "ceilingDistance": 8,
+            "xVelocity": 4,
+            "yVelocity": 12
+          }
+        }
+      ],
+
+      "concurrentActions": [
+        {
+          "name": "action-animate",
+          "parameters": {
+            "stateType": "aggro",
+            "state": "deaggro"
+          }
+        }
+      ],
+
+      "concurrentHostileActions": [
+        {
+          "name": "action-animate",
+          "parameters": {
+            "stateType": "aggro",
+            "state": "aggro"
+          }
+        }
+      ]
+    },
+
+    "touchDamage": {
+      "poly": [
+        [ 0.87, 1.625 ],
+        [ 1.8, 2.3 ],
+        [ 1.8, -2.3 ],
+        [ 0.87, -3 ],
+        [ -0.87, -3 ],
+        [ -1.8, -1.125 ],
+        [ -1.8, 1.125 ],
+        [ -0.87, 3 ]
+      ],
+      "damage": 56,
+
+      "teamType": "enemy",
+      "damageSourceKind": "slash",
+      "knockback": 20,
+      "statusEffects": []
+    },
+
+    "metaBoundBox": [ -4, -4, 4, 4 ],
+    "scale": 1.0,
+
+    "movementSettings": {
+      "collisionPoly": [
+        [ 0.87, 1.625 ],
+        [ 1.8, 2.3 ],
+        [ 1.8, -2.3 ],
+        [ 0.87, -3 ],
+        [ -0.87, -3 ],
+        [ -1.8, -1.125 ],
+        [ -1.8, 1.125 ],
+        [ -0.87, 3 ]
+      ],
+
+      "mass": 0.5,
+      "walkSpeed": 4,
+      "runSpeed": 12,
+      "gravityEnabled": false,
+
+      "airFriction": 4,
+      "airForce": 40,
+      "flySpeed": 15
+      //"physicsEffectCategories": [ "boss" ]
+    },
+
+    "bodyMaterialKind": "organic",
+
+    "knockoutTime": 0.3,
+    "knockoutAnimationStates": {
+      "damage": "stunned"
+    },
+    "deathParticles": "deathPoof",
+    "knockoutEffect": "",
+
+    "statusSettings": {
+      "statusProperties": {
+        "targetMaterialKind": "organic"
+      },
+
+      "appliesEnvironmentStatusEffects": false,
+      "appliesWeatherStatusEffects": true,
+      "minimumLiquidStatusEffectPercentage": 0.1,
+
+      "primaryScriptSources": [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta": 5,
+
+      "stats": {
+        "knockbackStunTime": {
+          "baseValue": 0.09
+        },
+        "knockbackThreshold": {
+          "baseValue": 9
+        },
+        "maxHealth": {
+          "baseValue": 380
+        },
+        "protection": {
+          "baseValue": 36
+        },
+        "healthRegen": {
+          "baseValue": 8.1
+        },
+        "powerMultiplier": {
+          "baseValue": 1.0
+        },
+        "physicalResistance": {
+          "baseValue": -0.5
+        },
+        "fireResistance": {
+          "baseValue": 0.0
+        },
+        "fireStatusImmunity": {
+          "baseValue": 1.0
+        },
+        "iceResistance": {
+          "baseValue": -0.3
+        },
+        "iceStatusImmunity": {
+          "baseValue": 0.0
+        },
+        "electricResistance": {
+          "baseValue": 0.5
+        },
+        "electricStatusImmunity": {
+          "baseValue": 1.0
+        },
+        "poisonResistance": {
+          "baseValue": 0.0
+        },
+        "poisonStatusImmunity": {
+          "baseValue": 0.0
+        }
+      },
+
+      "resources": {
+        "stunned": {
+          "deltaValue": -1.0,
+          "initialValue": 0.0
+        },
+        "health": {
+          "maxStat": "maxHealth",
+          "deltaStat": "healthRegen",
+          "defaultPercentage": 100
+        }
+      }
+    },
+
+    "mouthOffset": [ 0, 0 ],
+    "feetOffset": [ 0, -11 ],
+    "capturable": true,
+    "captureHealthFraction": 0.5,
+    "nametagColor": [ 64, 200, 255 ],
+    "captureCollectables": { "monsters": "ruintezan" }
+  }
+}

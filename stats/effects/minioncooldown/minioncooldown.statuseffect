@@ -1,0 +1,13 @@
+{
+  "name": "minioncooldown",
+
+  "defaultDuration": 60,
+
+  "scripts": [
+    "minioncooldown.lua"
+  ],
+
+  "label": "RECHARGE",
+  "icon": "/interface/statuses/invisible.png"
+
+}

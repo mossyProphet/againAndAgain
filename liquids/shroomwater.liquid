@@ -1,0 +1,29 @@
+{
+  "name" : "shroomwater",
+  "liquidId" : 21,
+  "description" : "YES, it is this cold on some planets. You are lucky, those 'cold' planets have an atmosphere",
+  "tickDelta" : 3,
+  "color" : [205, 150, 0, 205],
+  "radiantLight" : [0, 0, 0],
+  "statusEffects" : [ "healingwater", "wet" ],
+  "itemDrop" : "shroomblock",
+
+  "interactions" : [
+    {
+      "liquid" : 1,
+      "materialResult" : "shroomblock"
+    },
+    {
+      "liquid" : 6,
+      "materialResult" : "shroomblock"
+    },
+    {
+      "liquid" : 21,
+      "materialResult" : "shroomblock"
+    }
+  ],
+
+  "texture" : "/liquids/shroomwater.png",
+  "bottomLightMix" : [0, 70, 155],
+  "textureMovementFactor" : 0.5
+}

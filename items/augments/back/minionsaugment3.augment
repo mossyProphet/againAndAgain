@@ -1,0 +1,21 @@
+{
+  "itemName": "minionsaugment3",
+  "price": 15000,
+  "rarity": "Uncommon",
+  "category": "eppAugment",
+  "inventoryIcon": "minionsaugment.png",
+  "description": "An EPP module that greatly boosts your damage output. And enough pets to swarm any boss!",
+  "shortdescription": "Pet Augment(large)",
+
+  "augment": {
+    "type": "back",
+    "name": "damage1",
+    "displayName": "+3 Minion Slot",
+    "displayIcon": "/items/augments/back/minionsaugment.png",
+    "effects": [ "rageaugment3", "minionaugment3" ]
+  },
+
+  "radioMessagesOnPickup": [ "pickupaugment" ],
+
+  "scripts": [ "/scripts/augments/augment.lua" ]
+}

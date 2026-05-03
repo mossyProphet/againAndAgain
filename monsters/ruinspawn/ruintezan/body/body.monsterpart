@@ -1,0 +1,9 @@
+{
+  "name" : "ruintezan",
+  "category" : "ruintezan",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "horror.png"
+  }
+}

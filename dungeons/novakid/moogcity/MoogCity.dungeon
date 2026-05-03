@@ -1,0 +1,135 @@
+{
+	"metadata": {
+		"name": "moogcity",
+		"species": "novakid",
+		"rules": [],
+		"anchor": [ "pillar" ],
+		"gravity": 80,																																		
+		"maxRadius": 4000000,
+		"maxParts": 500,
+		"protected": false
+		//"extendSurfaceFreeSpace": 300
+	},
+
+	"parts": [
+
+		{
+			"name": "base1",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 1 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "pillar", "base1", "base" ]
+				]
+			],
+			"def": [ "tmx", "MoogSurfaceSupportPoint.json" ],
+			"chance": 1
+		},
+		{
+			"chance": 1,
+			"def": [ "tmx", "MoogSurfaceSupportPoint.json" ],
+			"name": "base",
+			"rules": [
+				//[ "ignorePartMaximumRule" ],
+				[
+					"maxSpawnCount",
+					[ 8 ]
+				],
+				[
+					"doNotConnectToPart",
+					[ "pillar", "base1", "base" ]
+				]
+			]
+		},
+		{
+			"name": "stationtu",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"doNotConnectToPart",
+					[ "stationtu" ]
+				]
+			],
+			"def": [ "tmx", "MoogWanderingTraderStation.json" ],
+			"chance": 1
+		},
+		{
+			"name": "alley",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"doNotConnectToPart",
+					[ "pillar", "alley" ]
+				]
+
+			],
+			"def": [ "tmx", "MoogSurfaceAlley.json" ],
+			"chance": 1
+		},
+		{
+			"name": "arch",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"doNotConnectToPart",
+					[ "alley", "arch" ]
+				]
+			],
+			"def": [ "tmx", "MoogSupportBeamArch.json" ],
+			"chance": 1
+		},
+		{
+			"name": "pillar",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"doNotConnectToPart",
+					[ "base1", "alley" ]
+				]
+			],
+			"def": [ "tmx", "MoogSupportBeamPillar.json" ],
+			"chance": 1
+		},
+
+		//{
+		//	"name": "station",
+		//	"rules": [
+		//		[ "ignorePartMaximumRule" ],
+		//		[
+		//			"doNotConnectToPart",
+		//			[ "stationtu", "ascend" ]
+		//		]
+		//	],
+		//	"def": [ "tmx", "MoogSurfaceConsole.json" ],
+		//	"chance": 0.33
+		//},
+		//{
+		//	"name": "ascend",
+		//	"rules": [
+		//		[ "ignorePartMaximumRule" ],
+		//		[
+		//			"doNotConnectToPart",
+		//			[ "stationtu", "station" ]
+		//		]
+		//	],
+		//	"def": [ "tmx", "MoogSurfaceAscendPoint.json" ],
+		//	"chance": 0.99
+		//}
+		{
+			"name": "archtu",
+			"rules": [
+				[ "ignorePartMaximumRule" ],
+				[
+					"doNotConnectToPart",
+					[ "station" ]
+				]
+			],
+			"def": [ "tmx", "MoogSupportBeamArchTu.json" ],
+			"chance": 0.5
+		}
+	]
+}

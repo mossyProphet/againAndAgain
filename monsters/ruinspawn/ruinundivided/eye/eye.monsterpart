@@ -1,0 +1,9 @@
+{
+  "name" : "ruinundividedeye",
+  "category" : "ruinundivided",
+  "type" : "eye",
+
+  "frames" : {
+    "eye" : "yokateye.png"
+  }
+}

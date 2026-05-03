@@ -1,0 +1,22 @@
+[
+{
+    "op": "replace",
+    "path": "/primaryAbility/baseDps",
+    "value": 26
+  },
+  {
+    "op": "replace",
+    "path": "/primaryAbility/fireTime",
+    "value": 0.5
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/baseDamage",
+    "value": 26
+  },
+  {
+    "op": "replace",
+    "path": "/altAbility/energyUsage",
+    "value": 50
+  },
+ ]

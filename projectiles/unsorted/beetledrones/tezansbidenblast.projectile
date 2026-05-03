@@ -1,0 +1,45 @@
+{
+  "projectileName": "tezansbidenblast",
+  "image": "tezansbidenblast.png",
+  "animationCycle": 0.15,
+  "frameNumber": 3,
+  "damageKindImage": "icon.png",
+  "flippable": true,
+  "orientationLocked": false,
+  "emitters": [ "largeelectriccloud" ],
+  "damageTeam": { "type": "indiscriminate" },
+  "actionOnReap": [
+    {
+      "action": "config",
+      "file": "/projectiles/explosions/regularexplosion2/electricexplosionknockback.config"
+    }
+  ],
+  "statusEffects": [],
+  "damagePoly": [
+    [ -8, 4 ],
+    [ -4, 8 ],
+    [ 4, 8 ],
+    [ 8, 4 ],
+    [ 8, -4 ],
+    [ 4, -8 ],
+    [ -4, -8 ],
+    [ -8, -4 ]
+  ],
+  "power": 5.0,
+  "speed": 15,
+  "damageKind": "plasma",
+  "physics": "laser",
+  "bounces": 0,
+  "piercing": true,
+  "timeToLive": 15,
+  
+
+  "persistentAudio": "/sfx/gun/impact_plasma.ogg",
+
+  "scripts": [ "tezansbidenblast.lua"],
+  "scriptDelta" : 1,
+
+  "homingDistance" : 81,
+  "rotationRate" : 2.5,
+  "trackingLimit" : 2.0
+}

@@ -1,0 +1,12 @@
+{
+  "itemName": "livingcoralblock",
+  "price": 1,
+  "category": "block",
+  "rarity": "Common",
+  "inventoryIcon": "livingcoralblock.png",
+  "description": "Corals like these form reefs large enough to house untold millions of biota",
+  "shortdescription": "Coral block",
+
+
+  "materialId": 573
+}

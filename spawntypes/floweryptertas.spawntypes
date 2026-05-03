@@ -1,0 +1,20 @@
+[
+  {
+    "name": "cvc_nautileech",
+
+    "spawnParameters": {
+      "area": "air",
+      "region": "all",
+      "time": "all"
+    },
+    "groupSize": [ 1, 1 ],
+    "spawnChance": 0.02,
+    "monsterType": [
+      [ 0.19, "greaternautileech" ],
+      [ 0.81, "nautileech" ]
+    ],
+    "monsterParameters": {
+      "aggressive": true
+    }
+  }
+]
